@@ -1,0 +1,154 @@
+[
+  {
+    "_id": "blog001",
+    "user_id": "user123",
+    "title": "Spaghetti Aglio e Olio Recipe",
+    "recipe": {
+      "recipe_id": "R001",
+      "title": "Spaghetti Aglio e Olio",
+      "image_url": "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
+      "ingredients_list": [
+        "spaghetti 200g",
+        "olive oil 4 tbsp",
+        "garlic 4 cloves",
+        "red pepper flakes ½ tsp",
+        "parsley chopped",
+        "salt"
+      ],
+      "instructions": [
+        "Cook spaghetti in salted water until al dente.",
+        "While pasta cooks, sauté garlic in olive oil until golden, add red pepper flakes.",
+        "Toss pasta with oil, garlic mix and chopped parsley.",
+        "Serve hot."
+      ],
+      "time_minutes": 20,
+      "difficulty_score": 2,
+      "nutrition_facts": {
+        "serving_size": "1 plate",
+        "calories": 450,
+        "protein_g": 12,
+        "fat_total_g": 18,
+        "carbohydrates_g": 58,
+        "fiber_g": 3,
+        "sugar_g": 2
+      },
+      "tags": ["Italian", "quick", "vegetarian", "pasta"]
+    },
+    "rating": 10,
+    "bad_rating": 2,
+    "difficulty_score_distribution": {
+      "1": 1,
+      "2": 3,
+      "3": 4,
+      "4": 2,
+      "5": 0
+    },
+    "diff_score": 2.7,
+    "reject_reason": [],
+    "created_at": "2025-11-06T10:00:00.000Z",
+    "is_public": true
+  },
+  {
+    "_id": "blog002",
+    "user_id": "user456",
+    "title": "Chicken Teriyaki Bowl Recipe",
+    "recipe": {
+      "recipe_id": "R002",
+      "title": "Chicken Teriyaki Bowl",
+      "image_url": "https://images.unsplash.com/photo-1604908177524-579c3e805dbf",
+      "ingredients_list": [
+        "chicken breast 300g",
+        "soy sauce 3 tbsp",
+        "mirin 2 tbsp",
+        "sugar 1 tbsp",
+        "ginger grated 1 tsp",
+        "garlic 1 clove",
+        "rice 2 cups",
+        "sesame seeds",
+        "spring onions"
+      ],
+      "instructions": [
+        "Cook rice according to package instructions.",
+        "Cut chicken into strips.",
+        "Mix soy sauce, mirin, sugar, ginger, garlic to make teriyaki sauce.",
+        "Sear chicken until cooked then pour sauce and reduce until thick.",
+        "Serve chicken over rice, sprinkle sesame seeds and chopped spring onions."
+      ],
+      "time_minutes": 30,
+      "difficulty_score": 3,
+      "nutrition_facts": {
+        "serving_size": "1 bowl",
+        "calories": 520,
+        "protein_g": 38,
+        "fat_total_g": 14,
+        "carbohydrates_g": 65,
+        "fiber_g": 4,
+        "sugar_g": 12
+      },
+      "tags": ["Japanese", "chicken", "rice bowl", "main course"]
+    },
+    "rating": 10,
+    "bad_rating": 2,
+    "difficulty_score_distribution": {
+      "1": 1,
+      "2": 2,
+      "3": 4,
+      "4": 3,
+      "5": 0
+    },
+    "diff_score": 3.0,
+    "reject_reason": [],
+    "created_at": "2025-11-06T09:00:00.000Z",
+    "is_public": true
+  },
+  {
+    "_id": "blog003",
+    "user_id": "user789",
+    "title": "Classic Pancakes Recipe",
+    "recipe": {
+      "recipe_id": "R003",
+      "title": "Classic Pancakes",
+      "image_url": "https://images.unsplash.com/photo-1587730550499-86f21e7b18e3",
+      "ingredients_list": [
+        "flour 1 cup",
+        "milk 1 cup",
+        "egg 1",
+        "sugar 2 tbsp",
+        "baking powder 1 tsp",
+        "butter 2 tbsp",
+        "salt a pinch"
+      ],
+      "instructions": [
+        "Mix flour, sugar, baking powder, and salt in a bowl.",
+        "Whisk milk and egg together and add to dry ingredients.",
+        "Stir until smooth.",
+        "Heat a pan with butter and pour batter, cook until bubbles form, flip and cook until golden."
+      ],
+      "time_minutes": 25,
+      "difficulty_score": 1,
+      "nutrition_facts": {
+        "serving_size": "2 pancakes",
+        "calories": 300,
+        "protein_g": 8,
+        "fat_total_g": 10,
+        "carbohydrates_g": 45,
+        "fiber_g": 2,
+        "sugar_g": 8
+      },
+      "tags": ["Breakfast", "quick", "sweet", "vegetarian"]
+    },
+    "rating": 5,
+    "bad_rating": 1,
+    "difficulty_score_distribution": {
+      "1": 2,
+      "2": 1,
+      "3": 2,
+      "4": 0,
+      "5": 0
+    },
+    "diff_score": 2.0,
+    "reject_reason": [],
+    "created_at": "2025-11-06T08:30:00.000Z",
+    "is_public": true
+  }
+]

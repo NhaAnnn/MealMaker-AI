@@ -1,0 +1,1784 @@
+[
+  {
+    "recipe_id": "R001",
+    "title": "Spaghetti Aglio e Olio",
+    "image_url": "https://images.unsplash.com/photo‑1589302168068‑964664d93dc0",
+    "ingredients_list": ["spaghetti 200g", "olive oil 4 tbsp", "garlic 4 cloves", "red pepper flakes ½ tsp", "parsley chopped", "salt"],
+    "instructions": [
+      "Cook spaghetti in salted water until al dente.",
+      "While pasta cooks, sauté garlic in olive oil until golden, add red pepper flakes.",
+      "Toss pasta with oil, garlic mix and chopped parsley.",
+      "Serve hot."
+    ],
+    "time_minutes": 20,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 450,
+      "protein_g": 12,
+      "fat_total_g": 18,
+      "carbohydrates_g": 58,
+      "fiber_g": 3,
+      "sugar_g": 2
+    },
+    "tags": ["Italian", "quick", "vegetarian", "pasta"]
+  },
+  {
+    "recipe_id": "R002",
+    "title": "Chicken Teriyaki Bowl",
+    "image_url": "https://images.unsplash.com/photo‑1604908177524‑579c3e805dbf",
+    "ingredients_list": ["chicken breast 300g", "soy sauce 3 tbsp", "mirin 2 tbsp", "sugar 1 tbsp", "ginger grated 1 tsp", "garlic 1 clove", "rice 2 cups", "sesame seeds", "spring onions"],
+    "instructions": [
+      "Cook rice according to package instructions.",
+      "Cut chicken into strips.",
+      "Mix soy sauce, mirin, sugar, ginger, garlic to make teriyaki sauce.",
+      "Sear chicken until cooked then pour sauce and reduce until thick.",
+      "Serve chicken over rice, sprinkle sesame seeds and chopped spring onions."
+    ],
+    "time_minutes": 30,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "1 bowl",
+      "calories": 520,
+      "protein_g": 38,
+      "fat_total_g": 14,
+      "carbohydrates_g": 65,
+      "fiber_g": 4,
+      "sugar_g": 12
+    },
+    "tags": ["Japanese", "chicken", "rice bowl", "main course"]
+  },
+  {
+    "recipe_id": "R003",
+    "title": "Vegan Buddha Bowl",
+    "image_url": "https://images.unsplash.com/photo‑1598514981626‑2e7499f9f973",
+    "ingredients_list": ["quinoa 1 cup", "chickpeas 1 can", "sweet potato diced", "kale leaves", "avocado", "tahini dressing"],
+    "instructions": [
+      "Cook quinoa and roast sweet potato until tender.",
+      "Rinse and drain chickpeas, lightly season and bake if preferred.",
+      "Assemble quinoa in bowl, add kale, sweet potato, chickpeas, avocado slices.",
+      "Drizzle with tahini dressing."
+    ],
+    "time_minutes": 25,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 bowl",
+      "calories": 480,
+      "protein_g": 16,
+      "fat_total_g": 22,
+      "carbohydrates_g": 54,
+      "fiber_g": 12,
+      "sugar_g": 5
+    },
+    "tags": ["vegan", "healthy", "bowl", "gluten‑free"]
+  },
+  {
+    "recipe_id": "R004",
+    "title": "Classic Margherita Pizza",
+    "image_url": "https://images.unsplash.com/photo‑1548365328‑12bb1c6c68b4",
+    "ingredients_list": ["pizza dough", "tomato sauce", "mozzarella cheese", "fresh basil", "olive oil", "salt"],
+    "instructions": [
+      "Pre‑heat oven to 250°C.",
+      "Stretch dough onto pizza peel.",
+      "Spread tomato sauce, top with mozzarella slices and fresh basil leaves.",
+      "Drizzle olive oil and sprinkle salt.",
+      "Bake 10‑12 minutes until crust is golden and cheese bubbly."
+    ],
+    "time_minutes": 40,
+    "difficulty_score": 4,
+    "nutrition_facts": {
+      "serving_size": "1 whole pizza (approx.)",
+      "calories": 900,
+      "protein_g": 34,
+      "fat_total_g": 36,
+      "carbohydrates_g": 102,
+      "fiber_g": 6,
+      "sugar_g": 7
+    },
+    "tags": ["Italian", "pizza", "vegetarian", "dinner"]
+  },
+  {
+    "recipe_id": "R005",
+    "title": "Beef Tacos with Pico de Gallo",
+    "image_url": "https://images.unsplash.com/photo‑1577484864843‑176b33f03639",
+    "ingredients_list": ["ground beef 400g", "taco shells 8", "onion diced", "taco seasoning", "tomato diced", "cilantro chopped", "lime", "lettuce shredded", "cheddar cheese"],
+    "instructions": [
+      "Cook ground beef with diced onion and taco seasoning until browned.",
+      "Warm taco shells.",
+      "Make pico de gallo by mixing diced tomato, onion, cilantro, lime juice, salt.",
+      "Assemble tacos with beef, lettuce, cheese, pico de gallo."
+    ],
+    "time_minutes": 30,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "2 tacos",
+      "calories": 550,
+      "protein_g": 28,
+      "fat_total_g": 30,
+      "carbohydrates_g": 40,
+      "fiber_g": 5,
+      "sugar_g": 4
+    },
+    "tags": ["Mexican", "beef", "tacos", "party"]
+  },
+  {
+    "recipe_id": "R006",
+    "title": "Thai Green Curry with Tofu",
+    "image_url": "https://images.unsplash.com/photo‑1562967916‑50a5faaa04ef",
+    "ingredients_list": ["green curry paste 2 tbsp", "coconut milk 400ml", "tofu cubed", "bamboo shoots", "bell pepper sliced", "thai basil", "fish sauce or soy sauce", "lime leaves", "jasmine rice"],
+    "instructions": [
+      "Heat a little oil, fry green curry paste until fragrant.",
+      "Add coconut milk and bring to simmer.",
+      "Add tofu, bamboo shoots, bell pepper, lime leaves.",
+      "Cook until vegetables tender.",
+      "Season with fish sauce or soy sauce, garnish with Thai basil.",
+      "Serve with jasmine rice."
+    ],
+    "time_minutes": 35,
+    "difficulty_score": 4,
+    "nutrition_facts": {
+      "serving_size": "1 bowl",
+      "calories": 600,
+      "protein_g": 20,
+      "fat_total_g": 34,
+      "carbohydrates_g": 60,
+      "fiber_g": 7,
+      "sugar_g": 6
+    },
+    "tags": ["Thai", "curry", "tofu", "spicy"]
+  },
+  {
+    "recipe_id": "R007",
+    "title": "Salmon Teriyaki Salad",
+    "image_url": "https://images.unsplash.com/photo‑1582458138572‑0d42f354e8e8",
+    "ingredients_list": ["salmon fillet 200g", "soy sauce 2 tbsp", "honey 1 tbsp", "ginger 1 tsp", "mixed salad greens", "cucumber slices", "carrot ribbons", "sesame seeds", "rice wine vinegar"],
+    "instructions": [
+      "Mix soy sauce, honey, ginger to marinate salmon for 10 minutes.",
+      "Pan sear salmon until cooked through, set aside.",
+      "Toss salad greens, cucumber, carrot ribbons, drizzle rice wine vinegar and olive oil.",
+      "Top salad with salmon, sprinkle sesame seeds."
+    ],
+    "time_minutes": 25,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "1 salad bowl",
+      "calories": 450,
+      "protein_g": 32,
+      "fat_total_g": 20,
+      "carbohydrates_g": 28,
+      "fiber_g": 5,
+      "sugar_g": 8
+    },
+    "tags": ["salad", "fish", "healthy", "quick"]
+  },
+  {
+    "recipe_id": "R008",
+    "title": "Chocolate Lava Cake",
+    "image_url": "https://images.unsplash.com/photo‑1589718059395‑7c8f2c754682",
+    "ingredients_list": ["dark chocolate 100g", "butter 100g", "sugar 2/3 cup", "eggs 2", "flour ¼ cup", "vanilla extract 1 tsp"],
+    "instructions": [
+      "Pre‑heat oven to 200°C.",
+      "Melt chocolate and butter together.",
+      "Whisk eggs, sugar, vanilla until pale, fold in melted chocolate mix, then flour.",
+      "Pour into greased ramekins.",
+      "Bake 10‑12 minutes until edges set but center is gooey.",
+      "Serve immediately."
+    ],
+    "time_minutes": 20,
+    "difficulty_score": 5,
+    "nutrition_facts": {
+      "serving_size": "1 cake",
+      "calories": 390,
+      "protein_g": 6,
+      "fat_total_g": 26,
+      "carbohydrates_g": 34,
+      "fiber_g": 3,
+      "sugar_g": 24
+    },
+    "tags": ["dessert", "chocolate", "cake", "special"]
+  },
+  {
+    "recipe_id": "R009",
+    "title": "Greek Moussaka",
+    "image_url": "https://images.unsplash.com/photo‑1604908175792‑85e1d47fbb97",
+    "ingredients_list": ["eggplants sliced", "potatoes sliced", "ground lamb 500g", "tomato paste", "onion chopped", "garlic minced", "béchamel sauce", "grated cheese"],
+    "instructions": [
+      "Pre‑heat oven to 190°C.",
+      "Fry eggplant and potato slices until softened.",
+      "Cook lamb with onion, garlic, tomato paste until done.",
+      "Layer potatoes, eggplants, lamb mix in baking dish.",
+      "Top with béchamel and grated cheese.",
+      "Bake ~40 minutes until golden on top.",
+      "Let rest before serving."
+    ],
+    "time_minutes": 70,
+    "difficulty_score": 5,
+    "nutrition_facts": {
+      "serving_size": "1 large slice",
+      "calories": 650,
+      "protein_g": 30,
+      "fat_total_g": 38,
+      "carbohydrates_g": 45,
+      "fiber_g": 7,
+      "sugar_g": 6
+    },
+    "tags": ["Greek", "baked", "lamb", "traditional"]
+  },
+  {
+    "recipe_id": "R010",
+    "title": "Avocado & Banana Smoothie Bowl",
+    "image_url": "https://images.unsplash.com/photo‑1588675606730‑802f0f89c384",
+    "ingredients_list": ["avocado 1", "banana 1", "almond milk 1 cup", "spinach handful", "chia seeds 1 tbsp", "honey 1 tsp", "granola for topping"],
+    "instructions": [
+      "Blend avocado, banana, almond milk, spinach, honey until smooth.",
+      "Pour into bowl.",
+      "Top with chia seeds and granola.",
+      "Serve chilled."
+    ],
+    "time_minutes": 5,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "1 bowl",
+      "calories": 320,
+      "protein_g": 8,
+      "fat_total_g": 14,
+      "carbohydrates_g": 42,
+      "fiber_g": 9,
+      "sugar_g": 18
+    },
+    "tags": ["breakfast", "vegan", "smoothie bowl", "quick"]
+  },
+  {
+    "recipe_id": "R011",
+    "title": "Baked Ziti with Cheese",
+    "image_url": "https://images.unsplash.com/photo-1599785209707-52a3ef0a34e1",
+    "ingredients_list": ["ziti pasta 250g", "marinara sauce 2 cups", "mozzarella 200g shredded", "ricotta 150g", "Parmesan 50g grated", "basil fresh"],
+    "instructions": [
+      "Preheat oven to 190°C.",
+      "Cook pasta until al dente and drain.",
+      "Mix pasta with marinara sauce and ricotta.",
+      "Transfer to baking dish, top with mozzarella and Parmesan.",
+      "Bake 20–25 minutes until cheese melted and golden.",
+      "Garnish with fresh basil and serve."
+    ],
+    "time_minutes": 40,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 600,
+      "protein_g": 28,
+      "fat_total_g": 24,
+      "carbohydrates_g": 70,
+      "fiber_g": 5,
+      "sugar_g": 8
+    },
+    "tags": ["Italian", "pasta", "baked", "vegetarian"]
+  },
+  {
+    "recipe_id": "R012",
+    "title": "Lemon Garlic Shrimp Pasta",
+    "image_url": "https://images.unsplash.com/photo-1604908175792-85e1d47fbb97",
+    "ingredients_list": ["spaghetti 200g", "shrimp peeled 300g", "garlic 3 cloves minced", "olive oil 2 tbsp", "lemon juice 2 tbsp", "parsley chopped", "salt", "pepper"],
+    "instructions": [
+      "Cook spaghetti until al dente, drain and reserve some pasta water.",
+      "Heat olive oil in pan, sauté garlic until fragrant.",
+      "Add shrimp, cook until pink and opaque.",
+      "Add lemon juice, parsley, and reserved pasta water.",
+      "Toss pasta with shrimp and sauce.",
+      "Serve immediately."
+    ],
+    "time_minutes": 25,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 420,
+      "protein_g": 30,
+      "fat_total_g": 16,
+      "carbohydrates_g": 45,
+      "fiber_g": 3,
+      "sugar_g": 2
+    },
+    "tags": ["seafood", "pasta", "quick", "Italian"]
+  },
+  {
+    "recipe_id": "R013",
+    "title": "Caprese Salad",
+    "image_url": "https://images.unsplash.com/photo-1570197782032-b0b3d9e78663",
+    "ingredients_list": ["tomatoes 3 sliced", "mozzarella 200g sliced", "basil leaves", "olive oil 2 tbsp", "balsamic glaze", "salt", "pepper"],
+    "instructions": [
+      "Arrange tomato and mozzarella slices alternately on a plate.",
+      "Place basil leaves between slices.",
+      "Drizzle with olive oil and balsamic glaze.",
+      "Season with salt and pepper.",
+      "Serve fresh."
+    ],
+    "time_minutes": 10,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 300,
+      "protein_g": 15,
+      "fat_total_g": 22,
+      "carbohydrates_g": 8,
+      "fiber_g": 2,
+      "sugar_g": 6
+    },
+    "tags": ["salad", "Italian", "vegetarian", "quick"]
+  },
+  {
+    "recipe_id": "R014",
+    "title": "Grilled Chicken Caesar Salad",
+    "image_url": "https://images.unsplash.com/photo-1604908177524-579c3e805dbf",
+    "ingredients_list": ["chicken breast 2", "romaine lettuce", "croutons", "Parmesan cheese", "Caesar dressing"],
+    "instructions": [
+      "Season chicken with salt and pepper, grill until cooked through.",
+      "Chop romaine lettuce and place in bowl.",
+      "Slice chicken and place on top of lettuce.",
+      "Add croutons and sprinkle Parmesan cheese.",
+      "Drizzle with Caesar dressing and toss lightly.",
+      "Serve immediately."
+    ],
+    "time_minutes": 20,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 bowl",
+      "calories": 450,
+      "protein_g": 35,
+      "fat_total_g": 20,
+      "carbohydrates_g": 25,
+      "fiber_g": 3,
+      "sugar_g": 2
+    },
+    "tags": ["salad", "chicken", "healthy", "quick"]
+  },
+  {
+    "recipe_id": "R015",
+    "title": "Beef Stir‑Fry with Vegetables",
+    "image_url": "https://images.unsplash.com/photo-1604908175792-85e1d47fbb97",
+    "ingredients_list": ["beef strips 300g", "broccoli florets", "bell peppers sliced", "soy sauce 3 tbsp", "garlic minced 2 cloves", "ginger grated 1 tsp", "sesame oil 1 tbsp"],
+    "instructions": [
+      "Heat sesame oil in a wok or large pan.",
+      "Add garlic and ginger, sauté until fragrant.",
+      "Add beef strips, cook until browned.",
+      "Add vegetables and stir-fry until tender-crisp.",
+      "Pour soy sauce and toss everything together.",
+      "Serve hot with rice or noodles."
+    ],
+    "time_minutes": 25,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 500,
+      "protein_g": 35,
+      "fat_total_g": 22,
+      "carbohydrates_g": 40,
+      "fiber_g": 5,
+      "sugar_g": 6
+    },
+    "tags": ["beef", "stir-fry", "Asian", "quick"]
+  },
+  {
+    "recipe_id": "R016",
+    "title": "Vegetable Frittata",
+    "image_url": "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
+    "ingredients_list": ["eggs 6", "milk 50ml", "spinach 100g", "bell peppers diced", "onion diced", "cheddar cheese 50g", "salt", "pepper", "olive oil 1 tbsp"],
+    "instructions": [
+      "Preheat oven to 180°C.",
+      "Whisk eggs with milk, salt, and pepper.",
+      "Heat olive oil in oven-safe pan, sauté vegetables until softened.",
+      "Pour egg mixture over vegetables, sprinkle cheese on top.",
+      "Bake 15–20 minutes until eggs are set.",
+      "Slice and serve warm."
+    ],
+    "time_minutes": 30,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 slice",
+      "calories": 250,
+      "protein_g": 18,
+      "fat_total_g": 16,
+      "carbohydrates_g": 8,
+      "fiber_g": 2,
+      "sugar_g": 3
+    },
+    "tags": ["vegetarian", "breakfast", "baked", "quick"]
+  },
+  {
+    "recipe_id": "R017",
+    "title": "Teriyaki Salmon with Rice",
+    "image_url": "https://images.unsplash.com/photo-1582458138572-0d42f354e8e8",
+    "ingredients_list": ["salmon fillet 2", "soy sauce 3 tbsp", "mirin 2 tbsp", "sugar 1 tbsp", "garlic minced 1 clove", "ginger grated 1 tsp", "rice 2 cups", "spring onions"],
+    "instructions": [
+      "Cook rice according to package instructions.",
+      "Mix soy sauce, mirin, sugar, garlic, ginger to make teriyaki sauce.",
+      "Pan-sear salmon fillets until cooked through.",
+      "Pour teriyaki sauce over salmon and simmer for 2–3 minutes.",
+      "Serve salmon over rice, garnish with chopped spring onions."
+    ],
+    "time_minutes": 30,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 520,
+      "protein_g": 38,
+      "fat_total_g": 14,
+      "carbohydrates_g": 65,
+      "fiber_g": 4,
+      "sugar_g": 12
+    },
+    "tags": ["salmon", "Japanese", "main course", "healthy"]
+  },
+  {
+    "recipe_id": "R018",
+    "title": "Pancakes with Maple Syrup",
+    "image_url": "https://images.unsplash.com/photo-1589718059395-7c8f2c754682",
+    "ingredients_list": ["flour 200g", "milk 250ml", "eggs 2", "sugar 2 tbsp", "baking powder 1 tsp", "salt pinch", "butter 1 tbsp", "maple syrup"],
+    "instructions": [
+      "Mix flour, sugar, baking powder, and salt in a bowl.",
+      "Whisk eggs with milk, then combine with dry ingredients.",
+      "Heat butter in a non-stick pan.",
+      "Pour batter to form pancakes, cook until bubbles form, flip and cook other side.",
+      "Serve warm with maple syrup."
+    ],
+    "time_minutes": 20,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "2 pancakes",
+      "calories": 350,
+      "protein_g": 10,
+      "fat_total_g": 12,
+      "carbohydrates_g": 50,
+      "fiber_g": 2,
+      "sugar_g": 12
+    },
+    "tags": ["breakfast", "sweet", "quick", "vegetarian"]
+  },
+  {
+    "recipe_id": "R019",
+    "title": "Stuffed Bell Peppers",
+    "image_url": "https://images.unsplash.com/photo-1548365328-12bb1c6c68b4",
+    "ingredients_list": ["bell peppers 4", "ground beef 300g", "rice 1 cup cooked", "onion diced", "tomato sauce 1 cup", "cheddar cheese 50g", "olive oil 1 tbsp", "salt", "pepper"],
+    "instructions": [
+      "Preheat oven to 180°C.",
+      "Cut tops off bell peppers and remove seeds.",
+      "Sauté onion and ground beef in olive oil until browned.",
+      "Mix beef with cooked rice and tomato sauce.",
+      "Stuff mixture into bell peppers, top with cheese.",
+      "Bake 25–30 minutes until peppers tender and cheese melted."
+    ],
+    "time_minutes": 45,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "1 stuffed pepper",
+      "calories": 400,
+      "protein_g": 25,
+      "fat_total_g": 18,
+      "carbohydrates_g": 35,
+      "fiber_g": 5,
+      "sugar_g": 6
+    },
+    "tags": ["beef", "baked", "dinner", "healthy"]
+  },
+  {
+    "recipe_id": "R020",
+    "title": "Chocolate Chip Cookies",
+    "image_url": "https://images.unsplash.com/photo-1604908177524-579c3e805dbf",
+    "ingredients_list": ["flour 250g", "butter 100g", "sugar 100g", "brown sugar 50g", "eggs 2", "chocolate chips 150g", "baking soda 1 tsp", "vanilla extract 1 tsp", "salt ½ tsp"],
+    "instructions": [
+      "Preheat oven to 180°C.",
+      "Cream butter, sugar, and brown sugar until fluffy.",
+      "Add eggs and vanilla extract, mix well.",
+      "Combine flour, baking soda, and salt, then fold into wet ingredients.",
+      "Stir in chocolate chips.",
+      "Scoop onto baking tray and bake 10–12 minutes until golden.",
+      "Cool before serving."
+    ],
+    "time_minutes": 25,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "2 cookies",
+      "calories": 300,
+      "protein_g": 4,
+      "fat_total_g": 15,
+      "carbohydrates_g": 38,
+      "fiber_g": 2,
+      "sugar_g": 22
+    },
+    "tags": ["dessert", "cookies", "sweet", "baking"]
+  },
+   {
+    "recipe_id": "R021",
+    "title": "Mushroom Risotto",
+    "image_url": "https://images.unsplash.com/photo-1604908175792-85e1d47fbb97",
+    "ingredients_list": ["arborio rice 200g", "mushrooms 200g sliced", "onion diced", "garlic minced 2 cloves", "vegetable broth 600ml", "Parmesan 50g grated", "butter 2 tbsp", "olive oil 1 tbsp", "salt", "pepper"],
+    "instructions": [
+      "Heat olive oil in pan and sauté onion and garlic until fragrant.",
+      "Add mushrooms and cook until softened.",
+      "Add rice and toast for 2 minutes.",
+      "Gradually add vegetable broth, stirring frequently until rice is creamy and cooked.",
+      "Stir in butter and Parmesan, season with salt and pepper.",
+      "Serve hot."
+    ],
+    "time_minutes": 40,
+    "difficulty_score": 4,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 450,
+      "protein_g": 12,
+      "fat_total_g": 18,
+      "carbohydrates_g": 60,
+      "fiber_g": 4,
+      "sugar_g": 3
+    },
+    "tags": ["Italian", "vegetarian", "rice", "dinner"]
+  },
+  {
+    "recipe_id": "R022",
+    "title": "Chicken Fajitas",
+    "image_url": "https://images.unsplash.com/photo-1577484864843-176b33f03639",
+    "ingredients_list": ["chicken breast 300g sliced", "bell peppers sliced", "onion sliced", "taco seasoning 2 tbsp", "olive oil 2 tbsp", "tortillas", "lime wedges"],
+    "instructions": [
+      "Heat olive oil in pan, sauté chicken with taco seasoning until cooked.",
+      "Add bell peppers and onion, cook until tender-crisp.",
+      "Warm tortillas in a pan or oven.",
+      "Assemble fajitas by placing chicken and vegetables in tortillas.",
+      "Serve with lime wedges."
+    ],
+    "time_minutes": 25,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "2 tortillas",
+      "calories": 400,
+      "protein_g": 28,
+      "fat_total_g": 15,
+      "carbohydrates_g": 40,
+      "fiber_g": 4,
+      "sugar_g": 5
+    },
+    "tags": ["Mexican", "chicken", "quick", "dinner"]
+  },
+  {
+    "recipe_id": "R023",
+    "title": "Quinoa Salad with Roasted Vegetables",
+    "image_url": "https://images.unsplash.com/photo-1598514981626-2e7499f9f973",
+    "ingredients_list": ["quinoa 1 cup", "zucchini diced", "bell peppers diced", "carrot diced", "olive oil 2 tbsp", "lemon juice 2 tbsp", "feta cheese crumbled", "parsley chopped", "salt", "pepper"],
+    "instructions": [
+      "Preheat oven to 200°C.",
+      "Toss vegetables with olive oil, salt, and pepper, roast 20 minutes.",
+      "Cook quinoa according to package instructions.",
+      "Combine roasted vegetables with quinoa.",
+      "Drizzle lemon juice and sprinkle feta and parsley on top.",
+      "Serve warm or chilled."
+    ],
+    "time_minutes": 35,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 bowl",
+      "calories": 420,
+      "protein_g": 12,
+      "fat_total_g": 18,
+      "carbohydrates_g": 55,
+      "fiber_g": 8,
+      "sugar_g": 6
+    },
+    "tags": ["vegan", "healthy", "bowl", "gluten-free"]
+  },
+  {
+    "recipe_id": "R024",
+    "title": "Shrimp Scampi",
+    "image_url": "https://images.unsplash.com/photo-1604908175792-85e1d47fbb97",
+    "ingredients_list": ["shrimp 300g peeled", "spaghetti 200g", "garlic 4 cloves minced", "butter 3 tbsp", "olive oil 1 tbsp", "lemon juice 2 tbsp", "parsley chopped", "salt", "pepper"],
+    "instructions": [
+      "Cook spaghetti until al dente and drain.",
+      "Heat butter and olive oil in pan, sauté garlic until fragrant.",
+      "Add shrimp, cook until pink.",
+      "Stir in lemon juice and parsley.",
+      "Toss spaghetti with shrimp mixture.",
+      "Serve immediately."
+    ],
+    "time_minutes": 25,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 450,
+      "protein_g": 32,
+      "fat_total_g": 20,
+      "carbohydrates_g": 40,
+      "fiber_g": 3,
+      "sugar_g": 2
+    },
+    "tags": ["seafood", "pasta", "quick", "Italian"]
+  },
+  {
+    "recipe_id": "R025",
+    "title": "Veggie Burger",
+    "image_url": "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
+    "ingredients_list": ["burger buns 2", "veggie patties 2", "lettuce", "tomato slices", "onion slices", "cheddar cheese", "ketchup", "mustard"],
+    "instructions": [
+      "Cook veggie patties according to package instructions or grill.",
+      "Toast burger buns lightly.",
+      "Assemble burgers with lettuce, tomato, onion, patty, and cheese.",
+      "Add ketchup and mustard to taste.",
+      "Serve immediately."
+    ],
+    "time_minutes": 15,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "1 burger",
+      "calories": 350,
+      "protein_g": 14,
+      "fat_total_g": 14,
+      "carbohydrates_g": 45,
+      "fiber_g": 5,
+      "sugar_g": 6
+    },
+    "tags": ["vegetarian", "fast food", "quick", "lunch"]
+  },
+  {
+    "recipe_id": "R026",
+    "title": "Spicy Tofu Stir-Fry",
+    "image_url": "https://images.unsplash.com/photo-1562967916-50a5faaa04ef",
+    "ingredients_list": ["tofu 300g cubed", "broccoli florets", "bell pepper sliced", "carrot sliced", "soy sauce 3 tbsp", "chili sauce 1 tbsp", "garlic minced 2 cloves", "sesame oil 1 tbsp"],
+    "instructions": [
+      "Heat sesame oil in pan, sauté garlic until fragrant.",
+      "Add tofu cubes, cook until lightly browned.",
+      "Add vegetables and stir-fry until tender-crisp.",
+      "Pour soy sauce and chili sauce, toss to coat.",
+      "Serve hot with rice or noodles."
+    ],
+    "time_minutes": 25,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 380,
+      "protein_g": 18,
+      "fat_total_g": 20,
+      "carbohydrates_g": 30,
+      "fiber_g": 6,
+      "sugar_g": 5
+    },
+    "tags": ["vegan", "Asian", "stir-fry", "healthy"]
+  },
+  {
+    "recipe_id": "R027",
+    "title": "Margherita Flatbread",
+    "image_url": "https://images.unsplash.com/photo-1548365328-12bb1c6c68b4",
+    "ingredients_list": ["flatbread 2", "tomato sauce ½ cup", "mozzarella slices", "fresh basil leaves", "olive oil 1 tbsp", "salt", "pepper"],
+    "instructions": [
+      "Preheat oven to 200°C.",
+      "Place flatbread on baking tray.",
+      "Spread tomato sauce on flatbread.",
+      "Top with mozzarella slices and basil leaves.",
+      "Drizzle with olive oil, season with salt and pepper.",
+      "Bake 8–10 minutes until cheese melts.",
+      "Serve warm."
+    ],
+    "time_minutes": 15,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "1 flatbread",
+      "calories": 320,
+      "protein_g": 12,
+      "fat_total_g": 15,
+      "carbohydrates_g": 35,
+      "fiber_g": 3,
+      "sugar_g": 4
+    },
+    "tags": ["Italian", "vegetarian", "quick", "lunch"]
+  },
+  {
+    "recipe_id": "R028",
+    "title": "Chicken Noodle Soup",
+    "image_url": "https://images.unsplash.com/photo-1604908177524-579c3e805dbf",
+    "ingredients_list": ["chicken breast 300g", "egg noodles 150g", "carrot sliced", "celery sliced", "onion diced", "chicken broth 1 liter", "salt", "pepper", "parsley chopped"],
+    "instructions": [
+      "Bring chicken broth to a boil in pot.",
+      "Add chicken and cook until tender, then remove and shred.",
+      "Add vegetables to broth, cook until tender.",
+      "Return shredded chicken to pot.",
+      "Add noodles, cook until al dente.",
+      "Season with salt and pepper, garnish with parsley.",
+      "Serve hot."
+    ],
+    "time_minutes": 35,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 bowl",
+      "calories": 350,
+      "protein_g": 28,
+      "fat_total_g": 10,
+      "carbohydrates_g": 40,
+      "fiber_g": 4,
+      "sugar_g": 5
+    },
+    "tags": ["chicken", "soup", "healthy", "quick"]
+  },
+  {
+    "recipe_id": "R029",
+    "title": "Avocado Toast with Egg",
+    "image_url": "https://images.unsplash.com/photo-1588675606730-802f0f89c384",
+    "ingredients_list": ["bread slices 2", "avocado 1", "eggs 2", "salt", "pepper", "chili flakes optional"],
+    "instructions": [
+      "Toast bread slices until golden.",
+      "Mash avocado, season with salt and pepper.",
+      "Spread avocado on toast.",
+      "Fry or poach eggs and place on top.",
+      "Sprinkle chili flakes if desired.",
+      "Serve immediately."
+    ],
+    "time_minutes": 10,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 300,
+      "protein_g": 12,
+      "fat_total_g": 18,
+      "carbohydrates_g": 28,
+      "fiber_g": 6,
+      "sugar_g": 2
+    },
+    "tags": ["breakfast", "vegan optional", "quick", "healthy"]
+  },
+  {
+    "recipe_id": "R030",
+    "title": "Banana Oatmeal Cookies",
+    "image_url": "https://images.unsplash.com/photo-1604908177524-579c3e805dbf",
+    "ingredients_list": ["ripe bananas 2", "rolled oats 1.5 cups", "chocolate chips 50g", "vanilla extract 1 tsp", "cinnamon 1 tsp"],
+    "instructions": [
+      "Preheat oven to 180°C.",
+      "Mash bananas in a bowl.",
+      "Add oats, chocolate chips, vanilla extract, and cinnamon, mix well.",
+      "Scoop onto baking tray lined with parchment paper.",
+      "Bake 12–15 minutes until golden.",
+      "Cool before serving."
+    ],
+    "time_minutes": 20,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "2 cookies",
+      "calories": 200,
+      "protein_g": 4,
+      "fat_total_g": 6,
+      "carbohydrates_g": 35,
+      "fiber_g": 4,
+      "sugar_g": 12
+    },
+    "tags": ["dessert", "healthy", "baking", "quick"]
+  },
+  {
+    "recipe_id": "R031",
+    "title": "Spinach and Feta Quiche",
+    "image_url": "https://images.unsplash.com/photo-1604908175792-85e1d47fbb97",
+    "ingredients_list": ["pie crust 1", "spinach 200g", "feta cheese 100g", "eggs 3", "milk 150ml", "salt", "pepper", "nutmeg pinch"],
+    "instructions": [
+      "Preheat oven to 180°C.",
+      "Line pie dish with pie crust.",
+      "Sauté spinach until wilted and cool slightly.",
+      "Whisk eggs, milk, salt, pepper, and nutmeg together.",
+      "Add spinach and feta to egg mixture.",
+      "Pour mixture into pie crust.",
+      "Bake 30–35 minutes until set and golden.",
+      "Cool slightly before serving."
+    ],
+    "time_minutes": 50,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "1 slice",
+      "calories": 350,
+      "protein_g": 15,
+      "fat_total_g": 22,
+      "carbohydrates_g": 22,
+      "fiber_g": 3,
+      "sugar_g": 2
+    },
+    "tags": ["vegetarian", "baked", "brunch", "healthy"]
+  },
+  {
+    "recipe_id": "R032",
+    "title": "Thai Peanut Noodles",
+    "image_url": "https://images.unsplash.com/photo-1562967916-50a5faaa04ef",
+    "ingredients_list": ["rice noodles 200g", "peanut butter 3 tbsp", "soy sauce 2 tbsp", "lime juice 1 tbsp", "garlic minced 2 cloves", "carrot julienned", "cucumber julienned", "cilantro chopped", "crushed peanuts"],
+    "instructions": [
+      "Cook rice noodles according to package instructions and drain.",
+      "Whisk together peanut butter, soy sauce, lime juice, and garlic.",
+      "Toss noodles with sauce.",
+      "Add carrot and cucumber, mix well.",
+      "Top with cilantro and crushed peanuts before serving."
+    ],
+    "time_minutes": 20,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 450,
+      "protein_g": 12,
+      "fat_total_g": 22,
+      "carbohydrates_g": 50,
+      "fiber_g": 5,
+      "sugar_g": 6
+    },
+    "tags": ["vegan", "Asian", "noodles", "quick"]
+  },
+  {
+    "recipe_id": "R033",
+    "title": "Beef Bolognese",
+    "image_url": "https://images.unsplash.com/photo-1604908177524-579c3e805dbf",
+    "ingredients_list": ["spaghetti 200g", "ground beef 300g", "onion diced", "garlic minced 2 cloves", "carrot diced", "celery diced", "tomato sauce 400ml", "olive oil 2 tbsp", "salt", "pepper", "Parmesan grated"],
+    "instructions": [
+      "Heat olive oil in pan and sauté onion, garlic, carrot, and celery until softened.",
+      "Add ground beef, cook until browned.",
+      "Pour in tomato sauce, season with salt and pepper.",
+      "Simmer for 20 minutes.",
+      "Cook spaghetti according to package instructions.",
+      "Serve sauce over spaghetti and sprinkle with Parmesan."
+    ],
+    "time_minutes": 50,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 550,
+      "protein_g": 30,
+      "fat_total_g": 22,
+      "carbohydrates_g": 55,
+      "fiber_g": 5,
+      "sugar_g": 7
+    },
+    "tags": ["Italian", "beef", "pasta", "main course"]
+  },
+  {
+    "recipe_id": "R034",
+    "title": "Grilled Vegetable Skewers",
+    "image_url": "https://images.unsplash.com/photo-1598514981626-2e7499f9f973",
+    "ingredients_list": ["zucchini slices", "bell peppers chunks", "mushrooms", "red onion chunks", "olive oil 2 tbsp", "salt", "pepper", "herbs optional"],
+    "instructions": [
+      "Preheat grill to medium heat.",
+      "Thread vegetables onto skewers.",
+      "Brush with olive oil, season with salt, pepper, and herbs.",
+      "Grill for 8–10 minutes, turning occasionally until charred and tender.",
+      "Serve hot."
+    ],
+    "time_minutes": 20,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "2 skewers",
+      "calories": 180,
+      "protein_g": 5,
+      "fat_total_g": 8,
+      "carbohydrates_g": 22,
+      "fiber_g": 5,
+      "sugar_g": 8
+    },
+    "tags": ["vegetarian", "grilled", "healthy", "quick"]
+  },
+  {
+    "recipe_id": "R035",
+    "title": "Chicken Curry",
+    "image_url": "https://images.unsplash.com/photo-1604908175792-85e1d47fbb97",
+    "ingredients_list": ["chicken 400g", "onion diced", "garlic minced 2 cloves", "ginger grated 1 tsp", "curry powder 2 tbsp", "coconut milk 400ml", "vegetables optional", "salt", "oil 2 tbsp"],
+    "instructions": [
+      "Heat oil in pan, sauté onion, garlic, and ginger until fragrant.",
+      "Add chicken pieces and cook until browned.",
+      "Stir in curry powder and cook for 1–2 minutes.",
+      "Pour in coconut milk, add vegetables if desired.",
+      "Simmer for 20–25 minutes until chicken is cooked.",
+      "Serve hot with rice."
+    ],
+    "time_minutes": 40,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 520,
+      "protein_g": 38,
+      "fat_total_g": 28,
+      "carbohydrates_g": 30,
+      "fiber_g": 4,
+      "sugar_g": 5
+    },
+    "tags": ["chicken", "curry", "Asian", "main course"]
+  },
+  {
+    "recipe_id": "R036",
+    "title": "Caprese Panini",
+    "image_url": "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
+    "ingredients_list": ["bread slices 2", "mozzarella slices", "tomato slices", "basil leaves", "olive oil 1 tsp", "salt", "pepper"],
+    "instructions": [
+      "Preheat panini press or grill pan.",
+      "Layer mozzarella, tomato, and basil between bread slices.",
+      "Drizzle lightly with olive oil and season with salt and pepper.",
+      "Grill panini until bread is golden and cheese melts.",
+      "Serve warm."
+    ],
+    "time_minutes": 10,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "1 panini",
+      "calories": 320,
+      "protein_g": 14,
+      "fat_total_g": 16,
+      "carbohydrates_g": 28,
+      "fiber_g": 2,
+      "sugar_g": 3
+    },
+    "tags": ["Italian", "vegetarian", "quick", "lunch"]
+  },
+  {
+    "recipe_id": "R037",
+    "title": "Baked Salmon with Lemon",
+    "image_url": "https://images.unsplash.com/photo-1582458138572-0d42f354e8e8",
+    "ingredients_list": ["salmon fillets 2", "lemon slices", "olive oil 2 tbsp", "garlic minced 1 clove", "salt", "pepper", "herbs optional"],
+    "instructions": [
+      "Preheat oven to 200°C.",
+      "Place salmon on baking tray lined with parchment paper.",
+      "Drizzle olive oil, sprinkle garlic, salt, pepper, and herbs.",
+      "Place lemon slices on top of salmon.",
+      "Bake 12–15 minutes until cooked through.",
+      "Serve hot."
+    ],
+    "time_minutes": 25,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 fillet",
+      "calories": 350,
+      "protein_g": 30,
+      "fat_total_g": 22,
+      "carbohydrates_g": 2,
+      "fiber_g": 0,
+      "sugar_g": 0
+    },
+    "tags": ["salmon", "baked", "healthy", "quick"]
+  },
+  {
+    "recipe_id": "R038",
+    "title": "Vegetable Lasagna",
+    "image_url": "https://images.unsplash.com/photo-1604908177524-579c3e805dbf",
+    "ingredients_list": ["lasagna sheets", "marinara sauce 2 cups", "zucchini sliced", "spinach 200g", "ricotta 150g", "mozzarella 200g shredded", "Parmesan 50g", "olive oil 1 tbsp", "salt", "pepper"],
+    "instructions": [
+      "Preheat oven to 190°C.",
+      "Sauté zucchini and spinach with olive oil until softened.",
+      "Spread a thin layer of marinara sauce in baking dish.",
+      "Layer lasagna sheets, vegetables, ricotta, and sauce.",
+      "Repeat layers and top with mozzarella and Parmesan.",
+      "Bake 35–40 minutes until golden and bubbly.",
+      "Let rest 5 minutes before serving."
+    ],
+    "time_minutes": 60,
+    "difficulty_score": 4,
+    "nutrition_facts": {
+      "serving_size": "1 slice",
+      "calories": 450,
+      "protein_g": 20,
+      "fat_total_g": 22,
+      "carbohydrates_g": 45,
+      "fiber_g": 6,
+      "sugar_g": 7
+    },
+    "tags": ["vegetarian", "baked", "Italian", "dinner"]
+  },
+  {
+    "recipe_id": "R039",
+    "title": "Shrimp Tacos",
+    "image_url": "https://images.unsplash.com/photo-1577484864843-176b33f03639",
+    "ingredients_list": ["shrimp 300g peeled", "taco shells 8", "cabbage shredded", "avocado slices", "lime wedges", "sour cream", "cilantro chopped", "taco seasoning 2 tbsp"],
+    "instructions": [
+      "Toss shrimp with taco seasoning.",
+      "Sauté shrimp in pan until pink and cooked through.",
+      "Warm taco shells.",
+      "Assemble tacos with shrimp, cabbage, avocado, and sour cream.",
+      "Garnish with cilantro and lime wedges.",
+      "Serve immediately."
+    ],
+    "time_minutes": 20,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "2 tacos",
+      "calories": 400,
+      "protein_g": 28,
+      "fat_total_g": 18,
+      "carbohydrates_g": 35,
+      "fiber_g": 5,
+      "sugar_g": 3
+    },
+    "tags": ["seafood", "Mexican", "quick", "dinner"]
+  },
+  {
+    "recipe_id": "R040",
+    "title": "Pumpkin Soup",
+    "image_url": "https://images.unsplash.com/photo-1604908175792-85e1d47fbb97",
+    "ingredients_list": ["pumpkin 500g peeled cubed", "onion diced", "garlic minced 2 cloves", "vegetable broth 500ml", "cream 100ml", "olive oil 1 tbsp", "salt", "pepper", "nutmeg pinch"],
+    "instructions": [
+      "Heat olive oil in pot, sauté onion and garlic until fragrant.",
+      "Add pumpkin cubes and cook for 5 minutes.",
+      "Pour in vegetable broth, bring to boil, then simmer until pumpkin is tender.",
+      "Blend soup until smooth.",
+      "Stir in cream, season with salt, pepper, and nutmeg.",
+      "Serve hot."
+    ],
+    "time_minutes": 35,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 bowl",
+      "calories": 250,
+      "protein_g": 5,
+      "fat_total_g": 15,
+      "carbohydrates_g": 28,
+      "fiber_g": 5,
+      "sugar_g": 6
+    },
+    "tags": ["vegetarian", "soup", "healthy", "quick"]
+  }, {
+    "recipe_id": "R041",
+    "title": "Greek Salad",
+    "image_url": "https://images.unsplash.com/photo-1598514981626-2e7499f9f973",
+    "ingredients_list": ["cucumber diced", "tomato diced", "red onion sliced", "feta cheese cubes", "olives", "olive oil 2 tbsp", "lemon juice 1 tbsp", "oregano 1 tsp", "salt", "pepper"],
+    "instructions": [
+      "Combine cucumber, tomato, red onion, feta, and olives in a bowl.",
+      "Whisk together olive oil, lemon juice, oregano, salt, and pepper.",
+      "Pour dressing over salad and toss gently.",
+      "Serve chilled."
+    ],
+    "time_minutes": 10,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "1 bowl",
+      "calories": 250,
+      "protein_g": 8,
+      "fat_total_g": 20,
+      "carbohydrates_g": 10,
+      "fiber_g": 3,
+      "sugar_g": 5
+    },
+    "tags": ["vegetarian", "salad", "healthy", "quick"]
+  },
+  {
+    "recipe_id": "R042",
+    "title": "Pasta Primavera",
+    "image_url": "https://images.unsplash.com/photo-1604908177524-579c3e805dbf",
+    "ingredients_list": ["spaghetti 200g", "zucchini sliced", "bell peppers sliced", "carrot sliced", "peas 100g", "olive oil 2 tbsp", "garlic minced 2 cloves", "Parmesan grated 50g", "salt", "pepper"],
+    "instructions": [
+      "Cook spaghetti until al dente.",
+      "Heat olive oil, sauté garlic until fragrant.",
+      "Add vegetables and cook until tender-crisp.",
+      "Toss spaghetti with vegetables.",
+      "Sprinkle Parmesan, season with salt and pepper, and serve."
+    ],
+    "time_minutes": 25,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 400,
+      "protein_g": 12,
+      "fat_total_g": 14,
+      "carbohydrates_g": 55,
+      "fiber_g": 6,
+      "sugar_g": 7
+    },
+    "tags": ["Italian", "vegetarian", "pasta", "quick"]
+  },
+  {
+    "recipe_id": "R043",
+    "title": "Teriyaki Salmon",
+    "image_url": "https://images.unsplash.com/photo-1582458138572-0d42f354e8e8",
+    "ingredients_list": ["salmon fillets 2", "soy sauce 3 tbsp", "mirin 2 tbsp", "sugar 1 tbsp", "ginger grated 1 tsp", "garlic minced 1 clove", "spring onions for garnish"],
+    "instructions": [
+      "Mix soy sauce, mirin, sugar, ginger, and garlic to make teriyaki sauce.",
+      "Marinate salmon fillets for 10–15 minutes.",
+      "Pan-sear salmon until cooked through, pouring in sauce to reduce and glaze.",
+      "Garnish with chopped spring onions and serve."
+    ],
+    "time_minutes": 25,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "1 fillet",
+      "calories": 350,
+      "protein_g": 30,
+      "fat_total_g": 18,
+      "carbohydrates_g": 12,
+      "fiber_g": 1,
+      "sugar_g": 6
+    },
+    "tags": ["seafood", "Japanese", "main course", "healthy"]
+  },
+  {
+    "recipe_id": "R044",
+    "title": "Vegetable Stir-Fry",
+    "image_url": "https://images.unsplash.com/photo-1562967916-50a5faaa04ef",
+    "ingredients_list": ["broccoli florets", "bell peppers sliced", "carrot sliced", "snow peas", "garlic minced 2 cloves", "soy sauce 3 tbsp", "sesame oil 1 tbsp"],
+    "instructions": [
+      "Heat sesame oil in a pan, sauté garlic until fragrant.",
+      "Add vegetables and stir-fry for 5–7 minutes until tender-crisp.",
+      "Add soy sauce and toss to coat.",
+      "Serve hot with rice or noodles."
+    ],
+    "time_minutes": 15,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 250,
+      "protein_g": 8,
+      "fat_total_g": 12,
+      "carbohydrates_g": 28,
+      "fiber_g": 6,
+      "sugar_g": 8
+    },
+    "tags": ["vegan", "Asian", "stir-fry", "quick"]
+  },
+  {
+    "recipe_id": "R045",
+    "title": "BBQ Chicken Wings",
+    "image_url": "https://images.unsplash.com/photo-1604908177524-579c3e805dbf",
+    "ingredients_list": ["chicken wings 500g", "BBQ sauce 4 tbsp", "olive oil 1 tbsp", "salt", "pepper"],
+    "instructions": [
+      "Preheat oven to 200°C.",
+      "Toss chicken wings with olive oil, salt, and pepper.",
+      "Place on baking tray and bake 25 minutes.",
+      "Brush BBQ sauce on wings and bake another 10 minutes until cooked and sticky.",
+      "Serve hot."
+    ],
+    "time_minutes": 45,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "4 wings",
+      "calories": 350,
+      "protein_g": 25,
+      "fat_total_g": 22,
+      "carbohydrates_g": 10,
+      "fiber_g": 0,
+      "sugar_g": 6
+    },
+    "tags": ["chicken", "BBQ", "party", "main course"]
+  },
+  {
+    "recipe_id": "R046",
+    "title": "Mango Smoothie",
+    "image_url": "https://images.unsplash.com/photo-1588675606730-802f0f89c384",
+    "ingredients_list": ["mango 1 cup diced", "banana 1", "yogurt ½ cup", "milk ½ cup", "honey 1 tsp"],
+    "instructions": [
+      "Combine mango, banana, yogurt, milk, and honey in a blender.",
+      "Blend until smooth.",
+      "Pour into glass and serve chilled."
+    ],
+    "time_minutes": 5,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "1 glass",
+      "calories": 200,
+      "protein_g": 5,
+      "fat_total_g": 2,
+      "carbohydrates_g": 45,
+      "fiber_g": 3,
+      "sugar_g": 30
+    },
+    "tags": ["breakfast", "vegan optional", "smoothie", "quick"]
+  },
+  {
+    "recipe_id": "R047",
+    "title": "Beef Stir-Fry",
+    "image_url": "https://images.unsplash.com/photo-1604908175792-85e1d47fbb97",
+    "ingredients_list": ["beef strips 300g", "broccoli florets", "bell peppers sliced", "soy sauce 3 tbsp", "garlic minced 2 cloves", "sesame oil 1 tbsp"],
+    "instructions": [
+      "Heat sesame oil in a pan, sauté garlic until fragrant.",
+      "Add beef strips, cook until browned.",
+      "Add vegetables and stir-fry for 3–5 minutes.",
+      "Add soy sauce and toss to coat.",
+      "Serve hot with rice or noodles."
+    ],
+    "time_minutes": 20,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 400,
+      "protein_g": 30,
+      "fat_total_g": 18,
+      "carbohydrates_g": 22,
+      "fiber_g": 4,
+      "sugar_g": 4
+    },
+    "tags": ["beef", "Asian", "stir-fry", "quick"]
+  },
+  {
+    "recipe_id": "R048",
+    "title": "Chocolate Brownies",
+    "image_url": "https://images.unsplash.com/photo-1589718059395-7c8f2c754682",
+    "ingredients_list": ["dark chocolate 100g", "butter 100g", "sugar 2/3 cup", "eggs 2", "flour 1/2 cup", "vanilla extract 1 tsp"],
+    "instructions": [
+      "Preheat oven to 180°C.",
+      "Melt chocolate and butter together.",
+      "Whisk eggs, sugar, and vanilla until pale.",
+      "Fold in melted chocolate and then flour.",
+      "Pour into greased baking dish.",
+      "Bake 20–25 minutes until set.",
+      "Cool before slicing and serving."
+    ],
+    "time_minutes": 35,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "1 piece",
+      "calories": 250,
+      "protein_g": 4,
+      "fat_total_g": 15,
+      "carbohydrates_g": 28,
+      "fiber_g": 3,
+      "sugar_g": 18
+    },
+    "tags": ["dessert", "chocolate", "baking", "special"]
+  },
+  {
+    "recipe_id": "R049",
+    "title": "Egg Fried Rice",
+    "image_url": "https://images.unsplash.com/photo-1604908177524-579c3e805dbf",
+    "ingredients_list": ["cooked rice 2 cups", "eggs 2", "carrot diced", "peas 100g", "onion diced", "soy sauce 2 tbsp", "sesame oil 1 tbsp"],
+    "instructions": [
+      "Heat sesame oil in pan, sauté onion and carrot until tender.",
+      "Push vegetables aside, scramble eggs in pan.",
+      "Add cooked rice and peas, stir-fry to combine.",
+      "Add soy sauce and toss well.",
+      "Serve hot."
+    ],
+    "time_minutes": 15,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 350,
+      "protein_g": 12,
+      "fat_total_g": 12,
+      "carbohydrates_g": 48,
+      "fiber_g": 4,
+      "sugar_g": 4
+    },
+    "tags": ["Asian", "rice", "quick", "main course"]
+  },
+  {
+    "recipe_id": "R050",
+    "title": "Lemon Drizzle Cake",
+    "image_url": "https://images.unsplash.com/photo-1589718059395-7c8f2c754682",
+    "ingredients_list": ["flour 200g", "sugar 150g", "butter 100g", "eggs 2", "lemon zest 1 tsp", "lemon juice 2 tbsp", "baking powder 1 tsp"],
+    "instructions": [
+      "Preheat oven to 180°C.",
+      "Cream butter and sugar until pale.",
+      "Beat in eggs one at a time.",
+      "Fold in flour, baking powder, lemon zest, and juice.",
+      "Pour into greased cake tin.",
+      "Bake 25–30 minutes until golden.",
+      "Cool before serving."
+    ],
+    "time_minutes": 45,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "1 slice",
+      "calories": 280,
+      "protein_g": 5,
+      "fat_total_g": 12,
+      "carbohydrates_g": 38,
+      "fiber_g": 1,
+      "sugar_g": 20
+    },
+    "tags": ["dessert", "baking", "cake", "sweet"]
+  },
+  {
+    "recipe_id": "R051",
+    "title": "Quinoa Salad with Avocado",
+    "image_url": "https://images.unsplash.com/photo-1598514981626-2e7499f9f973",
+    "ingredients_list": ["quinoa 1 cup cooked", "avocado diced", "cherry tomatoes halved", "cucumber diced", "lemon juice 1 tbsp", "olive oil 1 tbsp", "salt", "pepper", "parsley chopped"],
+    "instructions": [
+      "Cook quinoa according to package instructions and let cool.",
+      "In a bowl, combine quinoa, avocado, cherry tomatoes, cucumber, and parsley.",
+      "Whisk lemon juice, olive oil, salt, and pepper together.",
+      "Pour dressing over salad and toss gently.",
+      "Serve chilled."
+    ],
+    "time_minutes": 20,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "1 bowl",
+      "calories": 320,
+      "protein_g": 8,
+      "fat_total_g": 14,
+      "carbohydrates_g": 42,
+      "fiber_g": 8,
+      "sugar_g": 4
+    },
+    "tags": ["vegan", "healthy", "salad", "quick"]
+  },
+  {
+    "recipe_id": "R052",
+    "title": "Stuffed Bell Peppers",
+    "image_url": "https://images.unsplash.com/photo-1604908177524-579c3e805dbf",
+    "ingredients_list": ["bell peppers 4", "ground beef 300g", "rice 1 cup cooked", "onion diced", "garlic minced 2 cloves", "tomato sauce 200ml", "cheddar cheese 50g shredded", "salt", "pepper"],
+    "instructions": [
+      "Preheat oven to 190°C.",
+      "Cut tops off bell peppers and remove seeds.",
+      "Sauté onion and garlic until soft, add ground beef and cook until browned.",
+      "Mix beef with cooked rice and tomato sauce, season with salt and pepper.",
+      "Stuff mixture into bell peppers, top with cheddar cheese.",
+      "Bake 25–30 minutes until peppers are tender and cheese is melted.",
+      "Serve hot."
+    ],
+    "time_minutes": 50,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "1 stuffed pepper",
+      "calories": 400,
+      "protein_g": 25,
+      "fat_total_g": 18,
+      "carbohydrates_g": 35,
+      "fiber_g": 5,
+      "sugar_g": 6
+    },
+    "tags": ["beef", "baked", "main course", "healthy"]
+  },
+  {
+    "recipe_id": "R053",
+    "title": "Avocado Toast",
+    "image_url": "https://images.unsplash.com/photo-1588675606730-802f0f89c384",
+    "ingredients_list": ["bread slices 2", "avocado 1 mashed", "lemon juice 1 tsp", "salt", "pepper", "chili flakes optional"],
+    "instructions": [
+      "Toast bread slices until golden.",
+      "Mash avocado with lemon juice, salt, and pepper.",
+      "Spread avocado mixture on toasted bread.",
+      "Sprinkle chili flakes if desired.",
+      "Serve immediately."
+    ],
+    "time_minutes": 5,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "2 slices",
+      "calories": 250,
+      "protein_g": 6,
+      "fat_total_g": 16,
+      "carbohydrates_g": 24,
+      "fiber_g": 7,
+      "sugar_g": 2
+    },
+    "tags": ["vegan", "breakfast", "quick", "healthy"]
+  },
+  {
+    "recipe_id": "R054",
+    "title": "Chicken Caesar Salad",
+    "image_url": "https://images.unsplash.com/photo-1582458138572-0d42f354e8e8",
+    "ingredients_list": ["romaine lettuce 1 head", "chicken breast 200g grilled", "croutons 1/2 cup", "Parmesan shaved 30g", "Caesar dressing 3 tbsp", "salt", "pepper"],
+    "instructions": [
+      "Chop romaine lettuce and place in a large bowl.",
+      "Slice grilled chicken breast.",
+      "Add chicken, croutons, and Parmesan to lettuce.",
+      "Drizzle Caesar dressing and toss gently.",
+      "Season with salt and pepper, serve immediately."
+    ],
+    "time_minutes": 15,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 bowl",
+      "calories": 350,
+      "protein_g": 28,
+      "fat_total_g": 18,
+      "carbohydrates_g": 20,
+      "fiber_g": 3,
+      "sugar_g": 3
+    },
+    "tags": ["chicken", "salad", "healthy", "quick"]
+  },
+  {
+    "recipe_id": "R055",
+    "title": "Mushroom Risotto",
+    "image_url": "https://images.unsplash.com/photo-1604908175792-85e1d47fbb97",
+    "ingredients_list": ["arborio rice 1 cup", "mushrooms sliced 200g", "onion diced", "garlic minced 2 cloves", "vegetable broth 4 cups", "Parmesan grated 50g", "butter 2 tbsp", "olive oil 1 tbsp", "salt", "pepper"],
+    "instructions": [
+      "Heat olive oil and butter in pan, sauté onion and garlic until fragrant.",
+      "Add mushrooms and cook until softened.",
+      "Add arborio rice and stir for 1–2 minutes.",
+      "Gradually add vegetable broth, stirring continuously, until rice is creamy and cooked.",
+      "Stir in Parmesan, season with salt and pepper.",
+      "Serve hot."
+    ],
+    "time_minutes": 35,
+    "difficulty_score": 4,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 400,
+      "protein_g": 12,
+      "fat_total_g": 18,
+      "carbohydrates_g": 50,
+      "fiber_g": 4,
+      "sugar_g": 4
+    },
+    "tags": ["vegetarian", "Italian", "risotto", "dinner"]
+  },
+  {
+    "recipe_id": "R056",
+    "title": "Pancakes",
+    "image_url": "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
+    "ingredients_list": ["flour 200g", "milk 250ml", "eggs 2", "sugar 2 tbsp", "baking powder 1 tsp", "butter 1 tbsp", "salt pinch"],
+    "instructions": [
+      "Mix flour, sugar, baking powder, and salt in a bowl.",
+      "Whisk in milk and eggs until smooth batter forms.",
+      "Heat a non-stick pan with butter.",
+      "Pour batter in small circles and cook until bubbles appear.",
+      "Flip and cook the other side until golden.",
+      "Serve with syrup or toppings of choice."
+    ],
+    "time_minutes": 20,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "2 pancakes",
+      "calories": 300,
+      "protein_g": 8,
+      "fat_total_g": 10,
+      "carbohydrates_g": 45,
+      "fiber_g": 2,
+      "sugar_g": 10
+    },
+    "tags": ["breakfast", "sweet", "quick", "vegetarian"]
+  },
+  {
+    "recipe_id": "R057",
+    "title": "Shrimp Fettuccine",
+    "image_url": "https://images.unsplash.com/photo-1604908177524-579c3e805dbf",
+    "ingredients_list": ["fettuccine 200g", "shrimp 200g peeled", "garlic minced 2 cloves", "olive oil 2 tbsp", "Parmesan grated 30g", "parsley chopped", "salt", "pepper"],
+    "instructions": [
+      "Cook fettuccine according to package instructions.",
+      "Heat olive oil in a pan, sauté garlic until fragrant.",
+      "Add shrimp and cook until pink.",
+      "Toss cooked fettuccine with shrimp and garlic oil.",
+      "Sprinkle Parmesan and parsley, season with salt and pepper.",
+      "Serve immediately."
+    ],
+    "time_minutes": 25,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 400,
+      "protein_g": 25,
+      "fat_total_g": 14,
+      "carbohydrates_g": 45,
+      "fiber_g": 3,
+      "sugar_g": 3
+    },
+    "tags": ["seafood", "Italian", "pasta", "main course"]
+  },
+  {
+    "recipe_id": "R058",
+    "title": "Veggie Omelette",
+    "image_url": "https://images.unsplash.com/photo-1588675606730-802f0f89c384",
+    "ingredients_list": ["eggs 3", "bell peppers diced", "spinach handful", "mushrooms sliced", "salt", "pepper", "olive oil 1 tbsp"],
+    "instructions": [
+      "Beat eggs with salt and pepper.",
+      "Heat olive oil in a pan, sauté vegetables until tender.",
+      "Pour eggs over vegetables and cook until set.",
+      "Fold omelette and serve hot."
+    ],
+    "time_minutes": 10,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "1 omelette",
+      "calories": 250,
+      "protein_g": 18,
+      "fat_total_g": 18,
+      "carbohydrates_g": 6,
+      "fiber_g": 2,
+      "sugar_g": 3
+    },
+    "tags": ["vegetarian", "breakfast", "quick", "healthy"]
+  },
+  {
+    "recipe_id": "R059",
+    "title": "Chicken Fajitas",
+    "image_url": "https://images.unsplash.com/photo-1604908175792-85e1d47fbb97",
+    "ingredients_list": ["chicken breast 300g sliced", "bell peppers sliced", "onion sliced", "taco seasoning 2 tbsp", "olive oil 1 tbsp", "tortillas 4", "lime wedges", "sour cream optional"],
+    "instructions": [
+      "Heat olive oil in pan, sauté chicken with taco seasoning until cooked.",
+      "Add bell peppers and onion, cook until slightly tender.",
+      "Warm tortillas.",
+      "Assemble chicken and vegetables in tortillas, serve with lime wedges and sour cream."
+    ],
+    "time_minutes": 20,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 tortilla",
+      "calories": 300,
+      "protein_g": 25,
+      "fat_total_g": 12,
+      "carbohydrates_g": 28,
+      "fiber_g": 4,
+      "sugar_g": 3
+    },
+    "tags": ["chicken", "Mexican", "quick", "main course"]
+  },
+  {
+    "recipe_id": "R060",
+    "title": "Banana Bread",
+    "image_url": "https://images.unsplash.com/photo-1589718059395-7c8f2c754682",
+    "ingredients_list": ["ripe bananas 3", "flour 200g", "sugar 150g", "butter 100g", "eggs 2", "baking powder 1 tsp", "vanilla extract 1 tsp"],
+    "instructions": [
+      "Preheat oven to 175°C.",
+      "Mash bananas in a bowl.",
+      "Cream butter and sugar, then mix in eggs and vanilla.",
+      "Fold in mashed bananas and flour with baking powder.",
+      "Pour batter into greased loaf tin.",
+      "Bake 50–60 minutes until golden and a toothpick comes out clean.",
+      "Cool before slicing."
+    ],
+    "time_minutes": 70,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "1 slice",
+      "calories": 280,
+      "protein_g": 5,
+      "fat_total_g": 12,
+      "carbohydrates_g": 38,
+      "fiber_g": 3,
+      "sugar_g": 20
+    },
+    "tags": ["dessert", "baking", "sweet", "snack"]
+  },
+    {
+    "recipe_id": "R061",
+    "title": "Caprese Salad",
+    "image_url": "https://images.unsplash.com/photo-1598514981626-2e7499f9f973",
+    "ingredients_list": ["tomatoes sliced", "mozzarella sliced", "fresh basil leaves", "olive oil 1 tbsp", "balsamic glaze 1 tsp", "salt", "pepper"],
+    "instructions": [
+      "Arrange tomato and mozzarella slices alternately on a plate.",
+      "Tuck fresh basil leaves between slices.",
+      "Drizzle with olive oil and balsamic glaze.",
+      "Season with salt and pepper.",
+      "Serve immediately."
+    ],
+    "time_minutes": 10,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 250,
+      "protein_g": 12,
+      "fat_total_g": 20,
+      "carbohydrates_g": 6,
+      "fiber_g": 1,
+      "sugar_g": 4
+    },
+    "tags": ["Italian", "salad", "vegetarian", "quick"]
+  },
+  {
+    "recipe_id": "R062",
+    "title": "Spaghetti Bolognese",
+    "image_url": "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
+    "ingredients_list": ["spaghetti 200g", "ground beef 300g", "onion diced", "garlic minced 2 cloves", "tomato sauce 400ml", "olive oil 2 tbsp", "salt", "pepper", "Parmesan grated 30g"],
+    "instructions": [
+      "Cook spaghetti until al dente.",
+      "Heat olive oil in a pan, sauté onion and garlic until soft.",
+      "Add ground beef and cook until browned.",
+      "Pour in tomato sauce, season with salt and pepper, simmer 15 minutes.",
+      "Serve sauce over spaghetti, sprinkle with Parmesan."
+    ],
+    "time_minutes": 35,
+    "difficulty_score": 3,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 500,
+      "protein_g": 25,
+      "fat_total_g": 20,
+      "carbohydrates_g": 55,
+      "fiber_g": 5,
+      "sugar_g": 8
+    },
+    "tags": ["Italian", "pasta", "beef", "main course"]
+  },
+  {
+    "recipe_id": "R063",
+    "title": "Garlic Butter Shrimp",
+    "image_url": "https://images.unsplash.com/photo-1604908177524-579c3e805dbf",
+    "ingredients_list": ["shrimp 300g peeled", "garlic minced 3 cloves", "butter 2 tbsp", "olive oil 1 tbsp", "lemon juice 1 tbsp", "parsley chopped", "salt", "pepper"],
+    "instructions": [
+      "Heat olive oil and butter in a pan.",
+      "Add garlic and sauté until fragrant.",
+      "Add shrimp, season with salt and pepper, cook until pink.",
+      "Drizzle with lemon juice, sprinkle parsley.",
+      "Serve hot."
+    ],
+    "time_minutes": 15,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 300,
+      "protein_g": 25,
+      "fat_total_g": 18,
+      "carbohydrates_g": 2,
+      "fiber_g": 0,
+      "sugar_g": 0
+    },
+    "tags": ["seafood", "quick", "main course", "healthy"]
+  },
+  {
+    "recipe_id": "R064",
+    "title": "Tomato Soup",
+    "image_url": "https://images.unsplash.com/photo-1588675606730-802f0f89c384",
+    "ingredients_list": ["tomatoes 500g chopped", "onion 1 diced", "garlic 2 cloves", "vegetable broth 500ml", "olive oil 1 tbsp", "salt", "pepper", "basil leaves"],
+    "instructions": [
+      "Heat olive oil in a pot, sauté onion and garlic until soft.",
+      "Add chopped tomatoes, cook 5 minutes.",
+      "Pour in vegetable broth, simmer 15 minutes.",
+      "Blend until smooth, season with salt and pepper.",
+      "Garnish with basil leaves and serve hot."
+    ],
+    "time_minutes": 25,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "1 bowl",
+      "calories": 150,
+      "protein_g": 3,
+      "fat_total_g": 7,
+      "carbohydrates_g": 20,
+      "fiber_g": 4,
+      "sugar_g": 12
+    },
+    "tags": ["vegan", "soup", "healthy", "quick"]
+  },
+  {
+    "recipe_id": "R065",
+    "title": "Beef Burger",
+    "image_url": "https://images.unsplash.com/photo-1604908175792-85e1d47fbb97",
+    "ingredients_list": ["ground beef 300g", "burger buns 2", "lettuce leaves", "tomato slices", "cheddar cheese slices", "onion slices", "ketchup", "mustard", "salt", "pepper"],
+    "instructions": [
+      "Form ground beef into patties, season with salt and pepper.",
+      "Cook patties in a skillet or grill until desired doneness.",
+      "Toast burger buns.",
+      "Assemble burger with lettuce, tomato, onion, cheese, and patties.",
+      "Add ketchup and mustard, serve immediately."
+    ],
+    "time_minutes": 25,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 burger",
+      "calories": 500,
+      "protein_g": 28,
+      "fat_total_g": 28,
+      "carbohydrates_g": 35,
+      "fiber_g": 3,
+      "sugar_g": 6
+    },
+    "tags": ["beef", "fast food", "main course", "grill"]
+  },
+  {
+    "recipe_id": "R066",
+    "title": "Vegetable Lasagna",
+    "image_url": "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
+    "ingredients_list": ["lasagna sheets", "zucchini sliced", "spinach 200g", "ricotta cheese 200g", "tomato sauce 400ml", "mozzarella shredded 100g", "olive oil 1 tbsp", "salt", "pepper"],
+    "instructions": [
+      "Preheat oven to 180°C.",
+      "Sauté zucchini and spinach in olive oil until tender.",
+      "Layer lasagna sheets, vegetables, ricotta, and tomato sauce in baking dish.",
+      "Top with mozzarella cheese.",
+      "Bake 30–35 minutes until golden and bubbly.",
+      "Serve hot."
+    ],
+    "time_minutes": 50,
+    "difficulty_score": 4,
+    "nutrition_facts": {
+      "serving_size": "1 slice",
+      "calories": 350,
+      "protein_g": 15,
+      "fat_total_g": 18,
+      "carbohydrates_g": 35,
+      "fiber_g": 5,
+      "sugar_g": 7
+    },
+    "tags": ["vegetarian", "Italian", "baked", "dinner"]
+  },
+  {
+    "recipe_id": "R067",
+    "title": "Chicken Noodle Soup",
+    "image_url": "https://images.unsplash.com/photo-1588675606730-802f0f89c384",
+    "ingredients_list": ["chicken breast 200g", "noodles 100g", "carrot sliced", "celery sliced", "onion diced", "garlic 2 cloves", "chicken broth 500ml", "salt", "pepper", "parsley chopped"],
+    "instructions": [
+      "Bring chicken broth to a boil, add chicken breast and cook until done.",
+      "Remove chicken, shred, and set aside.",
+      "Add carrot, celery, onion, and garlic to broth, simmer 10 minutes.",
+      "Add noodles and cook until tender.",
+      "Return shredded chicken to soup, season with salt and pepper.",
+      "Garnish with parsley and serve hot."
+    ],
+    "time_minutes": 30,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 bowl",
+      "calories": 350,
+      "protein_g": 25,
+      "fat_total_g": 10,
+      "carbohydrates_g": 40,
+      "fiber_g": 4,
+      "sugar_g": 5
+    },
+    "tags": ["chicken", "soup", "healthy", "main course"]
+  },
+  {
+    "recipe_id": "R068",
+    "title": "Chocolate Chip Cookies",
+    "image_url": "https://images.unsplash.com/photo-1589718059395-7c8f2c754682",
+    "ingredients_list": ["flour 200g", "butter 100g", "sugar 100g", "brown sugar 50g", "egg 1", "vanilla extract 1 tsp", "chocolate chips 150g", "baking soda 1 tsp", "salt pinch"],
+    "instructions": [
+      "Preheat oven to 180°C.",
+      "Cream butter, sugar, and brown sugar together.",
+      "Beat in egg and vanilla extract.",
+      "Fold in flour, baking soda, salt, and chocolate chips.",
+      "Scoop onto baking tray and bake 10–12 minutes until golden.",
+      "Cool before serving."
+    ],
+    "time_minutes": 25,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "2 cookies",
+      "calories": 250,
+      "protein_g": 3,
+      "fat_total_g": 12,
+      "carbohydrates_g": 35,
+      "fiber_g": 2,
+      "sugar_g": 22
+    },
+    "tags": ["dessert", "baking", "sweet", "snack"]
+  },
+  {
+    "recipe_id": "R069",
+    "title": "Greek Yogurt Parfait",
+    "image_url": "https://images.unsplash.com/photo-1588675606730-802f0f89c384",
+    "ingredients_list": ["Greek yogurt 1 cup", "granola ½ cup", "mixed berries 1 cup", "honey 1 tbsp"],
+    "instructions": [
+      "Layer Greek yogurt in a glass or bowl.",
+      "Add granola on top of yogurt.",
+      "Add a layer of mixed berries.",
+      "Drizzle honey over the top.",
+      "Serve immediately."
+    ],
+    "time_minutes": 5,
+    "difficulty_score": 1,
+    "nutrition_facts": {
+      "serving_size": "1 parfait",
+      "calories": 300,
+      "protein_g": 15,
+      "fat_total_g": 6,
+      "carbohydrates_g": 45,
+      "fiber_g": 5,
+      "sugar_g": 20
+    },
+    "tags": ["breakfast", "healthy", "quick", "dessert"]
+  },
+  {
+    "recipe_id": "R070",
+    "title": "Teriyaki Tofu Stir-Fry",
+    "image_url": "https://images.unsplash.com/photo-1604908177524-579c3e805dbf",
+    "ingredients_list": ["tofu 200g cubed", "broccoli florets", "bell peppers sliced", "carrot sliced", "soy sauce 3 tbsp", "sesame oil 1 tbsp", "garlic minced 2 cloves", "ginger minced 1 tsp"],
+    "instructions": [
+      "Heat sesame oil in a pan, sauté garlic and ginger until fragrant.",
+      "Add tofu cubes, cook until golden on all sides.",
+      "Add vegetables and stir-fry 5–7 minutes.",
+      "Pour soy sauce over stir-fry and toss to coat.",
+      "Serve hot with rice or noodles."
+    ],
+    "time_minutes": 20,
+    "difficulty_score": 2,
+    "nutrition_facts": {
+      "serving_size": "1 plate",
+      "calories": 350,
+      "protein_g": 18,
+      "fat_total_g": 18,
+      "carbohydrates_g": 28,
+      "fiber_g": 6,
+      "sugar_g": 6
+    },
+    "tags": ["vegan", "Asian", "stir-fry", "main course"]
+  }
+]
