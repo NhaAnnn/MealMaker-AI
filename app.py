@@ -35,7 +35,7 @@ try:
                 key_json_dict = json.load(f)
              print(">>> Đang dùng khóa từ file 'serviceAccountKey.json' (Fallback) <<<")
         except FileNotFoundError:
-            raise Exception("Lỗi: Không tìm thấy khóa Firebase (Cả Biến Môi Trường và File cục bộ).")se Exception("Không tìm thấy biến môi trường 'FIREBASE_KEY_JSON'.")
+            raise Exception("Lỗi: Không tìm thấy khóa Firebase (Cả Biến Môi Trường và File cục bộ).")
 
     # 2. Chuyển chuỗi thành đối tượng Python Dictionary
     key_json_dict = json.loads(key_json_str)
