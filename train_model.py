@@ -1,25 +1,47 @@
 # --- File: train_model.py (Python) ---
-# KỊCH BẢN HUẤN LUYỆN (OFFLINE)
-# (Đã cập nhật để khớp với Model của bạn)
+# KỊCH BẢN HUẤN LUYỆN (OFFLINE) - ĐÃ SỬA LỖI BẢO MẬT FIREBASE
 
 import pandas as pd
 from sklearn.neighbors import NearestNeighbors
 import joblib
 import firebase_admin
 from firebase_admin import credentials, firestore
+import os          # <--- BỔ SUNG
+import json        # <--- BỔ SUNG
 
 # =======================================================================
 # GIAI ĐOẠN 1: TẢI DỮ LIỆU TỪ FIREBASE
 # =======================================================================
 print(">>> Bắt đầu huấn luyện (training)...")
+
+# --- SỬA ĐỔI BẢO MẬT: ĐỌC KHÓA TỪ BIẾN MÔI TRƯỜNG ---
 try:
-    cred = credentials.Certificate("serviceAccountKey.json")
-    firebase_admin.initialize_app(cred, {'projectId': 'mealmaker-backend'}) # !! THAY THẾ
+    # 1. Đọc chuỗi JSON từ Biến Môi Trường (ví dụ: FIREBASE_KEY_JSON)
+    key_json_str = os.environ.get("FIREBASE_KEY_JSON")
+
+    if not key_json_str:
+        # Fallback: Vẫn thử đọc file nếu không có biến môi trường (cho máy dev)
+        try:
+             with open("serviceAccountKey.json", 'r') as f:
+                key_json_dict = json.load(f)
+        except FileNotFoundError:
+            raise Exception("Lỗi: Không tìm thấy 'FIREBASE_KEY_JSON' trong biến môi trường và không tìm thấy file 'serviceAccountKey.json'.")
+
+    else:
+        # Chuyển chuỗi thành đối tượng Python Dictionary
+        key_json_dict = json.loads(key_json_str)
+
+    # Khởi tạo chứng chỉ
+    cred = credentials.Certificate(key_json_dict)
+
+    firebase_admin.initialize_app(cred, {'projectId': 'mealmaker-backend'})
     db = firestore.client()
     print("Đã kết nối Firebase.")
+
 except Exception as e:
     print(f"Lỗi kết nối Firebase: {e}")
     exit()
+# ------------------------------------------------------------------------
 
 # Tải TẤT CẢ dữ liệu "Yêu thích" từ CSDL
 raw_data = []

@@ -1,12 +1,13 @@
 # --- File: app_ai_service.py (Python AI Service) ---
 # SERVER PYTHON CHUYÊN BIỆT (VI DỊCH VỤ)
-# (Phiên bản Nâng cấp: Dùng ML cho Gắn Tag VÀ Gợi ý)
 
 import joblib
 import pandas as pd
 import numpy as np
 from flask import Flask, request, jsonify
 from datetime import datetime
+import os          # <--- BỔ SUNG
+import json        # <--- BỔ SUNG
 
 # (MỚI) Import thư viện Firebase Admin
 import firebase_admin
@@ -16,22 +17,46 @@ from firebase_admin import credentials, firestore
 # KHỞI TẠO ỨNG DỤNG VÀ FIREBASE
 # =======================================================================
 app = Flask(__name__)
-try:
-    # 1. Tải "chìa khóa" bí mật từ file JSON
-    cred = credentials.Certificate("serviceAccountKey.json")
+db = None  # Khởi tạo db mặc định là None
 
-    # 2. Khởi tạo app (!! THAY THẾ BẰNG PROJECT ID CỦA BẠN)
+try:
+    # 1. Đọc chuỗi JSON từ Biến Môi Trường
+    key_json_str = os.environ.get("FIREBASE_KEY_JSON")
+
+    if key_json_str:
+        # Ưu tiên: Dùng Biến Môi Trường (từ môi trường deploy HOẶC .env)
+        key_json_dict = json.loads(key_json_str)
+        print(">>> Đang dùng khóa từ Biến Môi Trường/ .env <<<")
+    else:
+        # Fallback (Chỉ khi cần thiết): Tự đọc file serviceAccountKey.json
+        # (Đây là backup nếu .env không hoạt động hoặc môi trường cần)
+        try:
+             with open("serviceAccountKey.json", 'r') as f:
+                key_json_dict = json.load(f)
+             print(">>> Đang dùng khóa từ file 'serviceAccountKey.json' (Fallback) <<<")
+        except FileNotFoundError:
+            raise Exception("Lỗi: Không tìm thấy khóa Firebase (Cả Biến Môi Trường và File cục bộ).")se Exception("Không tìm thấy biến môi trường 'FIREBASE_KEY_JSON'.")
+
+    # 2. Chuyển chuỗi thành đối tượng Python Dictionary
+    key_json_dict = json.loads(key_json_str)
+
+    # 3. Khởi tạo chứng chỉ bằng nội dung Dict
+    # Đây là cách AN TOÀN và CHÍNH XÁC để dùng Biến Môi Trường
+    cred = credentials.Certificate(key_json_dict)
+
+    # 4. Khởi tạo app (!! Dùng biến 'cred' vừa tạo)
     firebase_admin.initialize_app(cred, {
         'projectId': 'mealmaker-backend',
     })
 
-    # 3. Lấy CSDL Firestore
+    # 5. Lấy CSDL Firestore
     db = firestore.client()
     print(">>> KẾT NỐI FIREBASE (FIRESTORE) THÀNH CÔNG! <<<")
 
 except Exception as e:
-    print(f"LỖI: Không thể kết nối Firebase. Hãy kiểm tra file 'serviceAccountKey.json' và 'YOUR_PROJECT_ID'. Lỗi: {e}")
-    db = None
+    # Log lỗi chi tiết, không chỉ cho người dùng mà còn cho việc debug
+    print(f"LỖI: Không thể kết nối Firebase. Hãy kiểm tra biến môi trường 'FIREBASE_KEY_JSON'. Lỗi: {e}")
+    # db đã được khởi tạo là None ở trên
 
 # =======================================================================
 # TẢI "BỘ NÃO" AI GỢI Ý (k-NN) VÀO BỘ NHỚ
