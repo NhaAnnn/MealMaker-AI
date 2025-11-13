@@ -25,7 +25,7 @@ except Exception as e:
 raw_data = []
 try:
     # (SỬA LẠI) Đọc từ collection "recipeLikes" (khớp với model RecipeLike)
-    interactions_ref = db.collection("recipeLikes").stream()
+    interactions_ref = db.collection("recipe_likes").stream()
 
     for interaction in interactions_ref:
         doc = interaction.to_dict()

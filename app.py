@@ -1,6 +1,6 @@
 # --- File: app_ai_service.py (Python AI Service) ---
 # SERVER PYTHON CHUYÊN BIỆT (VI DỊCH VỤ)
-# (Phiên bản Nâng cấp: Tự xử lý User Cũ (ML) và User Mới (Rules))
+# (Phiên bản Nâng cấp: Dùng ML cho Gắn Tag VÀ Gợi ý)
 
 import joblib
 import pandas as pd
@@ -34,103 +34,121 @@ except Exception as e:
     db = None
 
 # =======================================================================
-# TẢI "BỘ NÃO" AI (ĐÃ HUẤN LUYỆN) VÀO BỘ NHỚ
+# TẢI "BỘ NÃO" AI GỢI Ý (k-NN) VÀO BỘ NHỚ
 # =======================================================================
-model_prefix = "ai_model_knn"
+model_prefix_knn = "ai_model_knn"
 try:
-    model = joblib.load(f"{model_prefix}_model.pkl")
-    user_item_matrix = joblib.load(f"{model_prefix}_matrix.pkl")
-    recipe_id_map = joblib.load(f"{model_prefix}_recipe_id_map.pkl")
-    user_id_map = joblib.load(f"{model_prefix}_user_id_map.pkl")
-    print(f">>> TẢI 'BỘ NÃO AI' (k-NN) THÀNH CÔNG! (Đã huấn luyện {user_item_matrix.shape[0]} users) <<<")
+    # (SỬA LẠI) Đổi tên biến (model -> model_knn)
+    model_knn = joblib.load(f"{model_prefix_knn}_model.pkl")
+    user_item_matrix = joblib.load(f"{model_prefix_knn}_matrix.pkl")
+    recipe_id_map = joblib.load(f"{model_prefix_knn}_recipe_id_map.pkl")
+    user_id_map = joblib.load(f"{model_prefix_knn}_user_id_map.pkl")
+    print(f">>> TẢI 'BỘ NÃO AI k-NN' THÀNH CÔNG! (Đã huấn luyện {user_item_matrix.shape[0]} users) <<<")
 except Exception as e:
-    print(f"CẢNH BÁO: Không tải được file 'bộ não' {model_prefix}_*.pkl.")
-    print(">>> AI Gợi ý (k-NN) sẽ không hoạt động. Hãy chạy file 'train_model.py' <<<")
-    model = None
+    print(f"CẢNH BÁO: Không tải được 'bộ não' k-NN. (Hãy chạy 'train_model.py')")
+    model_knn = None
 
 # =======================================================================
-# AI 1: TỰ ĐỘNG GẮN TAG (ĐÃ "TRAIN" ĐỂ KHỚP VỚI MÀN HÌNH HABITS)
+# (MỚI) TẢI "BỘ NÃO" AI GẮN TAG (NLP) VÀO BỘ NHỚ
 # =======================================================================
-TAG_DICTIONARY = {
-    "Gà": ["gà", "chicken", "cánh gà", "đùi gà", "ức gà"],
-    "Bò": ["bò", "beef", "thăn bò", "bắp bò"],
-    "Heo": ["heo", "lợn", "pork", "thịt ba chỉ", "sườn non"],
-    "Cá": ["cá", "fish", "cá hồi", "cá basa", "cá diêu hồng"],
-    "Hải Sản": ["tôm", "mực", "nghêu", "sò", "hải sản", "cua", "ghẹ"],
-    "Nướng": ["nướng", "quay", "grill", "đút lò"],
-    "Chiên": ["chiên", "rán", "fry"],
-    "Xào": ["xào", "stir-fry"],
-    "Hấp": ["hấp", "steam"],
-    "Luộc": ["luộc", "boil"],
-    "Kho": ["kho", "rim"],
-    "Salad": ["salad", "gỏi", "trộn"],
-    "Canh": ["canh", "soup", "súp"],
-    "low_carb": ["low carb", "ít tinh bột", "keto", "giảm cân"],
-    "high_protein": ["high protein", "nhiều đạm", "tăng cơ", "protein"],
-    "vegetarian": ["chay", "vegetarian", "đậu phụ", "nấm", "rau củ", "đậu hũ"],
-    "low_fat": ["low fat", "ít béo", "giảm mỡ"],
-    "easy_level": ["dễ", "sơ cấp", "easy"],
-    "advanced_level": ["nâng cao", "khó", "advanced", "cầu kỳ"],
-    "vietnamese": ["việt nam", "vietnamese", "Việt", "phở", "bún"],
-    "european": ["european", "âu", "mỹ", "ý", "pizza", "spaghetti", "bít tết"],
-    "asian": ["asian", "nhật", "hàn", "trung", "thái", "kim chi", "sushi"],
-    "latin": ["latin", "mexico", "tây ban nha", "taco"],
-}
+model_prefix_tagger = "ai_tagger"
+try:
+    model_tagger = joblib.load(f"{model_prefix_tagger}_model.pkl")
+    vectorizer_tagger = joblib.load(f"{model_prefix_tagger}_vectorizer.pkl")
+    mlb_tagger = joblib.load(f"{model_prefix_tagger}_mlb.pkl")
+    print(f">>> TẢI 'BỘ NÃO AI GẮN TAG' (NLP) THÀNH CÔNG! <<<")
+except Exception as e:
+    print(f"CẢNH BÁO: Không tải được 'bộ não' Gắn Tag. (Hãy chạy 'train_tagger.py')")
+    model_tagger = None
 
-def ai_auto_tag_recipe(title, ingredients_str, time):
-    tags = set()
-    text_to_analyze = (title + " " + ingredients_str).lower()
+# =======================================================================
+# (XÓA) AI 1: TỰ ĐỘNG GẮN TAG (DỰA TRÊN TỪ ĐIỂN)
+# Chúng ta không cần TAG_DICTIONARY và hàm ai_auto_tag_recipe cũ nữa
+# =======================================================================
 
-    for tag, keywords in TAG_DICTIONARY.items():
-        for keyword in keywords:
-            if keyword in text_to_analyze:
-                tags.add(tag)
-
-    if any(t in tags for t in ["Gà", "Bò", "Heo"]):
-        tags.add("Thịt")
-
-    if time <= 15:
-        tags.add("under_15")
-    if time <= 30:
-        tags.add("under_30")
-    if time >= 60:
-        tags.add("advanced_level")
-
-    return list(tags)
 
 # =======================================================================
 # API ENDPOINTS (ĐỂ SERVER NODE.JS GỌI)
 # =======================================================================
 
-# API 1: (MỚI) Dùng để Gắn Tag
+# API 1: (NÂNG CẤP) Dùng AI Huấn luyện để Gắn Tag
 # Server Node.js sẽ gọi API này khi user upload bài
 @app.route("/get-auto-tags", methods=["POST"])
 def get_auto_tags():
+    # Kiểm tra xem "bộ não" Gắn Tag đã được tải chưa
+    if not model_tagger:
+        return jsonify({"error": "Bộ não AI Gắn Tag (NLP) chưa sẵn sàng. Hãy chạy 'train_tagger.py'."}), 500
+
     try:
         data = request.json
         title = data.get("title", "")
-        # Nhận 'ingredients_list' (mảng) từ Node.js và chuyển thành chuỗi (string)
         ingredients_list = data.get("ingredients_list", [])
-        ingredients_str = " ".join(ingredients_list)
+        instructions_list = data.get("instructions", [])
 
+        # (MỚI) Lấy time_minutes
         time = data.get("time_minutes", 0)
 
-        # 1. Gọi AI Gắn Tag
-        tags = ai_auto_tag_recipe(title, ingredients_str, time)
+        # 1. Gộp text (giống hệt lúc train)
+        ingredients_str = " ".join(ingredients_list)
+        instructions_str = " ".join(instructions_list)
 
-        # 2. Trả về danh sách tag
-        return jsonify(tags), 200
+        # (ĐÃ SỬA) Gộp cả time_minutes vào input text để khớp với dữ liệu train
+        full_text = f"{title} {ingredients_str} {instructions_str} time_{time}"
+
+        # 2. Dùng "bộ não" (vectorizer) để biến text mới thành vector
+        text_vector = vectorizer_tagger.transform([full_text])
+
+        # 3. Dùng "bộ não" (model) để dự đoán vector nhãn
+        # Dùng predict_proba và áp dụng ngưỡng
+        predicted_probabilities = model_tagger.predict_proba(text_vector)
+
+        # Áp dụng Ngưỡng Xác suất: Điều chỉnh ngưỡng này (ví dụ: 0.25 đến 0.4)
+        THRESHOLD = 0.3
+        predicted_binary = (predicted_probabilities > THRESHOLD).astype(int)
+
+        # 4. Dùng "bộ não" (mlb) để dịch ngược vector nhãn thành chữ
+        predicted_tags = mlb_tagger.inverse_transform(predicted_binary)
+
+        # 5. Khởi tạo danh sách tags cuối cùng
+        final_tags = list(predicted_tags[0])
+
+        # =======================================================================
+        # 💡 LOGIC KHẮC PHỤC LỖI TAG THỜI GIAN (HARD RULE)
+        # =======================================================================
+
+        TIME_TAGS = ["quick", "medium_cook", "long_cook"]
+
+        # A. Loại bỏ bất kỳ tag thời gian nào AI VỪA DỰ ĐOÁN (để tránh tag sai)
+        final_tags = [tag for tag in final_tags if tag not in TIME_TAGS]
+
+        # B. Áp dụng luật cứng để TÍNH TOÁN tag thời gian chính xác
+        time_tag_rule = None
+        if time > 0 and time <= 25:
+            time_tag_rule = "quick"         # Nhanh: <= 25 phút
+        elif time > 25 and time <= 60:
+            time_tag_rule = "medium_cook"   # Vừa: > 25 phút và <= 60 phút
+        elif time > 60:
+            time_tag_rule = "long_cook"     # Lâu: > 60 phút
+
+        # C. Thêm tag thời gian chính xác vào danh sách cuối cùng
+        if time_tag_rule:
+            final_tags.append(time_tag_rule)
+
+        print(f"AI (NLP) đã dự đoán các tag: {final_tags}")
+        return jsonify(final_tags), 200
 
     except Exception as e:
-        print(f"Lỗi khi gắn tag: {e}")
+        print(f"Lỗi khi gắn tag (NLP): {e}")
         return jsonify({"error": str(e)}), 500
-
 
 # API 2: (SỬA LẠI) Dùng để Gợi ý (Hybrid AI)
 # Server Node.js sẽ gọi API này
 @app.route("/get-recommendations-ai", methods=["GET"])
 def get_recommendations_ai():
     if not db: return jsonify({"error": "Lỗi CSDL"}), 500
+
+    # (SỬA LẠI) Kiểm tra 'model_knn'
+    if not model_knn: return jsonify({"error": "Bộ não AI k-NN chưa sẵn sàng."}), 500
 
     user_id = request.args.get("userId")
     if not user_id:
@@ -139,14 +157,15 @@ def get_recommendations_ai():
     recommendation_ids = []
 
     # --- 1. THỬ DÙNG AI HỌC MÁY (k-NN) TRƯỚC (Cho user cũ) ---
-    # Kiểm tra xem 'model' đã được tải VÀ user_id có trong 'bộ não' không
-    if model and user_id in user_id_map:
+    # Kiểm tra xem user_id có trong 'bộ não' không
+    if user_id in user_id_map:
         try:
             print(f"Đang tìm gợi ý cho User Cũ ({user_id}) bằng k-NN...")
             user_index = user_id_map.get_loc(user_id)
             user_vector = user_item_matrix.iloc[user_index].values.reshape(1, -1)
 
-            distances, indices = model.kneighbors(user_vector, n_neighbors=15) # Tăng "hàng xóm"
+            # (SỬA LẠI) Dùng 'model_knn'
+            distances, indices = model_knn.kneighbors(user_vector, n_neighbors=15)
 
             recommendations = {}
             similar_user_indices = indices.flatten()[1:] # Bỏ qua user 0 (chính mình)
@@ -168,28 +187,23 @@ def get_recommendations_ai():
              recommendation_ids = [] # Đặt lại
 
     # --- 2. FALLBACK (DỰ PHÒNG) CHO USER MỚI (Dùng ai_profile) ---
-    # Nếu AI Học máy không tìm thấy gợi ý (ví dụ: user cũ nhưng ít 'Tim')
+    # Nếu AI Học máy không tìm thấy gợi ý
     # HOẶC nếu user là người mới (không có trong 'user_id_map')
     if not recommendation_ids:
         print(f"k-NN thất bại (hoặc user mới). Chuyển sang AI Dựa trên Luật (Habits)...")
-      try:
+        try:
             user_doc = db.collection("users").document(user_id).get()
 
             if not user_doc.exists or "ai_profile" not in user_doc.to_dict():
                 return jsonify({"error": "User mới, chưa chọn sở thích (Habits)"}), 404
 
-            # --- (SỬA LẠI LOGIC TẠI ĐÂY) ---
-            # Lấy tag từ cấu trúc ai_profile (Model User của bạn)
             ai_profile = user_doc.to_dict()["ai_profile"]
 
-            # (SỬA LẠI) Đọc đúng các trường 'diet' và 'favorite_cuisines'
+            # Đọc đúng các trường 'diet' và 'favorite_cuisines'
             tags_to_query = [
                 *(ai_profile.get("diet", [])),
                 *(ai_profile.get("favorite_cuisines", []))
-                # (Chúng ta cũng có thể thêm "Tốc độ" (easy_level) nếu server Node.js
-                # lưu nó vào ai_profile.cooking_skill_level)
             ]
-            # --- KẾT THÚC SỬA LỖI ---
 
             if not tags_to_query:
                 return jsonify({"error": "User chưa chọn sở thích nào"}), 404
@@ -219,7 +233,7 @@ def get_recommendations_ai():
 # API Ping
 @app.route("/")
 def hello():
-    return "Chào! Server AI (Python Hybrid Microservice) đang chạy!"
+    return "Chào! Server AI (Python Hybrid Microservice v2) đang chạy!"
 
 # =======================================================================
 # CHẠY SERVER
