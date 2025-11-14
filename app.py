@@ -231,11 +231,11 @@ def get_recommendations_ai():
             if not user_doc.exists or "ai_profile" not in user_doc.to_dict():
                 return jsonify({"error": "User mới, chưa chọn sở thích (Habits)"}), 404
 
-            ai_profile = user_doc.to_dict().get("ai_profile", {}) # Dùng .get() để tránh lỗi nếu ai_profile thiếu
-            user_tags_array = ai_profile.get("tags", []) # Lấy mảng 'tags' (sẽ là [] nếu thiếu)
+            ai_profile = user_doc.to_dict().get("ai_profile", {}) # <-- Đã thêm .get()
+            user_tags_array = ai_profile.get("tags", []) # <-- MỚI: Đọc mảng 'tags'
 
             # Trích xuất chỉ tên tag (tag_name) từ mảng đối tượng
-            tags_to_query = [item.get("tag_name") for item in user_tags_array if item.get("tag_name")]
+            tags_to_query = [item.get("tag_name") for item in user_tags_array if item.get("tag_name")] # <-- MỚI: Trích xuất tag_name
 
             print(f"Đang tìm món ăn dựa trên sở thích: {tags_to_query}")
 
@@ -244,9 +244,8 @@ def get_recommendations_ai():
 
             print(f"Đang tìm món ăn dựa trên sở thích: {tags_to_query}")
 
-            # Query CSDL 'recipes' (Lấy N=50 món tiềm năng)
             recommendations_ref = db.collection("recipes").where(
-                "tags", "array-contains-any", tags_to_query
+                "tags", "array_contains_any", tags_to_query
             ).limit(50).stream()
 
             fallback_potential_ids = []
