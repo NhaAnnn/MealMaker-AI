@@ -5,3 +5,4 @@ numpy
 gunicorn
 firebase-admin
 scikit-learn
+google-genai
