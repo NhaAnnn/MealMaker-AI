@@ -231,13 +231,13 @@ def get_recommendations_ai():
             if not user_doc.exists or "ai_profile" not in user_doc.to_dict():
                 return jsonify({"error": "User mới, chưa chọn sở thích (Habits)"}), 404
 
-            ai_profile = user_doc.to_dict()["ai_profile"]
+            ai_profile = user_doc.to_dict().get("ai_profile", {}) # Dùng .get() để tránh lỗi nếu ai_profile thiếu
+            user_tags_array = ai_profile.get("tags", []) # Lấy mảng 'tags' (sẽ là [] nếu thiếu)
 
-            # Đọc đúng các trường 'diet' và 'favorite_cuisines'
-            tags_to_query = [
-                *(ai_profile.get("diet", [])),
-                *(ai_profile.get("favorite_cuisines", []))
-            ]
+            # Trích xuất chỉ tên tag (tag_name) từ mảng đối tượng
+            tags_to_query = [item.get("tag_name") for item in user_tags_array if item.get("tag_name")]
+
+            print(f"Đang tìm món ăn dựa trên sở thích: {tags_to_query}")
 
             if not tags_to_query:
                 return jsonify({"error": "User chưa chọn sở thích nào"}), 404
