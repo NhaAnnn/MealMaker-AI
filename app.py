@@ -140,12 +140,20 @@ def generate_quiz_with_gemini(target_level, description, count):
                 response_mime_type="application/json"
             ),
         )
-        return json.loads(response.text)
+
+        # *** CẢI TIẾN: Bắt JSONDecodeError và trả về một thông báo lỗi rõ ràng hơn ***
+        try:
+            # 1. Thử tải JSON
+            return json.loads(response.text)
+        except json.JSONDecodeError as json_err:
+            print(f"LỖI PHÂN TÍCH JSON từ Gemini. Response text KHÔNG phải JSON hợp lệ.")
+            print(f"Phản hồi Gemini (có thể là lỗi): {response.text[:200]}...")
+            raise Exception("AI trả về định dạng không phải JSON hợp lệ.") # Bắt lỗi để log và trả về None
 
     except Exception as e:
-        print(f"Lỗi khi gọi Gemini API để tạo quiz: {e}")
-        return None
-
+        # Lỗi từ API (503 UNAVAILABLE, etc.) HOẶC lỗi JSONDecodeError mới được ném
+        print(f"Lỗi khi gọi hoặc xử lý phản hồi từ Gemini API: {e}")
+        return None # Trả về None để API chính xử lý lỗi 500
 
 # =======================================================================
 # API ENDPOINTS
