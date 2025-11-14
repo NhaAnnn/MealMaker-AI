@@ -250,7 +250,7 @@ def get_recommendations_ai():
 
             fallback_potential_ids = []
             for r in recommendations_ref:
-                fallback_potential_ids.append(r.to_dict().get("recipe_id"))
+                fallback_potential_ids.append(r.to_dict().get("_id"))
 
             # KỸ THUẬT NGẪU NHIÊN HÓA (CHỐNG CỨNG) CHO FALLBACK:
             if fallback_potential_ids:
