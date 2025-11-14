@@ -245,12 +245,12 @@ def get_recommendations_ai():
             print(f"Đang tìm món ăn dựa trên sở thích: {tags_to_query}")
 
             recommendations_ref = db.collection("recipes").where(
-                "tags", "array_contains_any", tags_to_query
-            ).limit(50).stream()
+                "tags", "array_contains_any", tags_to_query
+            ).limit(50).stream()
 
-            fallback_potential_ids = []
-            for r in recommendations_ref:
-                fallback_potential_ids.append(r.to_dict().get("_id"))
+            fallback_potential_ids = []
+            for r in recommendations_ref:
+                fallback_potential_ids.append(r.id)
 
             # KỸ THUẬT NGẪU NHIÊN HÓA (CHỐNG CỨNG) CHO FALLBACK:
             if fallback_potential_ids:
