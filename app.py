@@ -271,6 +271,66 @@ def get_recommendations_ai():
     return jsonify(recommendation_ids)
 
 
+# API 3: (MỚI) Đọc file và Trả về 20 Câu hỏi Quiz theo cấp độ
+@app.route("/get-quiz-questions", methods=["GET"])
+def get_quiz_questions():
+    """
+    Đọc file JSON chứa câu hỏi quiz và trả về 20 câu hỏi ngẫu nhiên theo cấp độ.
+
+    Tham số truy vấn:
+        level (int): Cấp độ cần lấy (1 đến 5).
+    """
+
+    # 1. Lấy tham số 'level' từ request (mặc định là 1 nếu không có)
+    level_str = request.args.get("level", "1")
+    try:
+        requested_level = int(level_str)
+        if requested_level < 1 or requested_level > 5:
+            return jsonify({"error": "Cấp độ phải là số nguyên từ 1 đến 5."}), 400
+    except ValueError:
+        return jsonify({"error": "Tham số 'level' không hợp lệ. Vui lòng cung cấp số nguyên."}), 400
+
+    # 2. Định nghĩa tên file và số lượng câu hỏi cần trả về
+    QUIZ_FILE_NAME = "cooking_quiz_questions.json"
+    N_QUESTIONS_RETURN = 20
+
+    try:
+        # 3. Đọc nội dung file JSON
+        with open(QUIZ_FILE_NAME, 'r', encoding='utf-8') as f:
+            all_questions = json.load(f)
+            print(f">>> Đã tải {len(all_questions)} câu hỏi từ '{QUIZ_FILE_NAME}' <<<")
+
+    except FileNotFoundError:
+        # Trường hợp lỗi: File không tồn tại
+        print(f"LỖI: Không tìm thấy file quiz: {QUIZ_FILE_NAME}")
+        return jsonify({"error": f"Lỗi: Không tìm thấy file câu hỏi {QUIZ_FILE_NAME}."}), 500
+    except json.JSONDecodeError:
+        # Trường hợp lỗi: Định dạng JSON không hợp lệ
+        print(f"LỖI: Định dạng JSON trong file {QUIZ_FILE_NAME} không hợp lệ.")
+        return jsonify({"error": f"Lỗi: Định dạng JSON trong file {QUIZ_FILE_NAME} không hợp lệ."}), 500
+
+    # 4. Lọc câu hỏi theo cấp độ yêu cầu
+    filtered_questions = [
+        q for q in all_questions if q.get("level") == requested_level
+    ]
+
+    print(f"Đã lọc được {len(filtered_questions)} câu hỏi ở Cấp độ {requested_level}.")
+
+    if not filtered_questions:
+        return jsonify({"error": f"Không tìm thấy câu hỏi nào cho Cấp độ {requested_level}."}), 404
+
+    # 5. Chọn ngẫu nhiên N_QUESTIONS_RETURN câu hỏi
+    # Sử dụng random.sample để chọn ngẫu nhiên không trùng lặp
+    final_quiz_set = random.sample(
+        filtered_questions,
+        min(N_QUESTIONS_RETURN, len(filtered_questions)) # Chọn tối đa N_QUESTIONS_RETURN hoặc tất cả nếu ít hơn
+    )
+
+    print(f"Đã chọn ngẫu nhiên {len(final_quiz_set)} câu hỏi cho Cấp độ {requested_level}.")
+
+    # 6. Trả về kết quả
+    return jsonify(final_quiz_set), 200
+
 # API Ping
 @app.route("/")
 def hello():

@@ -1,0 +1,2402 @@
+[
+    {
+        "level": 1,
+        "question": "What is the primary food safety risk associated with leaving cooked food out at room temperature for too long?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The food will lose its flavor."
+            },
+            {
+                "id": "b",
+                "text": "Bacteria will grow rapidly in the 'Danger Zone'."
+            },
+            {
+                "id": "c",
+                "text": "The food will shrink in volume."
+            },
+            {
+                "id": "d",
+                "text": "The food will become too dry."
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Bacteria multiply fastest between $4^{\\circ}\\text{C}$ and $60^{\\circ}\\text{C}$ ($40^{\\circ}\\text{F}$ and $140^{\\circ}\\text{F}$), known as the 'Danger Zone'. Food should not be left out for more than two hours."
+    },
+    {
+        "level": 1,
+        "question": "Which kitchen tool is used to remove liquid from cooked pasta or washed vegetables?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Spatula"
+            },
+            {
+                "id": "b",
+                "text": "Whisk"
+            },
+            {
+                "id": "c",
+                "text": "Colander"
+            },
+            {
+                "id": "d",
+                "text": "Ladle"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "A colander is a bowl-shaped tool with holes used for draining liquids from food."
+    },
+    {
+        "level": 1,
+        "question": "What does the culinary term 'dice' mean?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To cut food into long, thin strips."
+            },
+            {
+                "id": "b",
+                "text": "To cut food into very fine, paste-like pieces."
+            },
+            {
+                "id": "c",
+                "text": "To cut food into small, uniform cubes."
+            },
+            {
+                "id": "d",
+                "text": "To mash food until smooth."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "'Dicing' is a precise knife cut that produces small, block-shaped pieces, often $1/4$ or $1/2$ inch cubes."
+    },
+    {
+        "level": 1,
+        "question": "When should you wash your hands during the cooking process?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Only when you start cooking."
+            },
+            {
+                "id": "b",
+                "text": "Only after handling raw meat."
+            },
+            {
+                "id": "c",
+                "text": "Before starting, after handling raw ingredients, and after touching dirty items."
+            },
+            {
+                "id": "d",
+                "text": "Only when your hands look dirty."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Frequent hand washing is crucial to prevent the spread of bacteria and ensure food safety throughout preparation."
+    },
+    {
+        "level": 1,
+        "question": "Which basic cooking method involves cooking food submerged in oil or fat at a high temperature?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Steaming"
+            },
+            {
+                "id": "b",
+                "text": "Boiling"
+            },
+            {
+                "id": "c",
+                "text": "Deep-Frying"
+            },
+            {
+                "id": "d",
+                "text": "Sautéing"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Deep-frying is defined by submerging the food entirely in hot fat."
+    },
+    {
+        "level": 1,
+        "question": "A recipe calls for 1 teaspoon (tsp) of salt. Approximately how many milliliters (mL) is this?",
+        "options": [
+            {
+                "id": "a",
+                "text": "$1\\text{ mL}$"
+            },
+            {
+                "id": "b",
+                "text": "$5\\text{ mL}$"
+            },
+            {
+                "id": "c",
+                "text": "$15\\text{ mL}$"
+            },
+            {
+                "id": "d",
+                "text": "$25\\text{ mL}$"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "One teaspoon is a standard unit of volume, approximately equal to $5\\text{ mL}$."
+    },
+    {
+        "level": 1,
+        "question": "The term 'preheat' in a baking recipe means to:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Prepare the dough ahead of time."
+            },
+            {
+                "id": "b",
+                "text": "Place the item in a cold oven and then turn it on."
+            },
+            {
+                "id": "c",
+                "text": "Turn the oven on and allow it to reach the specified temperature before placing food inside."
+            },
+            {
+                "id": "d",
+                "text": "Cover the food tightly with foil."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Preheating ensures the food starts cooking immediately at the correct temperature, which is essential for baking consistency."
+    },
+    {
+        "level": 1,
+        "question": "Which of these is generally considered a 'Moist Heat' cooking method?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Grilling"
+            },
+            {
+                "id": "b",
+                "text": "Roasting"
+            },
+            {
+                "id": "c",
+                "text": "Steaming"
+            },
+            {
+                "id": "d",
+                "text": "Broiling"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Moist heat methods involve cooking with water or steam, such as steaming, boiling, or poaching. Grilling, roasting, and broiling are Dry Heat methods."
+    },
+    {
+        "level": 1,
+        "question": "If you cut raw chicken on a wooden cutting board, what must you do before cutting vegetables on the same board?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Wipe it quickly with a towel."
+            },
+            {
+                "id": "b",
+                "text": "Flip the board over."
+            },
+            {
+                "id": "c",
+                "text": "Rinse it with cold water only."
+            },
+            {
+                "id": "d",
+                "text": "Wash it thoroughly with hot, soapy water (sanitation)."
+            }
+        ],
+        "correct_id": "d",
+        "explanation": "This is necessary to prevent cross-contamination, where bacteria from the raw meat transfer to the ready-to-eat food."
+    },
+    {
+        "level": 1,
+        "question": "What is the function of a whisk in cooking?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To flip food on a grill."
+            },
+            {
+                "id": "b",
+                "text": "To evenly chop herbs and spices."
+            },
+            {
+                "id": "c",
+                "text": "To incorporate air into mixtures (like egg whites) or to blend ingredients smoothly."
+            },
+            {
+                "id": "d",
+                "text": "To measure dry ingredients."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "A whisk is designed to rapidly incorporate air and create a smooth, homogenous mixture."
+    },
+    {
+        "level": 1,
+        "question": "The safest place to thaw frozen meat is:",
+        "options": [
+            {
+                "id": "a",
+                "text": "On the kitchen counter at room temperature."
+            },
+            {
+                "id": "b",
+                "text": "In a bowl of hot water."
+            },
+            {
+                "id": "c",
+                "text": "In the refrigerator (below $4^{\\circ}\\text{C}$ or $40^{\\circ}\\text{F}$)."
+            },
+            {
+                "id": "d",
+                "text": "Near a heat source like the stove."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Thawing food in the refrigerator keeps it out of the temperature 'Danger Zone' where bacteria can multiply rapidly."
+    },
+    {
+        "level": 1,
+        "question": "The action of gently stirring ingredients to combine them without overmixing is called:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Whipping"
+            },
+            {
+                "id": "b",
+                "text": "Kneading"
+            },
+            {
+                "id": "c",
+                "text": "Folding"
+            },
+            {
+                "id": "d",
+                "text": "Slicing"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "'Folding' is a technique used, particularly in baking, to combine light and heavy ingredients (like whipped cream into batter) while retaining air."
+    },
+    {
+        "level": 1,
+        "question": "What is the primary purpose of seasoning food with salt?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To help the food cook faster."
+            },
+            {
+                "id": "b",
+                "text": "To make the food crunchy."
+            },
+            {
+                "id": "c",
+                "text": "To enhance and balance the natural flavors of the food."
+            },
+            {
+                "id": "d",
+                "text": "To preserve the food indefinitely."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Salt (and acid) are essential for seasoning, as they heighten and balance the other flavor components in a dish."
+    },
+    {
+        "level": 1,
+        "question": "When measuring liquids, you should read the measurement line at the bottom of the curve formed by the liquid. What is this curve called?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The vertex"
+            },
+            {
+                "id": "b",
+                "text": "The meniscus"
+            },
+            {
+                "id": "c",
+                "text": "The apex"
+            },
+            {
+                "id": "d",
+                "text": "The tangent"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "The meniscus is the curve in the upper surface of a liquid close to the container's surface, and accurate liquid measurement requires reading the bottom of the curve at eye level."
+    },
+    {
+        "level": 1,
+        "question": "What is the safest way to cut a round vegetable (like an onion or tomato) in half?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Cut it while holding it in your hand."
+            },
+            {
+                "id": "b",
+                "text": "Hold it steady and cut toward your hand."
+            },
+            {
+                "id": "c",
+                "text": "Cut a thin slice off one side to create a stable, flat base."
+            },
+            {
+                "id": "d",
+                "text": "Cut quickly without looking at the knife."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Creating a flat base prevents the food from rolling, greatly reducing the risk of a knife slip and injury."
+    },
+    {
+        "level": 1,
+        "question": "The term 'al dente' is most often used to describe the desired doneness of which food?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Chicken"
+            },
+            {
+                "id": "b",
+                "text": "Pasta"
+            },
+            {
+                "id": "c",
+                "text": "Soup"
+            },
+            {
+                "id": "d",
+                "text": "Bread"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "'Al dente' is Italian for 'to the tooth,' meaning the pasta is cooked until it is firm but not hard, retaining a slight resistance when chewed."
+    },
+    {
+        "level": 1,
+        "question": "What is the purpose of 'sifting' flour and dry ingredients in baking?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To measure the ingredients more accurately by weight."
+            },
+            {
+                "id": "b",
+                "text": "To chill the ingredients before mixing."
+            },
+            {
+                "id": "c",
+                "text": "To remove lumps and incorporate air for a lighter product."
+            },
+            {
+                "id": "d",
+                "text": "To increase the gluten content of the flour."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Sifting breaks up clumps and aerates the flour, ensuring it mixes evenly into the batter or dough."
+    },
+    {
+        "level": 1,
+        "question": "Which type of heat transfer occurs when food is cooked directly by the flame or heating element (like grilling or broiling)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Conduction"
+            },
+            {
+                "id": "b",
+                "text": "Radiation"
+            },
+            {
+                "id": "c",
+                "text": "Convection"
+            },
+            {
+                "id": "d",
+                "text": "Advection"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Radiation (or Radiant Heat) transfers energy through electromagnetic waves, often used to describe heat from a broiler, grill, or toaster."
+    },
+    {
+        "level": 1,
+        "question": "What does it mean to 'cream' butter and sugar together in a recipe?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To melt the butter and dissolve the sugar."
+            },
+            {
+                "id": "b",
+                "text": "To mix them quickly with a whisk until smooth."
+            },
+            {
+                "id": "c",
+                "text": "To beat them together until the mixture is light, fluffy, and pale in color."
+            },
+            {
+                "id": "d",
+                "text": "To heat them on the stove until they form a caramel."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "The creaming method incorporates tiny air bubbles into the butter/sugar mixture, which is crucial for leavening (rising) cookies and cakes."
+    },
+    {
+        "level": 1,
+        "question": "Which temperature is commonly referred to as the 'boiling point' of water at sea level?",
+        "options": [
+            {
+                "id": "a",
+                "text": "$50^{\\circ}\\text{C}$ ($122^{\\circ}\\text{F}$)"
+            },
+            {
+                "id": "b",
+                "text": "$75^{\\circ}\\text{C}$ ($167^{\\circ}\\text{F}$)"
+            },
+            {
+                "id": "c",
+                "text": "$100^{\\circ}\\text{C}$ ($212^{\\circ}\\text{F}$)"
+            },
+            {
+                "id": "d",
+                "text": "$150^{\\circ}\\text{C}$ ($302^{\\circ}\\text{F}$)"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "$100^{\\circ}\\text{C}$ ($212^{\\circ}\\text{F}$) is the standard boiling temperature for pure water at standard atmospheric pressure."
+    },
+    {
+        "level": 2,
+        "question": "What is the difference between 'boiling' and 'simmering' a liquid?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Boiling is done on the stovetop; simmering is done in the oven."
+            },
+            {
+                "id": "b",
+                "text": "Boiling has large, rapidly bursting bubbles; simmering has small bubbles that barely break the surface."
+            },
+            {
+                "id": "c",
+                "text": "Simmering uses a covered pot, boiling uses an uncovered pot."
+            },
+            {
+                "id": "d",
+                "text": "Simmering is a rapid reduction process; boiling is a slow one."
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Boiling occurs at $100^{\\circ}\\text{C}$ ($212^{\\circ}\\text{F}$) with rapid bubbles; simmering is just below boiling, typically $85^{\\circ}\\text{C}$ to $95^{\\circ}\\text{C}$ ($185^{\\circ}\\text{F}$ to $205^{\\circ}\\text{F}$). "
+    },
+    {
+        "level": 2,
+        "question": "What does the French culinary term 'sauté' primarily mean?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To cook food in water at a low temperature."
+            },
+            {
+                "id": "b",
+                "text": "To cook quickly in a small amount of hot fat."
+            },
+            {
+                "id": "c",
+                "text": "To simmer slowly in an oven."
+            },
+            {
+                "id": "d",
+                "text": "To coat food in batter and deep-fry."
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Sautéing involves cooking food quickly in a small amount of hot oil or butter, often while stirring or shaking the pan to ensure even browning."
+    },
+    {
+        "level": 2,
+        "question": "Approximately how many milliliters (mL) are in one standard US fluid cup?",
+        "options": [
+            {
+                "id": "a",
+                "text": "$150\\text{ mL}$"
+            },
+            {
+                "id": "b",
+                "text": "$240\\text{ mL}$"
+            },
+            {
+                "id": "c",
+                "text": "$500\\text{ mL}$"
+            },
+            {
+                "id": "d",
+                "text": "$1,000\\text{ mL}$"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "One standard US fluid cup is equal to approximately $236.6\\text{ mL}$, which is usually rounded to $240\\text{ mL}$ for practical kitchen measurements."
+    },
+    {
+        "level": 2,
+        "question": "Which basic knife cut produces long, thin strips, often used for stir-fries or garnishes?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Dice"
+            },
+            {
+                "id": "b",
+                "text": "Mince"
+            },
+            {
+                "id": "c",
+                "text": "Julienne"
+            },
+            {
+                "id": "d",
+                "text": "Chop"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "The Julienne cut produces uniform thin strips, typically around $1/8$ inch by $1/8$ inch by 2 inches long."
+    },
+    {
+        "level": 2,
+        "question": "What is the primary reason for 'resting' meat after cooking?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To allow the meat to cool down for slicing."
+            },
+            {
+                "id": "b",
+                "text": "To tenderize the muscle fibers."
+            },
+            {
+                "id": "c",
+                "text": "To allow juices to redistribute throughout the meat, preventing dryness."
+            },
+            {
+                "id": "d",
+                "text": "To increase the internal temperature through carryover cooking."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Resting allows muscle fibers to relax, reabsorbing the moisture that was pushed to the surface during heating, resulting in a juicier final product."
+    },
+    {
+        "level": 2,
+        "question": "When making stock, what is the mix of chopped onions, carrots, and celery called?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Bouquet Garni"
+            },
+            {
+                "id": "b",
+                "text": "Mirepoix"
+            },
+            {
+                "id": "c",
+                "text": "Sachet d'Épices"
+            },
+            {
+                "id": "d",
+                "text": "Roux"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Mirepoix is a classic French aromatic base, typically cut coarsely and used for stocks, soups, and sauces."
+    },
+    {
+        "level": 2,
+        "question": "The term 'al dente' is most often used to describe the desired doneness of which food?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Chicken"
+            },
+            {
+                "id": "b",
+                "text": "Pasta"
+            },
+            {
+                "id": "c",
+                "text": "Soup"
+            },
+            {
+                "id": "d",
+                "text": "Bread"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "'Al dente' is Italian for 'to the tooth,' meaning the pasta is cooked until it is firm but not hard, retaining a slight resistance when chewed."
+    },
+    {
+        "level": 2,
+        "question": "Which ingredient is often used as a leavening agent (causing the food to rise) when combined with an acid, such as vinegar or buttermilk?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Salt"
+            },
+            {
+                "id": "b",
+                "text": "Baking Soda"
+            },
+            {
+                "id": "c",
+                "text": "Sugar"
+            },
+            {
+                "id": "d",
+                "text": "Flour"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Baking soda (sodium bicarbonate) needs an acid to activate and release carbon dioxide gas, which causes baked goods to rise."
+    },
+    {
+        "level": 2,
+        "question": "What is the function of a 'zester' in the kitchen?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To grate hard cheese."
+            },
+            {
+                "id": "b",
+                "text": "To make small curls of chocolate."
+            },
+            {
+                "id": "c",
+                "text": "To remove the thin, colored outer layer (zest) of citrus fruit."
+            },
+            {
+                "id": "d",
+                "text": "To remove the core from an apple."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "A zester specifically removes the flavorful zest, avoiding the bitter white pith underneath."
+    },
+    {
+        "level": 2,
+        "question": "How many teaspoons (tsp) are in one tablespoon (TBSP)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "2"
+            },
+            {
+                "id": "b",
+                "text": "3"
+            },
+            {
+                "id": "c",
+                "text": "4"
+            },
+            {
+                "id": "d",
+                "text": "6"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "The standard conversion is 3 teaspoons (tsp) equal 1 tablespoon (TBSP)."
+    },
+    {
+        "level": 2,
+        "question": "The action of gently stirring ingredients to combine them without deflating air is called:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Whipping"
+            },
+            {
+                "id": "b",
+                "text": "Kneading"
+            },
+            {
+                "id": "c",
+                "text": "Folding"
+            },
+            {
+                "id": "d",
+                "text": "Slicing"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "'Folding' is a technique used to combine light (e.g., whipped egg whites) and heavy ingredients gently, maintaining volume."
+    },
+    {
+        "level": 2,
+        "question": "What does it mean to 'cream' butter and sugar together in a recipe?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To melt the butter and dissolve the sugar."
+            },
+            {
+                "id": "b",
+                "text": "To mix them quickly with a whisk until smooth."
+            },
+            {
+                "id": "c",
+                "text": "To beat them together until the mixture is light, fluffy, and pale in color."
+            },
+            {
+                "id": "d",
+                "text": "To heat them on the stove until they form a caramel."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "The creaming method incorporates tiny air bubbles into the butter/sugar mixture, which is crucial for leavening (rising) cookies and cakes."
+    },
+    {
+        "level": 2,
+        "question": "What is the best way to determine if yeast is alive and active before adding it to flour?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Mix it with cold water and see if it dissolves."
+            },
+            {
+                "id": "b",
+                "text": "Mix it with warm water and a little sugar and wait for it to foam."
+            },
+            {
+                "id": "c",
+                "text": "Smell it for a strong, metallic odor."
+            },
+            {
+                "id": "d",
+                "text": "Taste a small amount to check for bitterness."
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Yeast is a living organism. Warm water and sugar 'proof' the yeast, meaning they activate it, and foaming indicates it is ready for baking."
+    },
+    {
+        "level": 2,
+        "question": "Which of these is a 'Dry Heat' cooking method?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Steaming"
+            },
+            {
+                "id": "b",
+                "text": "Poaching"
+            },
+            {
+                "id": "c",
+                "text": "Roasting"
+            },
+            {
+                "id": "d",
+                "text": "Braising"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Roasting uses hot air, a form of dry heat. Steaming, Poaching, and Braising all involve liquid (moist heat)."
+    },
+    {
+        "level": 2,
+        "question": "When making an omelet, the process of scrambling the eggs in the pan before letting them set is an example of:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Deglazing"
+            },
+            {
+                "id": "b",
+                "text": "Clarifying"
+            },
+            {
+                "id": "c",
+                "text": "Coagulation"
+            },
+            {
+                "id": "d",
+                "text": "Maceration"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Coagulation is the setting of proteins (like those in eggs) due to heat, changing them from a liquid to a solid state."
+    },
+    {
+        "level": 2,
+        "question": "What is the purpose of 'sifting' flour and dry ingredients in baking?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To measure the ingredients more accurately by weight."
+            },
+            {
+                "id": "b",
+                "text": "To chill the ingredients before mixing."
+            },
+            {
+                "id": "c",
+                "text": "To remove lumps and incorporate air for a lighter product."
+            },
+            {
+                "id": "d",
+                "text": "To increase the gluten content of the flour."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Sifting breaks up clumps and aerates the flour, ensuring it mixes evenly into the batter or dough."
+    },
+    {
+        "level": 2,
+        "question": "Which cut requires the food item to be shaped into a barrel or oval before cutting, often done with carrots or potatoes?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Chiffonade"
+            },
+            {
+                "id": "b",
+                "text": "Tourné"
+            },
+            {
+                "id": "c",
+                "text": "Mince"
+            },
+            {
+                "id": "d",
+                "text": "Oblique"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "The 'Tourné' cut is a seven-sided, football-shaped preparation, used primarily for presentation."
+    },
+    {
+        "level": 2,
+        "question": "The best way to stop the cooking process immediately when blanching vegetables is to:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Remove them from the water and let them air dry."
+            },
+            {
+                "id": "b",
+                "text": "Plunge them into an ice bath (shocking)."
+            },
+            {
+                "id": "c",
+                "text": "Add cold water to the pot."
+            },
+            {
+                "id": "d",
+                "text": "Cover the pot with a lid."
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Plunging the vegetables into an ice bath ('shocking') immediately stops the heat transfer, preserving their bright color and crisp texture."
+    },
+    {
+        "level": 2,
+        "question": "When making gravy, what is a mixture of softened butter and flour kneaded together, used to thicken at the end of cooking?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Roux"
+            },
+            {
+                "id": "b",
+                "text": "Buerre Blanc"
+            },
+            {
+                "id": "c",
+                "text": "Slurry"
+            },
+            {
+                "id": "d",
+                "text": "Beurre Manié"
+            }
+        ],
+        "correct_id": "d",
+        "explanation": "Beurre Manié is uncooked butter and flour mixed together, often added at the end of cooking to thicken liquids without lumps."
+    },
+    {
+        "level": 2,
+        "question": "What is the primary function of acid (like lemon juice or vinegar) when added to a poaching liquid for fish or eggs?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To prevent the liquid from boiling."
+            },
+            {
+                "id": "b",
+                "text": "To help the protein set faster and maintain its shape."
+            },
+            {
+                "id": "c",
+                "text": "To increase the boiling temperature of the water."
+            },
+            {
+                "id": "d",
+                "text": "To tenderize tough muscle fibers."
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Acid accelerates protein coagulation, which helps the fish or egg whites set firmly and prevents them from disintegrating in the poaching liquid."
+    },
+    {
+        "level": 3,
+        "question": "The process of quickly submerging vegetables in boiling water and then plunging them into ice water is called what?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Puréeing"
+            },
+            {
+                "id": "b",
+                "text": "Reducing"
+            },
+            {
+                "id": "c",
+                "text": "Braising"
+            },
+            {
+                "id": "d",
+                "text": "Blanching"
+            }
+        ],
+        "correct_id": "d",
+        "explanation": "Blanching (chần) and 'shocking' (plunging into ice water) stops enzymatic action, preserving color and stopping the cooking process immediately."
+    },
+    {
+        "level": 3,
+        "question": "In bread baking, what is the primary function of salt, besides enhancing flavor?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It helps the yeast to grow faster."
+            },
+            {
+                "id": "b",
+                "text": "It speeds up the fermentation process."
+            },
+            {
+                "id": "c",
+                "text": "It controls the rate of yeast growth and strengthens the gluten structure."
+            },
+            {
+                "id": "d",
+                "text": "It prevents the dough from getting sticky."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Salt acts as a regulator, tightening the gluten matrix and controlling yeast activity, which is vital for proper dough texture and volume."
+    },
+    {
+        "level": 3,
+        "question": "What is the process of gently heating egg yolks with a hot liquid (like milk or cream) before adding them to a high-heat mixture to prevent curdling?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Emulsification"
+            },
+            {
+                "id": "b",
+                "text": "Clarification"
+            },
+            {
+                "id": "c",
+                "text": "Tempering"
+            },
+            {
+                "id": "d",
+                "text": "Fortification"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Tempering (làm ấm từ từ) involves slowly bringing up the temperature of sensitive ingredients (like eggs) to prevent them from scrambling when mixed with a hot liquid."
+    },
+    {
+        "level": 3,
+        "question": "Which liquid is typically used to 'deglaze' a pan after searing meat or vegetables?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Cooking oil"
+            },
+            {
+                "id": "b",
+                "text": "Wine or stock"
+            },
+            {
+                "id": "c",
+                "text": "Melted butter"
+            },
+            {
+                "id": "d",
+                "text": "Vegetable purée"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Deglazing involves adding a cold liquid (most often wine or stock) to a hot pan to dissolve the 'fond' (caramelized bits) and create a sauce base."
+    },
+    {
+        "level": 3,
+        "question": "What is 'clarified butter'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Butter that has been whipped until pale."
+            },
+            {
+                "id": "b",
+                "text": "Butter that is mixed with oil to raise its smoke point."
+            },
+            {
+                "id": "c",
+                "text": "Butter with the water and milk solids removed, leaving only pure butterfat."
+            },
+            {
+                "id": "d",
+                "text": "Butter mixed with fresh herbs."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Clarified butter (bơ trong) has a higher smoke point than regular butter because the milk solids (which burn easily) have been removed, making it ideal for sautéing."
+    },
+    {
+        "level": 3,
+        "question": "In sauce making, what does it mean to 'reduce' a liquid?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To add a thickening agent like cornstarch."
+            },
+            {
+                "id": "b",
+                "text": "To cook the liquid uncovered until the volume decreases and the flavor intensifies."
+            },
+            {
+                "id": "c",
+                "text": "To strain the liquid through a fine-mesh sieve."
+            },
+            {
+                "id": "d",
+                "text": "To add an acidic ingredient like vinegar or lemon juice."
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Reduction involves evaporating excess water from a liquid through simmering or boiling, concentrating the flavor into a thicker, richer consistency."
+    },
+    {
+        "level": 3,
+        "question": "What are the common aromatic ingredients in a standard *Mirepoix* (the French vegetable base)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Onions, leeks, and garlic."
+            },
+            {
+                "id": "b",
+                "text": "Onions, carrots, and celery."
+            },
+            {
+                "id": "c",
+                "text": "Garlic, ginger, and scallions."
+            },
+            {
+                "id": "d",
+                "text": "Tomatoes, mushrooms, and bell peppers."
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Mirepoix is typically a mixture of $50\\%$ onions, $25\\%$ carrots, and $25\\%$ celery, used as the aromatic base for many stocks, soups, and sauces."
+    },
+    {
+        "level": 3,
+        "question": "What is the purpose of adding a small amount of acid (like lemon juice or vinegar) when whipping egg whites?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To prevent over-whipping and the whites from collapsing."
+            },
+            {
+                "id": "b",
+                "text": "To increase the flavor and reduce the 'eggy' smell."
+            },
+            {
+                "id": "c",
+                "text": "To increase the stability of the foam and achieve maximum volume."
+            },
+            {
+                "id": "d",
+                "text": "To speed up the whipping process."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Acid (like cream of tartar or lemon juice) strengthens the protein structure in the egg whites, helping them hold air longer without weeping or collapsing."
+    },
+    {
+        "level": 3,
+        "question": "What is the term for dipping fruit (like sliced apples) into a lemon-water solution before use?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Macerating"
+            },
+            {
+                "id": "b",
+                "text": "Basting"
+            },
+            {
+                "id": "c",
+                "text": "Oxidizing"
+            },
+            {
+                "id": "d",
+                "text": "Preventing enzymatic browning"
+            }
+        ],
+        "correct_id": "d",
+        "explanation": "The acid in the lemon juice deactivates the enzymes (polyphenol oxidase) responsible for turning the fruit brown when exposed to air (oxidation)."
+    },
+    {
+        "level": 3,
+        "question": "When making mayonnaise, what is the process of slowly incorporating oil and egg yolk to create a stable, thick mixture?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Clarifying"
+            },
+            {
+                "id": "b",
+                "text": "Emulsification"
+            },
+            {
+                "id": "c",
+                "text": "Tempering"
+            },
+            {
+                "id": "d",
+                "text": "Sieving"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Emulsification is the process of mixing two liquids that normally do not combine (oil and water) using a binder (like the lecithin in egg yolk)."
+    },
+    {
+        "level": 3,
+        "question": "What is the proper method for 'rendering' fat from duck or bacon?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Cooking the fat at high heat until it smokes."
+            },
+            {
+                "id": "b",
+                "text": "Cooking the fat slowly over low heat until it melts and the solids become crispy."
+            },
+            {
+                "id": "c",
+                "text": "Mixing the fat with water and boiling it."
+            },
+            {
+                "id": "d",
+                "text": "Chilling the fat quickly in the freezer."
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Rendering fat involves low, slow heat to gently melt the fat without burning the connective tissue (solids), resulting in clear liquid fat."
+    },
+    {
+        "level": 3,
+        "question": "In baking, what is the key difference between using baking soda and baking powder?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Baking soda is a thickener; baking powder is a leavener."
+            },
+            {
+                "id": "b",
+                "text": "Baking powder needs an acid to activate; baking soda only needs moisture."
+            },
+            {
+                "id": "c",
+                "text": "Baking soda needs an acid to activate; baking powder is 'double-acting' and already contains the acid."
+            },
+            {
+                "id": "d",
+                "text": "Baking soda is used in savory dishes; baking powder is used in sweet dishes."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Baking powder contains both baking soda and an acidic component (like cream of tartar), meaning it requires only moisture and heat for leavening."
+    },
+    {
+        "level": 3,
+        "question": "What is the term for pouring a hot liquid (like pan juices) over meat repeatedly during roasting to keep it moist and add flavor?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Deglazing"
+            },
+            {
+                "id": "b",
+                "text": "Basting"
+            },
+            {
+                "id": "c",
+                "text": "Searing"
+            },
+            {
+                "id": "d",
+                "text": "Poaching"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Basting (tưới nước dùng) is done throughout the cooking process to moisten the surface of the meat and create a richer crust."
+    },
+    {
+        "level": 3,
+        "question": "What is the small packet of herbs and spices (often bay leaf, thyme, and peppercorns) tied in cheesecloth, used for flavoring stocks and soups?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Mirepoix"
+            },
+            {
+                "id": "b",
+                "text": "Bouquet Garni"
+            },
+            {
+                "id": "c",
+                "text": "Sachet d'Épices"
+            },
+            {
+                "id": "d",
+                "text": "Court Bouillon"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "A Sachet d'Épices is a 'bag of spices.' A Bouquet Garni is similar but usually consists of fresh herbs tied together with string, not in cheesecloth."
+    },
+    {
+        "level": 3,
+        "question": "If a recipe calls for a 'butterfly' cut on chicken breasts, what is the goal?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To cut the meat into decorative shapes."
+            },
+            {
+                "id": "b",
+                "text": "To separate the breast into two thin fillets."
+            },
+            {
+                "id": "c",
+                "text": "To cut the breast almost in half horizontally and open it like a book to create a uniform thickness."
+            },
+            {
+                "id": "d",
+                "text": "To tenderize the meat by pounding it thinly."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Butterflying creates a uniform thickness, allowing the chicken to cook quickly and evenly."
+    },
+    {
+        "level": 3,
+        "question": "Which ingredient is a natural stabilizer and thickening agent primarily composed of protein extracted from collagen?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Pectin"
+            },
+            {
+                "id": "b",
+                "text": "Lecithin"
+            },
+            {
+                "id": "c",
+                "text": "Gelatin"
+            },
+            {
+                "id": "d",
+                "text": "Starch"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Gelatin is derived from collagen and is used to thicken liquids into a gel (like panna cotta), a process known as gelation."
+    },
+    {
+        "level": 3,
+        "question": "What is the term for rapidly mixing an ingredient, often cream or egg whites, to incorporate air and increase volume?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Sautéing"
+            },
+            {
+                "id": "b",
+                "text": "Kneading"
+            },
+            {
+                "id": "c",
+                "text": "Whipping"
+            },
+            {
+                "id": "d",
+                "text": "Folding"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Whipping (đánh bông) is the vigorous incorporation of air to change the texture and increase the volume, such as making whipped cream or meringue."
+    },
+    {
+        "level": 3,
+        "question": "Which type of stock is made from bones that have been roasted or caramelized before simmering?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Fish Stock (Fumet)"
+            },
+            {
+                "id": "b",
+                "text": "Brown Stock"
+            },
+            {
+                "id": "c",
+                "text": "Vegetable Stock"
+            },
+            {
+                "id": "d",
+                "text": "White Stock"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Roasting the bones and vegetables first creates the deep color and rich, savory flavor characteristic of a Brown Stock."
+    },
+    {
+        "level": 3,
+        "question": "What is the required sugar level ($^\\circ\text{C}$) to achieve the 'soft ball' stage in candy making?",
+        "options": [
+            {
+                "id": "a",
+                "text": "$105^{\\circ}\\text{C}$ ($221^{\\circ}\\text{F}$)"
+            },
+            {
+                "id": "b",
+                "text": "$115^{\\circ}\\text{C}$ ($240^{\\circ}\\text{F}$)"
+            },
+            {
+                "id": "c",
+                "text": "$125^{\\circ}\\text{C}$ ($257^{\\circ}\\text{F}$)"
+            },
+            {
+                "id": "d",
+                "text": "$140^{\\circ}\\text{C}$ ($285^{\\circ}\\text{F}$)"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "The soft ball stage, $115^{\\circ}\\text{C}$ ($240^{\\circ}\\text{F}$), is where a small amount of syrup dropped into cold water forms a soft, pliable ball. This is the temperature for fudge or soft caramel."
+    },
+    {
+        "level": 3,
+        "question": "The chemical process that gives seared food (like steak crust or toasted bread) its brown color and complex savory flavor is called the:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Caramelization"
+            },
+            {
+                "id": "b",
+                "text": "Maillard Reaction"
+            },
+            {
+                "id": "c",
+                "text": "Hydrolysis"
+            },
+            {
+                "id": "d",
+                "text": "Fermentation"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "The Maillard Reaction is the complex chemical reaction between amino acids and reducing sugars at high heat, creating hundreds of different flavor compounds."
+    },
+    {
+        "level": 4,
+        "question": "What is the primary difference between the 'Maillard Reaction' and 'Caramelization'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Maillard occurs only in meat; Caramelization occurs only in sugar."
+            },
+            {
+                "id": "b",
+                "text": "Maillard involves amino acids and sugars; Caramelization involves only the breakdown of sugars."
+            },
+            {
+                "id": "c",
+                "text": "Maillard requires moisture; Caramelization requires dry heat."
+            },
+            {
+                "id": "d",
+                "text": "Maillard occurs at high temperatures; Caramelization occurs at low temperatures."
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Caramelization is the thermal decomposition of sugar. The Maillard reaction is a more complex browning reaction between amino acids and reducing sugars, resulting in savory (umami) and complex flavors."
+    },
+    {
+        "level": 4,
+        "question": "The technique of cooking food slowly in its own fat or oil at a very low temperature (e.g., duck legs) is called:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Poaching"
+            },
+            {
+                "id": "b",
+                "text": "Braising"
+            },
+            {
+                "id": "c",
+                "text": "Confit"
+            },
+            {
+                "id": "d",
+                "text": "Render"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Confit is a preservation technique that involves submerging the food in fat and cooking it slowly at temperatures between $60^{\\circ}\\text{C}$ and $90^{\\circ}\\text{C}$ ($140^{\\circ}\\text{F}$ and $195^{\\circ}\\text{F}$)."
+    },
+    {
+        "level": 4,
+        "question": "When making clear stocks or consommés, a 'raft' is formed to achieve clarification. What is the raft primarily composed of?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Gelatin and mirepoix."
+            },
+            {
+                "id": "b",
+                "text": "Raw ground meat, egg whites, and mirepoix."
+            },
+            {
+                "id": "c",
+                "text": "Flour and butter (roux)."
+            },
+            {
+                "id": "d",
+                "text": "Pectin and acid."
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "The raft forms as the egg whites coagulate and trap impurities and sediment from the stock, rising to the surface to be skimmed off."
+    },
+    {
+        "level": 4,
+        "question": "What is the main purpose of 'larding' or 'barding' a lean cut of meat?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To reduce the cooking time."
+            },
+            {
+                "id": "b",
+                "text": "To inject flavor and prevent the meat from drying out during cooking."
+            },
+            {
+                "id": "c",
+                "text": "To increase the internal temperature rapidly."
+            },
+            {
+                "id": "d",
+                "text": "To brown the surface of the meat."
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Larding (inserting strips of fat) and Barding (wrapping the meat in fat, like bacon) both introduce fat to lean cuts, keeping them moist during long roasting periods."
+    },
+    {
+        "level": 4,
+        "question": "Which term describes the temperature at which an oil begins to break down and smoke continuously, indicating chemical decomposition?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Boiling Point"
+            },
+            {
+                "id": "b",
+                "text": "Flash Point"
+            },
+            {
+                "id": "c",
+                "text": "Smoke Point"
+            },
+            {
+                "id": "d",
+                "text": "Critical Point"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "The smoke point (điểm khói) is crucial for deep-frying and high-heat searing, as cooking past this point can produce bitter flavors and harmful compounds."
+    },
+    {
+        "level": 4,
+        "question": "The classic French term for butter that has been cooked until the milk solids brown and take on a nutty flavor is:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Beurre Clarifié"
+            },
+            {
+                "id": "b",
+                "text": "Beurre Manié"
+            },
+            {
+                "id": "c",
+                "text": "Beurre Noisette"
+            },
+            {
+                "id": "d",
+                "text": "Beurre Composé"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Beurre Noisette (brown butter) literally means 'hazelnut butter' due to its color and nutty aroma. It is used in classical sauce making."
+    },
+    {
+        "level": 4,
+        "question": "In the process of making dough, what is the term for developing the long, elastic chains of protein that provide structure?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Aeration"
+            },
+            {
+                "id": "b",
+                "text": "Hydration"
+            },
+            {
+                "id": "c",
+                "text": "Gluten Development"
+            },
+            {
+                "id": "d",
+                "text": "Laminating"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Gluten is formed when two proteins in wheat flour (glutenin and gliadin) are hydrated and physically worked (kneaded or mixed)."
+    },
+    {
+        "level": 4,
+        "question": "What is the precise knife cut that requires dicing a Julienne cut to create uniform cubes of $1/8$ inch x $1/8$ inch x $1/8$ inch?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Mince"
+            },
+            {
+                "id": "b",
+                "text": "Petit Dice"
+            },
+            {
+                "id": "c",
+                "text": "Brunoise"
+            },
+            {
+                "id": "d",
+                "text": "Macedoine"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "The Brunoise cut is one of the smallest and most precise classical cuts, often used for garnishes."
+    },
+    {
+        "level": 4,
+        "question": "What is the primary purpose of 'carrying over cooking' calculation when roasting a large piece of meat?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To ensure the meat is completely raw when removed from the oven."
+            },
+            {
+                "id": "b",
+                "text": "To determine the final rest time."
+            },
+            {
+                "id": "c",
+                "text": "To remove the meat from the oven before it reaches its final desired temperature, allowing residual heat to finish the process."
+            },
+            {
+                "id": "d",
+                "text": "To calculate the amount of pan juices for gravy."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Carryover cooking means the internal temperature of a large item continues to rise ($3^{\\circ}\\text{C}$ to $6^{\\circ}\\text{C}$ or $5^{\\circ}\\text{F}$ to $10^{\\circ}\\text{F}$) after leaving the heat source. Failing to account for this results in overcooked meat."
+    },
+    {
+        "level": 4,
+        "question": "In the context of the *Sous Vide* method, what is the significance of cooking duck breast at exactly $58^{\\circ}\\text{C}$ ($136^{\\circ}\\text{F}$) for an extended period?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It destroys all bacteria instantly."
+            },
+            {
+                "id": "b",
+                "text": "It is the point where the meat fibers shrink rapidly."
+            },
+            {
+                "id": "c",
+                "text": "It is the ideal temperature for the tenderization of the meat while maintaining a medium-rare finish."
+            },
+            {
+                "id": "d",
+                "text": "It caramelizes the skin fat."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "The precise, low temperature allows the connective tissue to tenderize over time without causing the muscle fibers to tighten and expel moisture, ensuring maximum juiciness and even doneness."
+    },
+    {
+        "level": 4,
+        "question": "The term for a flavorful liquid, usually water, wine, or vinegar, simmered with herbs and aromatics, used specifically for poaching fish or shellfish is:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Fumet"
+            },
+            {
+                "id": "b",
+                "text": "Consommé"
+            },
+            {
+                "id": "c",
+                "text": "Court Bouillon"
+            },
+            {
+                "id": "d",
+                "text": "Glace de Viande"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Court Bouillon (nước dùng ngắn) is not a stock but a highly flavorful poaching liquid used primarily for delicate seafood."
+    },
+    {
+        "level": 4,
+        "question": "What is the primary risk associated with adding salt to ground beef before forming and cooking hamburgers?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It prevents the Maillard reaction."
+            },
+            {
+                "id": "b",
+                "text": "It causes the protein to dissolve, resulting in a tough, sausage-like texture."
+            },
+            {
+                "id": "c",
+                "text": "It lowers the cooking temperature."
+            },
+            {
+                "id": "d",
+                "text": "It causes the meat to turn green."
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Salt dissolves the muscle protein myosin, which then binds the patty tightly when cooked, resulting in a texture closer to sausage or meatloaf than a tender burger."
+    },
+    {
+        "level": 4,
+        "question": "What is the difference between 'Pan Frying' and 'Sautéing'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Pan Frying is done with more fat and without agitation; Sautéing uses less fat and requires constant movement."
+            },
+            {
+                "id": "b",
+                "text": "Sautéing is a dry heat method; Pan Frying is a moist heat method."
+            },
+            {
+                "id": "c",
+                "text": "Pan Frying is always done at low heat; Sautéing is done at high heat."
+            },
+            {
+                "id": "d",
+                "text": "Sautéing is for meat only; Pan Frying is for vegetables only."
+            }
+        ],
+        "correct_id": "a",
+        "explanation": "Sautéing (nhảy) requires high heat and frequent agitation in minimal fat. Pan frying uses medium heat and enough fat to coat the food halfway, with less movement."
+    },
+    {
+        "level": 4,
+        "question": "Why is it important to scrape the milk solids from the bottom of a pot while clarifying butter?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To increase the flavor of the butterfat."
+            },
+            {
+                "id": "b",
+                "text": "To ensure the butter cools down quickly."
+            },
+            {
+                "id": "c",
+                "text": "To prevent the solids from burning and ruining the flavor of the final clarified butter."
+            },
+            {
+                "id": "d",
+                "text": "To speed up the evaporation of water."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "If the milk solids on the bottom of the pan burn, they will give the entire batch of clarified butter a bitter, burnt taste."
+    },
+    {
+        "level": 4,
+        "question": "What is the technique for finely slicing leafy herbs or vegetables (like basil or cabbage) into very thin ribbons?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Mince"
+            },
+            {
+                "id": "b",
+                "text": "Chiffonade"
+            },
+            {
+                "id": "c",
+                "text": "Concassé"
+            },
+            {
+                "id": "d",
+                "text": "Paysanne"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Chiffonade is a knife technique where leaves are stacked, rolled tightly, and sliced perpendicular to the roll."
+    },
+    {
+        "level": 4,
+        "question": "Which thickening agent is made by cooking fat and flour, then stirring the cooled mixture into a hot liquid?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Beurre Manié"
+            },
+            {
+                "id": "b",
+                "text": "Liaison"
+            },
+            {
+                "id": "c",
+                "text": "Roux"
+            },
+            {
+                "id": "d",
+                "text": "Slurry"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "A roux (a cooked mixture of fat and flour) is added to hot liquid. A Beurre Manié is *uncooked* fat and flour added to a hot liquid."
+    },
+    {
+        "level": 4,
+        "question": "What is the term for dipping a pastry brush into a liquid (like egg wash or simple syrup) and coating the top of a pastry before baking?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Glazing"
+            },
+            {
+                "id": "b",
+                "text": "Tempering"
+            },
+            {
+                "id": "c",
+                "text": "Docking"
+            },
+            {
+                "id": "d",
+                "text": "Barding"
+            }
+        ],
+        "correct_id": "a",
+        "explanation": "Glazing (phủ bóng) gives the finished pastry a shiny, golden-brown appearance and sometimes adds flavor."
+    },
+    {
+        "level": 4,
+        "question": "What is the maximum internal temperature that should be reached when cooking fish for consumption (to ensure moistness)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "$55^{\\circ}\\text{C}$ ($131^{\\circ}\\text{F}$)"
+            },
+            {
+                "id": "b",
+                "text": "$63^{\\circ}\\text{C}$ ($145^{\\circ}\\text{F}$)"
+            },
+            {
+                "id": "c",
+                "text": "$74^{\\circ}\\text{C}$ ($165^{\\circ}\\text{F}$)"
+            },
+            {
+                "id": "d",
+                "text": "$82^{\\circ}\\text{C}$ ($180^{\\circ}\\text{F}$)"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "$63^{\\circ}\\text{C}$ ($145^{\\circ}\\text{F}$) is the USDA safe minimum temperature for fish. Cooking beyond this point denatures the proteins too much, making the fish dry and flaky."
+    },
+    {
+        "level": 4,
+        "question": "What is the result of applying too much force or kneading bread dough for too long?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The dough will be overly sticky."
+            },
+            {
+                "id": "b",
+                "text": "It causes the yeast to die."
+            },
+            {
+                "id": "c",
+                "text": "It results in 'buckling' or tearing the gluten strands, making the final bread tough and dense."
+            },
+            {
+                "id": "d",
+                "text": "The dough will not rise (no leavening)."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Over-kneading tears the gluten structure, leading to a dough that is hard to shape and a baked product that is dense and chewy."
+    },
+    {
+        "level": 4,
+        "question": "Which type of vinegar is traditionally aged in wooden barrels and highly regarded for its complex, sweet, and acidic flavor profile?",
+        "options": [
+            {
+                "id": "a",
+                "text": "White Wine Vinegar"
+            },
+            {
+                "id": "b",
+                "text": "Distilled White Vinegar"
+            },
+            {
+                "id": "c",
+                "text": "Balsamic Vinegar"
+            },
+            {
+                "id": "d",
+                "text": "Cider Vinegar"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "True Balsamic Vinegar (Tradizionale) is aged for years (often 12 to 25) in barrels made from different woods, creating a thick, syrup-like texture and complex flavor."
+    },
+    {
+        "level": 5,
+        "question": "What is the culinary philosophy and practice of 'mise en place' (French for 'everything in its place')?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The final plating and garnishing of a dish."
+            },
+            {
+                "id": "b",
+                "text": "The technique of cooking multiple dishes at the same time."
+            },
+            {
+                "id": "c",
+                "text": "The methodical process of preparing all ingredients and equipment before cooking begins."
+            },
+            {
+                "id": "d",
+                "text": "The process of serving a meal family-style."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Mise en place is the fundamental organizational technique in professional kitchens, ensuring efficiency and consistency by preparing all components beforehand."
+    },
+    {
+        "level": 5,
+        "question": "A 'Glace de Viande' is a highly concentrated reduction of which classical base liquid?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Béchamel Sauce"
+            },
+            {
+                "id": "b",
+                "text": "Brown Stock"
+            },
+            {
+                "id": "c",
+                "text": "White Wine Reduction (Buerre Blanc)"
+            },
+            {
+                "id": "d",
+                "text": "Court Bouillon"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Glace de Viande is a syrupy reduction of Brown Stock (often Espagnole or Veal Stock) used to intensify flavor in sauces and dishes."
+    },
+    {
+        "level": 5,
+        "question": "In the five mother sauces, which sauce is thickened by an egg yolk and cream mixture called a 'Liaison'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Béchamel"
+            },
+            {
+                "id": "b",
+                "text": "Hollandaise"
+            },
+            {
+                "id": "c",
+                "text": "Velouté"
+            },
+            {
+                "id": "d",
+                "text": "Espagnole"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Velouté is traditionally finished with a 'liaison' (egg yolk and cream) to enrich it, distinguishing it from a standard roux-thickened Velouté."
+    },
+    {
+        "level": 5,
+        "question": "The term 'nappe' refers to the ability of a sauce to:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Cling lightly and evenly to the back of a spoon."
+            },
+            {
+                "id": "b",
+                "text": "Be strained through a chinois."
+            },
+            {
+                "id": "c",
+                "text": "Form a stable emulsion for over 24 hours."
+            },
+            {
+                "id": "d",
+                "text": "Be served cold without separating."
+            }
+        ],
+        "correct_id": "a",
+        "explanation": "Nappe is the desired thickness and texture for many French sauces, indicating they are neither too thin nor too thick, and can coat food effectively."
+    },
+    {
+        "level": 5,
+        "question": "What is the primary function of pectin in fruit jams and jellies, and at what condition does it optimally gel?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Thickening; requires high heat and neutral pH."
+            },
+            {
+                "id": "b",
+                "text": "Emulsification; requires agitation and fat."
+            },
+            {
+                "id": "c",
+                "text": "Gelling; requires heat, sugar, and acid."
+            },
+            {
+                "id": "d",
+                "text": "Leavening; requires moisture and heat."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Pectin forms a gel structure, but only under the right conditions of high heat, a sufficient amount of sugar (to pull water away), and a low pH (acid)."
+    },
+    {
+        "level": 5,
+        "question": "The preparation of *Ghee* (Indian clarified butter) differs from classical clarified butter because Ghee is cooked longer until the milk solids:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Dissolve completely into the fat."
+            },
+            {
+                "id": "b",
+                "text": "Are mixed with oil and refrigerated."
+            },
+            {
+                "id": "c",
+                "text": "Turn golden brown and caramelize, adding a nutty aroma to the fat."
+            },
+            {
+                "id": "d",
+                "text": "Evaporate entirely, leaving only water."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Ghee is cooked until the milk solids brown, imparting a rich, nutty, and savory flavor, unlike standard clarified butter, which is kept flavor-neutral."
+    },
+    {
+        "level": 5,
+        "question": "Which molecular gastronomy technique uses calcium chloride and sodium alginate to create small, liquid-filled spheres?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Emulsification"
+            },
+            {
+                "id": "b",
+                "text": "Homogenization"
+            },
+            {
+                "id": "c",
+                "text": "Spherification"
+            },
+            {
+                "id": "d",
+                "text": "Hydrolysis"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Spherification is a common technique in molecular cooking that uses the reaction between these two ingredients to create membranes around a liquid."
+    },
+    {
+        "level": 5,
+        "question": "In butchery, what is the term for the large, tough connective tissue found in meat that converts into rich gelatin when simmered for a long time?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Elastin"
+            },
+            {
+                "id": "b",
+                "text": "Myoglobin"
+            },
+            {
+                "id": "c",
+                "text": "Collagen"
+            },
+            {
+                "id": "d",
+                "text": "Actin"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Collagen is abundant in cheaper cuts of meat and is the reason slow-cooking methods (like braising) are used to tenderize them by converting the collagen into gelatin."
+    },
+    {
+        "level": 5,
+        "question": "The term for reducing a liquid by boiling it down to $1/4$ of its original volume, often used for demi-glace, is:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Au Sec"
+            },
+            {
+                "id": "b",
+                "text": "Monté"
+            },
+            {
+                "id": "c",
+                "text": "Duxelles"
+            },
+            {
+                "id": "d",
+                "text": "Chiffonade"
+            }
+        ],
+        "correct_id": "a",
+        "explanation": "Au Sec (French for 'almost dry') means reducing a liquid almost entirely, which intensely concentrates the flavor."
+    },
+    {
+        "level": 5,
+        "question": "What is the primary leavening agent (riser) used in *Pâte à Choux* (e.g., éclairs and cream puffs)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Yeast"
+            },
+            {
+                "id": "b",
+                "text": "Baking Powder"
+            },
+            {
+                "id": "c",
+                "text": "Gluten development"
+            },
+            {
+                "id": "d",
+                "text": "Steam (moisture rapidly turning to gas)"
+            }
+        ],
+        "correct_id": "d",
+        "explanation": "Pâte à Choux relies entirely on the rapid conversion of the dough's high water content into steam during baking to create its characteristic hollow interior."
+    },
+    {
+        "level": 5,
+        "question": "When making stocks, what is the process of removing impurities that float to the surface during simmering?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Tempering"
+            },
+            {
+                "id": "b",
+                "text": "Sieving"
+            },
+            {
+                "id": "c",
+                "text": "Skimming"
+            },
+            {
+                "id": "d",
+                "text": "Straining"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Skimming is the continuous action of removing foam or fat from the surface of simmering liquid (like stock or sauce) to ensure clarity."
+    },
+    {
+        "level": 5,
+        "question": "What is the key role of Xantham Gum in modern cooking and baking?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It acts as a strong abrasive for cleaning."
+            },
+            {
+                "id": "b",
+                "text": "It provides structure to tough meats."
+            },
+            {
+                "id": "c",
+                "text": "It acts as a powerful thickener and stabilizer, often replacing cornstarch in gluten-free recipes."
+            },
+            {
+                "id": "d",
+                "text": "It speeds up fermentation in sourdough starter."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Xantham Gum is a hydrocolloid used in small amounts to thicken liquids and keep emulsions stable without needing heat."
+    },
+    {
+        "level": 5,
+        "question": "What is the temperature range where most pathogenic bacteria (like Salmonella) are killed almost instantly?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Below $0^{\\circ}\\text{C}$ ($32^{\\circ}\\text{F}$)"
+            },
+            {
+                "id": "b",
+                "text": "Above $74^{\\circ}\\text{C}$ ($165^{\\circ}\\text{F}$)"
+            },
+            {
+                "id": "c",
+                "text": "Between $4^{\\circ}\\text{C}$ and $60^{\\circ}\\text{C}$ ($40^{\\circ}\\text{F}$ and $140^{\\circ}\\text{F}$)"
+            },
+            {
+                "id": "d",
+                "text": "Exactly $63^{\\circ}\\text{C}$ ($145^{\\circ}\\text{F}$)"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Cooking food above the $74^{\\circ}\\text{C}$ ($165^{\\circ}\\text{F}$) threshold ensures near-instantaneous pasteurization, killing the majority of harmful pathogens."
+    },
+    {
+        "level": 5,
+        "question": "The butter-based sauce that is made from a reduction of shallots, vinegar, and white wine, then finished with cold, cubed butter and no cream, is called:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Hollandaise"
+            },
+            {
+                "id": "b",
+                "text": "Beurre Blanc"
+            },
+            {
+                "id": "c",
+                "text": "Béchamel"
+            },
+            {
+                "id": "d",
+                "text": "Roux"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Beurre Blanc (white butter) is a delicate, temperamental emulsion of butter and acid reduction, which is highly sensitive to heat."
+    },
+    {
+        "level": 5,
+        "question": "What is the primary function of the acid in the vinegar or lemon juice component of a Hollandaise sauce?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To prevent the sauce from boiling."
+            },
+            {
+                "id": "b",
+                "text": "To stabilize the egg yolk proteins, allowing them to bind with the fat."
+            },
+            {
+                "id": "c",
+                "text": "To intensify the yellow color of the yolk."
+            },
+            {
+                "id": "d",
+                "text": "To reduce the amount of fat needed for the emulsion."
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "The acid helps the egg yolk proteins unfold and bind to the butterfat, acting as a crucial element in stabilizing the emulsion."
+    },
+    {
+        "level": 5,
+        "question": "What is the ideal internal cooking temperature for preparing medium-rare beef steak?",
+        "options": [
+            {
+                "id": "a",
+                "text": "$50^{\\circ}\\text{C}$ ($122^{\\circ}\\text{F}$)"
+            },
+            {
+                "id": "b",
+                "text": "$57^{\\circ}\\text{C}$ ($135^{\\circ}\\text{F}$)"
+            },
+            {
+                "id": "c",
+                "text": "$65^{\\circ}\\text{C}$ ($150^{\\circ}\\text{F}$)"
+            },
+            {
+                "id": "d",
+                "text": "$71^{\\circ}\\text{C}$ ($160^{\\circ}\\text{F}$)"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Medium-rare is typically achieved in the range of $55^{\\circ}\\text{C}$ to $58^{\\circ}\\text{C}$ ($131^{\\circ}\\text{F}$ to $136^{\\circ}\\text{F}$), which yields a warm, pink center."
+    },
+    {
+        "level": 5,
+        "question": "Which thickening agent is a hydrocolloid extracted from red seaweed, commonly used to create clear, firm gels that can withstand heat (thermoreversible)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Pectin"
+            },
+            {
+                "id": "b",
+                "text": "Gelatin"
+            },
+            {
+                "id": "c",
+                "text": "Agar-Agar"
+            },
+            {
+                "id": "d",
+                "text": "Guar Gum"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Agar-Agar sets at room temperature and remains stable at higher temperatures, unlike gelatin, which melts when heated."
+    },
+    {
+        "level": 5,
+        "question": "What is the key difference between a *Fumet* and a standard White Fish Stock?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Fumet uses clarified butter; stock uses oil."
+            },
+            {
+                "id": "b",
+                "text": "Fumet uses aromatic vegetables; stock uses only bones."
+            },
+            {
+                "id": "c",
+                "text": "Fumet includes an acid (like white wine or lemon juice) and is cooked for a shorter time; stock is neutral and cooked longer."
+            },
+            {
+                "id": "d",
+                "text": "Fumet is reduced by half; stock is not reduced."
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "A Fumet (nước dùng cá cô đặc) is typically more intensely flavored, often including white wine and cooked for a shorter time to avoid extracting bitter flavors."
+    },
+    {
+        "level": 5,
+        "question": "In pastry making, what is the term for repeatedly folding and chilling dough (e.g., puff pastry or croissants) to create alternating layers of fat and dough?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Kneading"
+            },
+            {
+                "id": "b",
+                "text": "Laminating"
+            },
+            {
+                "id": "c",
+                "text": "Docking"
+            },
+            {
+                "id": "d",
+                "text": "Creaming"
+            }
+        ],
+        "correct_id": "b",
+        "explanation": "Laminating (tạo lớp) is the critical process for laminated doughs, where the layers of butter create the flaky structure when the water in the butter turns to steam."
+    },
+    {
+        "level": 5,
+        "question": "What is the term for a savory pastry that contains a meat filling and is baked entirely encased in a decorative shell of shortcrust pastry?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Quiche"
+            },
+            {
+                "id": "b",
+                "text": "Vol-au-vent"
+            },
+            {
+                "id": "c",
+                "text": "Pâté en Croûte"
+            },
+            {
+                "id": "d",
+                "text": "Tournedos"
+            }
+        ],
+        "correct_id": "c",
+        "explanation": "Pâté en Croûte (pâté trong vỏ bánh) is a classic French dish where a forcemeat or pâté is baked inside a pastry crust, often chilled and served sliced."
+    }
+]
