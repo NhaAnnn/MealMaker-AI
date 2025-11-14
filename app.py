@@ -6,10 +6,11 @@ import pandas as pd
 import numpy as np
 from flask import Flask, request, jsonify
 from datetime import datetime
-import os          # <--- BỔ SUNG
-import json        # <--- BỔ SUNG
+import os
+import json
+import random  # <--- BỔ SUNG THƯ VIỆN RANDOM
 
-# (MỚI) Import thư viện Firebase Admin
+# Import thư viện Firebase Admin
 import firebase_admin
 from firebase_admin import credentials, firestore
 
@@ -29,19 +30,23 @@ try:
         print(">>> Đang dùng khóa từ Biến Môi Trường/ .env <<<")
     else:
         # Fallback (Chỉ khi cần thiết): Tự đọc file serviceAccountKey.json
-        # (Đây là backup nếu .env không hoạt động hoặc môi trường cần)
         try:
              with open("serviceAccountKey.json", 'r') as f:
-                key_json_dict = json.load(f)
+               key_json_dict = json.load(f)
              print(">>> Đang dùng khóa từ file 'serviceAccountKey.json' (Fallback) <<<")
         except FileNotFoundError:
             raise Exception("Lỗi: Không tìm thấy khóa Firebase (Cả Biến Môi Trường và File cục bộ).")
 
     # 2. Chuyển chuỗi thành đối tượng Python Dictionary
-    key_json_dict = json.loads(key_json_str)
+    # Lưu ý: Nếu key_json_str không tồn tại, dòng này sẽ bị lỗi vì key_json_str là None.
+    # Logic đã được sửa ở trên để xử lý trường hợp key_json_str là None (fallback đọc file).
+    # Tuy nhiên, nếu bạn tin rằng key_json_str luôn có (ví dụ: dùng .env), bạn có thể giữ
+    # logic đơn giản hơn. Ở đây, tôi giữ logic đã sửa.
+
+    # Fix: Nếu dùng fallback đọc file, key_json_dict đã được gán.
+    # Nếu dùng Biến Môi Trường, key_json_dict đã được gán.
 
     # 3. Khởi tạo chứng chỉ bằng nội dung Dict
-    # Đây là cách AN TOÀN và CHÍNH XÁC để dùng Biến Môi Trường
     cred = credentials.Certificate(key_json_dict)
 
     # 4. Khởi tạo app (!! Dùng biến 'cred' vừa tạo)
@@ -87,17 +92,10 @@ except Exception as e:
     model_tagger = None
 
 # =======================================================================
-# (XÓA) AI 1: TỰ ĐỘNG GẮN TAG (DỰA TRÊN TỪ ĐIỂN)
-# Chúng ta không cần TAG_DICTIONARY và hàm ai_auto_tag_recipe cũ nữa
-# =======================================================================
-
-
-# =======================================================================
 # API ENDPOINTS (ĐỂ SERVER NODE.JS GỌI)
 # =======================================================================
 
 # API 1: (NÂNG CẤP) Dùng AI Huấn luyện để Gắn Tag
-# Server Node.js sẽ gọi API này khi user upload bài
 @app.route("/get-auto-tags", methods=["POST"])
 def get_auto_tags():
     # Kiểm tra xem "bộ não" Gắn Tag đã được tải chưa
@@ -166,13 +164,11 @@ def get_auto_tags():
         print(f"Lỗi khi gắn tag (NLP): {e}")
         return jsonify({"error": str(e)}), 500
 
-# API 2: (SỬA LẠI) Dùng để Gợi ý (Hybrid AI)
-# Server Node.js sẽ gọi API này
+# API 2: (SỬA LẠI VÀ THÊM LOGIC NGẪU NHIÊN) Dùng để Gợi ý (Hybrid AI)
 @app.route("/get-recommendations-ai", methods=["GET"])
 def get_recommendations_ai():
     if not db: return jsonify({"error": "Lỗi CSDL"}), 500
 
-    # (SỬA LẠI) Kiểm tra 'model_knn'
     if not model_knn: return jsonify({"error": "Bộ não AI k-NN chưa sẵn sàng."}), 500
 
     user_id = request.args.get("userId")
@@ -182,15 +178,18 @@ def get_recommendations_ai():
     recommendation_ids = []
 
     # --- 1. THỬ DÙNG AI HỌC MÁY (k-NN) TRƯỚC (Cho user cũ) ---
-    # Kiểm tra xem user_id có trong 'bộ não' không
     if user_id in user_id_map:
         try:
+            # Tham số điều chỉnh cho kỹ thuật chống cứng (Anti-Staleness)
+            N_NEIGHBORS = 15     # Số lượng user hàng xóm được tìm kiếm
+            N_POTENTIAL = 50     # KỸ THUẬT MỚI: Lấy danh sách N món tiềm năng
+            K_FINAL = 14         # Số lượng món cuối cùng muốn trả về
+
             print(f"Đang tìm gợi ý cho User Cũ ({user_id}) bằng k-NN...")
             user_index = user_id_map.get_loc(user_id)
             user_vector = user_item_matrix.iloc[user_index].values.reshape(1, -1)
 
-            # (SỬA LẠI) Dùng 'model_knn'
-            distances, indices = model_knn.kneighbors(user_vector, n_neighbors=15)
+            distances, indices = model_knn.kneighbors(user_vector, n_neighbors=N_NEIGHBORS)
 
             recommendations = {}
             similar_user_indices = indices.flatten()[1:] # Bỏ qua user 0 (chính mình)
@@ -198,22 +197,32 @@ def get_recommendations_ai():
             for neighbor_index in similar_user_indices:
                 neighbor_vector = user_item_matrix.iloc[neighbor_index]
                 for recipe_index, rating in enumerate(neighbor_vector):
+                    # Chỉ quan tâm các món mà user hàng xóm đã thích
+                    # VÀ user hiện tại chưa từng thích
                     if rating == 1 and user_vector[0][recipe_index] == 0:
                         recipe_id = recipe_id_map[recipe_index]
                         recommendations[recipe_id] = recommendations.get(recipe_id, 0) + 1
 
-            # Lấy 14 món (2 món/ngày x 7 ngày)
-            sorted_ids = [r[0] for r in sorted(recommendations.items(), key=lambda item: item[1], reverse=True)[:14]]
+            # Lấy N món tiềm năng (ví dụ: 50 món) dựa trên điểm số cao nhất
+            potential_ids = [r[0] for r in sorted(recommendations.items(),
+                                                  key=lambda item: item[1],
+                                                  reverse=True)[:N_POTENTIAL]]
 
-            if sorted_ids:
-                recommendation_ids = sorted_ids
+            # KỸ THUẬT NGẪU NHIÊN HÓA (CHỐNG CỨNG):
+            if potential_ids:
+                # Trộn danh sách
+                random.shuffle(potential_ids)
+                # Chọn ngẫu nhiên K món từ danh sách đã trộn
+                recommendation_ids = potential_ids[:K_FINAL]
+                print(f"k-NN đã tìm thấy {len(potential_ids)} món tiềm năng. Đã chọn ngẫu nhiên {len(recommendation_ids)} món.")
+
+            if not recommendation_ids:
+                print("k-NN không tìm thấy đủ gợi ý. Chuyển sang fallback.")
         except Exception as e:
-             print(f"Lỗi k-NN, chuyển sang fallback: {e}")
-             recommendation_ids = [] # Đặt lại
+            print(f"Lỗi k-NN, chuyển sang fallback: {e}")
+            recommendation_ids = [] # Đặt lại
 
     # --- 2. FALLBACK (DỰ PHÒNG) CHO USER MỚI (Dùng ai_profile) ---
-    # Nếu AI Học máy không tìm thấy gợi ý
-    # HOẶC nếu user là người mới (không có trong 'user_id_map')
     if not recommendation_ids:
         print(f"k-NN thất bại (hoặc user mới). Chuyển sang AI Dựa trên Luật (Habits)...")
         try:
@@ -235,17 +244,25 @@ def get_recommendations_ai():
 
             print(f"Đang tìm món ăn dựa trên sở thích: {tags_to_query}")
 
-            # Query CSDL 'recipes'
+            # Query CSDL 'recipes' (Lấy N=50 món tiềm năng)
             recommendations_ref = db.collection("recipes").where(
                 "tags", "array-contains-any", tags_to_query
-            ).limit(14).stream() # Lấy 14 món
+            ).limit(50).stream()
 
+            fallback_potential_ids = []
             for r in recommendations_ref:
-                recommendation_ids.append(r.to_dict().get("recipe_id")) # Lấy recipe_id
+                fallback_potential_ids.append(r.to_dict().get("recipe_id"))
+
+            # KỸ THUẬT NGẪU NHIÊN HÓA (CHỐNG CỨNG) CHO FALLBACK:
+            if fallback_potential_ids:
+                random.shuffle(fallback_potential_ids)
+                recommendation_ids = fallback_potential_ids[:14] # Chọn ngẫu nhiên 14 món từ 50
+                print(f"Fallback đã tìm thấy {len(fallback_potential_ids)} món. Đã chọn ngẫu nhiên {len(recommendation_ids)} món.")
+
 
         except Exception as e:
-             print(f"Lỗi khi dùng Fallback (Habits): {e}")
-             return jsonify({"error": str(e)}), 500
+            print(f"Lỗi khi dùng Fallback (Habits): {e}")
+            return jsonify({"error": str(e)}), 500
 
     # --- 3. BƯỚC CUỐI: TRẢ VỀ DANH SÁCH ID ---
     if not recommendation_ids:
@@ -258,7 +275,7 @@ def get_recommendations_ai():
 # API Ping
 @app.route("/")
 def hello():
-    return "Chào! Server AI (Python Hybrid Microservice v2) đang chạy!"
+    return "Chào! Server AI (Python Hybrid Microservice v2 - Anti-Stale) đang chạy!"
 
 # =======================================================================
 # CHẠY SERVER
