@@ -21,7 +21,7 @@ from firebase_admin import db as firebase_rtdb # Thêm alias nếu cần dùng R
 # KHỞI TẠO ỨNG DỤNG VÀ FIREBASE
 # =======================================================================
 app = Flask(__name__)
-db = None  # Khởi tạo db mặc định là None
+db = None
 
 # Tên file chứng chỉ Firebase (chỉ dùng khi phát triển cục bộ)
 FIREBASE_LOCAL_KEY_FILE = "firebase_admin.json"
