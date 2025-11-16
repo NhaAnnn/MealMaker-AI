@@ -33,7 +33,7 @@ try:
     else:
         # Fallback: Tự đọc file serviceAccountKey.json
         try:
-            with open("serviceAccountKey.json", 'r') as f:
+            with open("firebase.json", 'r') as f:
                 key_json_dict = json.load(f)
             print(">>> Đang dùng khóa từ file 'serviceAccountKey.json' (Fallback) <<<")
         except FileNotFoundError:
@@ -44,7 +44,7 @@ try:
 
     # 3. Khởi tạo app (!! Dùng biến 'cred' vừa tạo)
     firebase_admin.initialize_app(cred, {
-        'projectId': 'mealmaker-backend',
+        'projectId': 'mealplanner-739f1',
     })
 
     # 4. Lấy CSDL Firestore
