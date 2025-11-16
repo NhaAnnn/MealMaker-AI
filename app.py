@@ -113,7 +113,7 @@ def get_auto_tags():
 
         # 3. Dùng "bộ não" (model) để dự đoán vector nhãn
         predicted_probabilities = model_tagger.predict_proba(text_vector)
-        THRESHOLD = 0.27
+        THRESHOLD = 0.35
         predicted_binary = (predicted_probabilities > THRESHOLD).astype(int)
 
         # 4. Dùng "bộ não" (mlb) để dịch ngược vector nhãn thành chữ
