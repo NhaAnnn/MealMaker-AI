@@ -1,4 +1,4 @@
-# --- File: train_tagger.py ---
+# --- File: train_tagger.py (Cập nhật sử dụng Firebase/Firestore) ---
 # KỊCH BẢN HUẤN LUYỆN (OFFLINE) CHO AI GẮN TAG
 # Chạy file này 1 lần (python train_tagger.py)
 
@@ -10,25 +10,60 @@ from sklearn.multiclass import OneVsRestClassifier
 from sklearn.linear_model import LogisticRegression
 import joblib
 import sys
+import firebase_admin
+from firebase_admin import credentials, firestore
+import os
 
 
 # =======================================================================
-# GIAI ĐOẠN 1: TẢI VÀ CHUẨN BỊ DỮ LIỆU
+# GIAI ĐOẠN 1: TẢI VÀ CHUẨN BỊ DỮ LIỆU TỪ FIREBASE
 # =======================================================================
 print(">>> Bắt đầu huấn luyện (training) AI Gắn Tag...")
 
+# --- KẾT NỐI FIREBASE (Giữ nguyên phần bảo mật) ---
 try:
-    # 1. Tải dữ liệu từ recipes.json
-    with open('recipes.json', 'r', encoding='utf-8') as f:
-        recipes_data = json.load(f)
-    print(f"Đã tải {len(recipes_data)} công thức từ 'recipes.json'.")
-except FileNotFoundError:
-    print("LỖI: Không tìm thấy file 'recipes.json'.")
-    print("Hãy đảm bảo file 'recipes.json' chứa dữ liệu đầy đủ.")
-    sys.exit(1)
+    key_json_str = os.environ.get("FIREBASE_KEY_JSON")
+
+    if not key_json_str:
+        try:
+            with open("serviceAccountKey.json", 'r') as f:
+                key_json_dict = json.load(f)
+        except FileNotFoundError:
+            raise Exception("Lỗi: Không tìm thấy 'FIREBASE_KEY_JSON' trong biến môi trường và không tìm thấy file 'serviceAccountKey.json'.")
+    else:
+        key_json_dict = json.loads(key_json_str)
+
+    cred = credentials.Certificate(key_json_dict)
+    # Thay 'mealmaker-backend' bằng project ID thực tế của bạn
+    firebase_admin.initialize_app(cred, {'projectId': 'mealmaker-backend'})
+    db = firestore.client()
+    print("Đã kết nối Firebase thành công.")
+
 except Exception as e:
-    print(f"Lỗi khi đọc file JSON: {e}")
+    print(f"Lỗi kết nối Firebase: {e}")
     sys.exit(1)
+# ------------------------------------------------------------------------
+
+# 1. Tải dữ liệu từ collection 'recipes'
+recipes_data = []
+try:
+    print("Đang tải dữ liệu từ collection 'recipes'...")
+    # ⭐️ ĐỌC DỮ LIỆU TỪ COLLECTION 'recipes'
+    recipes_ref = db.collection("recipes").stream()
+
+    for recipe_doc in recipes_ref:
+        # doc.to_dict() trả về cấu trúc dữ liệu Map như bạn đã cung cấp
+        recipes_data.append(recipe_doc.to_dict())
+
+    if not recipes_data:
+        raise ValueError("Lỗi: Không tìm thấy công thức nào trong CSDL.")
+
+    print(f"Đã tải thành công {len(recipes_data)} công thức từ Firebase.")
+
+except Exception as e:
+    print(f"LỖI: Không thể tải dữ liệu từ Firestore: {e}")
+    sys.exit(1)
+
 
 # 2. Chuẩn bị dữ liệu (Input và Output)
 X_text = [] # Input (Văn bản)
@@ -37,6 +72,7 @@ y_tags = [] # Output (Tags)
 for recipe in recipes_data:
     # Gộp title, ingredients, instructions thành 1 khối văn bản
     title = recipe.get('title', '')
+    # Sử dụng 'ingredients_list' hoặc 'ingredients_list_fixed'
     ingredients = " ".join(recipe.get('ingredients_list', recipe.get('ingredients_list_fixed', [])))
     instructions = " ".join(recipe.get('instructions', []))
 
@@ -44,7 +80,7 @@ for recipe in recipes_data:
     time_minutes = recipe.get('time_minutes', 0)
 
     # ----------------------------------------------------
-    # 💡 LOGIC MỚI: TẠO VÀ GÁN TAG THỜI GIAN
+    # 💡 LOGIC: TẠO VÀ GÁN TAG THỜI GIAN
     # ----------------------------------------------------
 
     # Lấy các tags hiện có
@@ -59,17 +95,12 @@ for recipe in recipes_data:
     elif time_minutes > 60:
         time_tag = "long_cook"     # Lâu: > 60 phút
 
-    # Thêm tag thời gian vào danh sách tags
-    if time_tag and time_tag not in tags:
+    # Thêm tag thời gian vào danh sách tags, loại bỏ tags thời gian cũ
+    tags = [t for t in tags if t not in ["quick", "medium_cook", "long_cook"]]
+    if time_tag:
         tags.append(time_tag)
 
-    # CŨNG CÓ THỂ BỎ TAG "quick" ĐÃ CÓ VÀ THAY THẾ BẰNG TAG PHÙ HỢP
-    # Nếu muốn đảm bảo chỉ có một tag thời gian:
-    # tags = [t for t in tags if t not in ["quick", "medium_cook", "long_cook"]]
-    # if time_tag: tags.append(time_tag)
-
     # Gộp time_minutes vào input text để AI học tag thời gian
-    # Việc này vẫn cần thiết để AI có thể nhìn thấy giá trị số
     full_text = f"{title} {ingredients} {instructions} time_{time_minutes}"
 
     # ----------------------------------------------------
@@ -86,14 +117,11 @@ print(f"Đã chuẩn bị {len(X_text)} mẫu dữ liệu hợp lệ để huấ
 # =======================================================================
 
 # 1. "Số hóa" Nhãn (Tags)
-# Dạy cho AI biết tất cả các tags có thể có
 mlb = MultiLabelBinarizer()
 y_binary = mlb.fit_transform(y_tags)
 print(f'Đã "số hóa" nhãn (tags). Tìm thấy {len(mlb.classes_)} tags độc nhất.')
 
 # 2. "Số hóa" Văn bản (Text)
-# Dạy cho AI "đọc" văn bản
-# Giữ nguyên max_features=5000
 vectorizer = TfidfVectorizer(max_features=5000, stop_words=None)
 X_vectors = vectorizer.fit_transform(X_text)
 print(f'Đã "số hóa" văn bản (TF-IDF).')
@@ -104,8 +132,6 @@ print(f'Đã "số hóa" văn bản (TF-IDF).')
 # =======================================================================
 
 # 1. Chọn mô hình
-# OneVsRestClassifier cho phép sử dụng mô hình nhị phân (LogisticRegression)
-# cho bài toán gắn nhãn đa nhãn.
 classifier = OneVsRestClassifier(LogisticRegression(solver='liblinear'), n_jobs=-1)
 
 # 2. Huấn luyện (Train)
