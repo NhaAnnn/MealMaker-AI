@@ -10,13 +10,12 @@ import random
 
 from flask import Flask, request, jsonify
 from datetime import datetime
-# ⭐ Khắc phục UserWarning Firestore
+# ⭐ FIX: Khắc phục UserWarning Firestore
 from google.cloud.firestore import FieldFilter
 
 # Import thư viện Firebase Admin
 import firebase_admin
 from firebase_admin import credentials, firestore
-# from firebase_admin import db as firebase_rtdb # Không dùng Realtime DB
 
 # =======================================================================
 # KHỞI TẠO ỨNG DỤNG VÀ FIREBASE
@@ -43,19 +42,25 @@ try:
                 key_json_dict = json.load(f)
             print(f">>> Đang dùng khóa từ file '{FIREBASE_LOCAL_KEY_FILE}' (Fallback) <<<")
         except FileNotFoundError:
-            raise Exception("Lỗi: Không tìm thấy khóa Firebase (Cả Biến Môi Trường và File cục bộ).")
+            # Nếu không tìm thấy, nó sẽ thất bại và được catch ở khối ngoài
+            pass
 
-    # 2. Khởi tạo chứng chỉ và app
-    cred = credentials.Certificate(key_json_dict)
+    # Phải có key_json_dict để khởi tạo
+    if key_json_dict:
+        # 2. Khởi tạo chứng chỉ và app
+        cred = credentials.Certificate(key_json_dict)
 
-    # 3. Khởi tạo app (Chỉ khởi tạo 1 lần)
-    firebase_admin.initialize_app(cred, {
-        'projectId': FIREBASE_PROJECT_ID,
-    })
+        # 3. Khởi tạo app (Chỉ khởi tạo 1 lần)
+        if not firebase_admin._apps:
+             firebase_admin.initialize_app(cred, {
+                'projectId': FIREBASE_PROJECT_ID,
+            })
 
-    # 4. Lấy CSDL Firestore
-    db = firestore.client()
-    print(">>> KẾT NỐI FIREBASE (FIRESTORE) THÀNH CÔNG! <<<")
+        # 4. Lấy CSDL Firestore
+        db = firestore.client()
+        print(">>> KẾT NỐI FIREBASE (FIRESTORE) THÀNH CÔNG! <<<")
+    else:
+        raise Exception("Không thể tìm thấy hoặc tải khóa Firebase.")
 
 except Exception as e:
     print(f"LỖI: Không thể kết nối Firebase. Lỗi: {e}")
@@ -161,7 +166,8 @@ def get_recommendations_ai():
     recommendation_ids = []
 
     # --- 1. LEVEL 1: DÙNG AI HỌC MÁY (k-NN) ---
-    if model_knn and user_id in user_id_map.index:
+    # ⭐ FIX: Loại bỏ .index, kiểm tra user_id trong Index trực tiếp
+    if model_knn and user_id in user_id_map:
         try:
             N_NEIGHBORS = 15
             N_POTENTIAL = 50
@@ -217,7 +223,7 @@ def get_recommendations_ai():
                 else:
                     print(f"Đang tìm món ăn dựa trên sở thích: {tags_to_query}")
 
-                    # ⭐ ĐÃ SỬA: Dùng cú pháp filter=FieldFilter để loại bỏ UserWarning
+                    # Đã sửa: Dùng cú pháp filter=FieldFilter để loại bỏ UserWarning
                     recommendations_ref = db.collection("recipes").where(
                         filter=FieldFilter("tags", "array_contains_any", tags_to_query)
                     ).limit(50).stream()
