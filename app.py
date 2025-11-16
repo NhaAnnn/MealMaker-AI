@@ -100,13 +100,13 @@ def get_auto_tags():
         data = request.json
         title = data.get("title", "")
         ingredients_list = data.get("ingredients_list", [])
-        instructions_list = data.get("instructions", [])
+        # instructions_list = data.get("instructions", [])
         time = data.get("time_minutes", 0)
 
         # 1. Gộp text (giống hệt lúc train)
         ingredients_str = " ".join(ingredients_list)
-        instructions_str = " ".join(instructions_list)
-        full_text = f"{title} {ingredients_str} {instructions_str} time_{time}"
+        # instructions_str = " ".join(instructions_list)
+        full_text = f"{title} {ingredients_str} time_{time}"
 
         # 2. Dùng "bộ não" (vectorizer) để biến text mới thành vector
         text_vector = vectorizer_tagger.transform([full_text])
