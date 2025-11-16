@@ -238,9 +238,7 @@ def get_recommendations_ai():
         print("Level 3 Fallback: Đang lấy ngẫu nhiên 14 món phổ biến...")
         try:
             # Lấy 50 món (ví dụ: có 'views' cao nhất, hoặc mới nhất)
-            global_recommendations_ref = db.collection("recipes").order_by(
-                "views", direction=firestore.Query.DESCENDING
-            ).limit(50).stream()
+            global_recommendations_ref = db.collection("recipes").limit(50).stream()
 
             global_potential_ids = [r.id for r in global_recommendations_ref]
 
