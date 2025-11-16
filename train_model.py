@@ -22,7 +22,7 @@ try:
     if not key_json_str:
         # Fallback: Vẫn thử đọc file nếu không có biến môi trường (cho máy dev)
         try:
-             with open("firebase.json", 'r') as f:
+             with open("firebase_admin.json", 'r') as f:
                 key_json_dict = json.load(f)
         except FileNotFoundError:
             raise Exception("Lỗi: Không tìm thấy 'FIREBASE_KEY_JSON' trong biến môi trường và không tìm thấy file 'serviceAccountKey.json'.")
@@ -34,7 +34,7 @@ try:
     # Khởi tạo chứng chỉ
     cred = credentials.Certificate(key_json_dict)
 
-    firebase_admin.initialize_app(cred, {'projectId': 'mealplanner-739f1'})
+    firebase_admin.initialize_app(cred, {'projectId': 'mealplanner2-9b7dd'})
     db = firestore.client()
     print("Đã kết nối Firebase.")
 
