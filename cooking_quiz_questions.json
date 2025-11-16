@@ -21,7 +21,7 @@
             }
         ],
         "correct_id": "b",
-        "explanation": "Bacteria multiply fastest between $4^{\\circ}\\text{C}$ and $60^{\\circ}\\text{C}$ ($40^{\\circ}\\text{F}$ and $140^{\\circ}\\text{F}$), known as the 'Danger Zone'. Food should not be left out for more than two hours."
+        "explanation": "Bacteria multiply fastest between 4 degrees Celsius and 60 degrees Celsius (40 degree Fahrenheit and 140 degree Fahrenheit), known as the 'Danger Zone'. Food should not be left out for more than two hours."
     },
     {
         "level": 1,
@@ -69,7 +69,7 @@
             }
         ],
         "correct_id": "c",
-        "explanation": "'Dicing' is a precise knife cut that produces small, block-shaped pieces, often $1/4$ or $1/2$ inch cubes."
+        "explanation": "'Dicing' is a precise knife cut that produces small, block-shaped pieces, often 1/4 or 1/2 inch cubes."
     },
     {
         "level": 1,
@@ -121,27 +121,27 @@
     },
     {
         "level": 1,
-        "question": "A recipe calls for 1 teaspoon (tsp) of salt. Approximately how many milliliters (mL) is this?",
+        "question": "A recipe calls for 1 teaspoon (tsp) of salt. Approximately how many milliliters (ml) is this?",
         "options": [
             {
                 "id": "a",
-                "text": "$1\\text{ mL}$"
+                "text": "1 ml"
             },
             {
                 "id": "b",
-                "text": "$5\\text{ mL}$"
+                "text": "5 ml"
             },
             {
                 "id": "c",
-                "text": "$15\\text{ mL}$"
+                "text": "15 ml"
             },
             {
                 "id": "d",
-                "text": "$25\\text{ mL}$"
+                "text": "25 ml"
             }
         ],
         "correct_id": "b",
-        "explanation": "One teaspoon is a standard unit of volume, approximately equal to $5\\text{ mL}$."
+        "explanation": "One teaspoon is a standard unit of volume, approximately equal to 5 ml."
     },
     {
         "level": 1,
@@ -253,7 +253,7 @@
             },
             {
                 "id": "c",
-                "text": "In the refrigerator (below $4^{\\circ}\\text{C}$ or $40^{\\circ}\\text{F}$)."
+                "text": "In the refrigerator (below 4 degrees Celsius or 40 degree Fahrenheit)."
             },
             {
                 "id": "d",
@@ -461,23 +461,23 @@
         "options": [
             {
                 "id": "a",
-                "text": "$50^{\\circ}\\text{C}$ ($122^{\\circ}\\text{F}$)"
+                "text": "50 degrees Celsius (122 degree Fahrenheit)"
             },
             {
                 "id": "b",
-                "text": "$75^{\\circ}\\text{C}$ ($167^{\\circ}\\text{F}$)"
+                "text": "75 degrees Celsius (167 degree Fahrenheit)"
             },
             {
                 "id": "c",
-                "text": "$100^{\\circ}\\text{C}$ ($212^{\\circ}\\text{F}$)"
+                "text": "100 degrees Celsius (212 degree Fahrenheit)"
             },
             {
                 "id": "d",
-                "text": "$150^{\\circ}\\text{C}$ ($302^{\\circ}\\text{F}$)"
+                "text": "150 degrees Celsius (302 degree Fahrenheit)"
             }
         ],
         "correct_id": "c",
-        "explanation": "$100^{\\circ}\\text{C}$ ($212^{\\circ}\\text{F}$) is the standard boiling temperature for pure water at standard atmospheric pressure."
+        "explanation": "100 degrees Celsius (212 degree Fahrenheit) is the standard boiling temperature for pure water at standard atmospheric pressure."
     },
     {
         "level": 2,
@@ -501,7 +501,7 @@
             }
         ],
         "correct_id": "b",
-        "explanation": "Boiling occurs at $100^{\\circ}\\text{C}$ ($212^{\\circ}\\text{F}$) with rapid bubbles; simmering is just below boiling, typically $85^{\\circ}\\text{C}$ to $95^{\\circ}\\text{C}$ ($185^{\\circ}\\text{F}$ to $205^{\\circ}\\text{F}$). "
+        "explanation": "Boiling occurs at 100 degrees Celsius (212 degree Fahrenheit) with rapid bubbles; simmering is just below boiling, typically 85 degrees Celsius to 95 degrees Celsius (185 degree Fahrenheit to 205 degree Fahrenheit). "
     },
     {
         "level": 2,
@@ -529,27 +529,27 @@
     },
     {
         "level": 2,
-        "question": "Approximately how many milliliters (mL) are in one standard US fluid cup?",
+        "question": "Approximately how many milliliters (ml) are in one standard US fluid cup?",
         "options": [
             {
                 "id": "a",
-                "text": "$150\\text{ mL}$"
+                "text": "150 ml"
             },
             {
                 "id": "b",
-                "text": "$240\\text{ mL}$"
+                "text": "240 ml"
             },
             {
                 "id": "c",
-                "text": "$500\\text{ mL}$"
+                "text": "500 ml"
             },
             {
                 "id": "d",
-                "text": "$1,000\\text{ mL}$"
+                "text": "1,000 ml"
             }
         ],
         "correct_id": "b",
-        "explanation": "One standard US fluid cup is equal to approximately $236.6\\text{ mL}$, which is usually rounded to $240\\text{ mL}$ for practical kitchen measurements."
+        "explanation": "One standard US fluid cup is equal to approximately 236.6 ml, which is usually rounded to 240 ml for practical kitchen measurements."
     },
     {
         "level": 2,
@@ -573,7 +573,7 @@
             }
         ],
         "correct_id": "c",
-        "explanation": "The Julienne cut produces uniform thin strips, typically around $1/8$ inch by $1/8$ inch by 2 inches long."
+        "explanation": "The Julienne cut produces uniform thin strips, typically around 1/8 inch by 1/8 inch by 2 inches long."
     },
     {
         "level": 2,
@@ -1125,7 +1125,7 @@
             }
         ],
         "correct_id": "b",
-        "explanation": "Mirepoix is typically a mixture of $50\\%$ onions, $25\\%$ carrots, and $25\\%$ celery, used as the aromatic base for many stocks, soups, and sauces."
+        "explanation": "Mirepoix is typically a mixture of 50\\% onions, 25\\% carrots, and 25\\% celery, used as the aromatic base for many stocks, soups, and sauces."
     },
     {
         "level": 3,
@@ -1393,27 +1393,27 @@
     },
     {
         "level": 3,
-        "question": "What is the required sugar level ($^\\circ\text{C}$) to achieve the 'soft ball' stage in candy making?",
+        "question": "What is the required sugar level (^\\circ\text{C}) to achieve the 'soft ball' stage in candy making?",
         "options": [
             {
                 "id": "a",
-                "text": "$105^{\\circ}\\text{C}$ ($221^{\\circ}\\text{F}$)"
+                "text": "105 degrees Celsius (221 degree Fahrenheit)"
             },
             {
                 "id": "b",
-                "text": "$115^{\\circ}\\text{C}$ ($240^{\\circ}\\text{F}$)"
+                "text": "115 degrees Celsius (240 degree Fahrenheit)"
             },
             {
                 "id": "c",
-                "text": "$125^{\\circ}\\text{C}$ ($257^{\\circ}\\text{F}$)"
+                "text": "125 degrees Celsius (257 degree Fahrenheit)"
             },
             {
                 "id": "d",
-                "text": "$140^{\\circ}\\text{C}$ ($285^{\\circ}\\text{F}$)"
+                "text": "140 degrees Celsius (285 degree Fahrenheit)"
             }
         ],
         "correct_id": "b",
-        "explanation": "The soft ball stage, $115^{\\circ}\\text{C}$ ($240^{\\circ}\\text{F}$), is where a small amount of syrup dropped into cold water forms a soft, pliable ball. This is the temperature for fudge or soft caramel."
+        "explanation": "The soft ball stage, 115 degrees Celsius (240 degree Fahrenheit), is where a small amount of syrup dropped into cold water forms a soft, pliable ball. This is the temperature for fudge or soft caramel."
     },
     {
         "level": 3,
@@ -1485,7 +1485,7 @@
             }
         ],
         "correct_id": "c",
-        "explanation": "Confit is a preservation technique that involves submerging the food in fat and cooking it slowly at temperatures between $60^{\\circ}\\text{C}$ and $90^{\\circ}\\text{C}$ ($140^{\\circ}\\text{F}$ and $195^{\\circ}\\text{F}$)."
+        "explanation": "Confit is a preservation technique that involves submerging the food in fat and cooking it slowly at temperatures between 60 degrees Celsius and 90 degrees Celsius (140 degree Fahrenheit and 195 degree Fahrenheit)."
     },
     {
         "level": 4,
@@ -1609,7 +1609,7 @@
     },
     {
         "level": 4,
-        "question": "What is the precise knife cut that requires dicing a Julienne cut to create uniform cubes of $1/8$ inch x $1/8$ inch x $1/8$ inch?",
+        "question": "What is the precise knife cut that requires dicing a Julienne cut to create uniform cubes of 1/8 inch x 1/8 inch x 1/8 inch?",
         "options": [
             {
                 "id": "a",
@@ -1653,11 +1653,11 @@
             }
         ],
         "correct_id": "c",
-        "explanation": "Carryover cooking means the internal temperature of a large item continues to rise ($3^{\\circ}\\text{C}$ to $6^{\\circ}\\text{C}$ or $5^{\\circ}\\text{F}$ to $10^{\\circ}\\text{F}$) after leaving the heat source. Failing to account for this results in overcooked meat."
+        "explanation": "Carryover cooking means the internal temperature of a large item continues to rise (3 degrees Celsius to 6 degrees Celsius or 5 degree Fahrenheit to 10 degree Fahrenheit) after leaving the heat source. Failing to account for this results in overcooked meat."
     },
     {
         "level": 4,
-        "question": "In the context of the *Sous Vide* method, what is the significance of cooking duck breast at exactly $58^{\\circ}\\text{C}$ ($136^{\\circ}\\text{F}$) for an extended period?",
+        "question": "In the context of the *Sous Vide* method, what is the significance of cooking duck breast at exactly 58 degrees Celsius (136 degree Fahrenheit) for an extended period?",
         "options": [
             {
                 "id": "a",
@@ -1853,23 +1853,23 @@
         "options": [
             {
                 "id": "a",
-                "text": "$55^{\\circ}\\text{C}$ ($131^{\\circ}\\text{F}$)"
+                "text": "55 degrees Celsius (131 degree Fahrenheit)"
             },
             {
                 "id": "b",
-                "text": "$63^{\\circ}\\text{C}$ ($145^{\\circ}\\text{F}$)"
+                "text": "63 degrees Celsius (145 degree Fahrenheit)"
             },
             {
                 "id": "c",
-                "text": "$74^{\\circ}\\text{C}$ ($165^{\\circ}\\text{F}$)"
+                "text": "74 degrees Celsius (165 degree Fahrenheit)"
             },
             {
                 "id": "d",
-                "text": "$82^{\\circ}\\text{C}$ ($180^{\\circ}\\text{F}$)"
+                "text": "82 degrees Celsius (180 degree Fahrenheit)"
             }
         ],
         "correct_id": "b",
-        "explanation": "$63^{\\circ}\\text{C}$ ($145^{\\circ}\\text{F}$) is the USDA safe minimum temperature for fish. Cooking beyond this point denatures the proteins too much, making the fish dry and flaky."
+        "explanation": "63 degrees Celsius (145 degree Fahrenheit) is the USDA safe minimum temperature for fish. Cooking beyond this point denatures the proteins too much, making the fish dry and flaky."
     },
     {
         "level": 4,
@@ -2113,7 +2113,7 @@
     },
     {
         "level": 5,
-        "question": "The term for reducing a liquid by boiling it down to $1/4$ of its original volume, often used for demi-glace, is:",
+        "question": "The term for reducing a liquid by boiling it down to 1/4 of its original volume, often used for demi-glace, is:",
         "options": [
             {
                 "id": "a",
@@ -2213,23 +2213,23 @@
         "options": [
             {
                 "id": "a",
-                "text": "Below $0^{\\circ}\\text{C}$ ($32^{\\circ}\\text{F}$)"
+                "text": "Below 0 degrees Celsius (32 degree Fahrenheit)"
             },
             {
                 "id": "b",
-                "text": "Above $74^{\\circ}\\text{C}$ ($165^{\\circ}\\text{F}$)"
+                "text": "Above 74 degrees Celsius (165 degree Fahrenheit)"
             },
             {
                 "id": "c",
-                "text": "Between $4^{\\circ}\\text{C}$ and $60^{\\circ}\\text{C}$ ($40^{\\circ}\\text{F}$ and $140^{\\circ}\\text{F}$)"
+                "text": "Between 4 degrees Celsius and 60 degrees Celsius (40 degree Fahrenheit and 140 degree Fahrenheit)"
             },
             {
                 "id": "d",
-                "text": "Exactly $63^{\\circ}\\text{C}$ ($145^{\\circ}\\text{F}$)"
+                "text": "Exactly 63 degrees Celsius (145 degree Fahrenheit)"
             }
         ],
         "correct_id": "b",
-        "explanation": "Cooking food above the $74^{\\circ}\\text{C}$ ($165^{\\circ}\\text{F}$) threshold ensures near-instantaneous pasteurization, killing the majority of harmful pathogens."
+        "explanation": "Cooking food above the 74 degrees Celsius (165 degree Fahrenheit) threshold ensures near-instantaneous pasteurization, killing the majority of harmful pathogens."
     },
     {
         "level": 5,
@@ -2285,23 +2285,23 @@
         "options": [
             {
                 "id": "a",
-                "text": "$50^{\\circ}\\text{C}$ ($122^{\\circ}\\text{F}$)"
+                "text": "50 degrees Celsius (122 degree Fahrenheit)"
             },
             {
                 "id": "b",
-                "text": "$57^{\\circ}\\text{C}$ ($135^{\\circ}\\text{F}$)"
+                "text": "57 degrees Celsius (135 degree Fahrenheit)"
             },
             {
                 "id": "c",
-                "text": "$65^{\\circ}\\text{C}$ ($150^{\\circ}\\text{F}$)"
+                "text": "65 degrees Celsius (150 degree Fahrenheit)"
             },
             {
                 "id": "d",
-                "text": "$71^{\\circ}\\text{C}$ ($160^{\\circ}\\text{F}$)"
+                "text": "71 degrees Celsius (160 degree Fahrenheit)"
             }
         ],
         "correct_id": "b",
-        "explanation": "Medium-rare is typically achieved in the range of $55^{\\circ}\\text{C}$ to $58^{\\circ}\\text{C}$ ($131^{\\circ}\\text{F}$ to $136^{\\circ}\\text{F}$), which yields a warm, pink center."
+        "explanation": "Medium-rare is typically achieved in the range of 55 degrees Celsius to 58 degrees Celsius (131 degree Fahrenheit to 136 degree Fahrenheit), which yields a warm, pink center."
     },
     {
         "level": 5,
